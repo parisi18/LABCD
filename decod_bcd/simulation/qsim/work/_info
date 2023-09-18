@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Users/RafaelParisi/Documents/UNIFESP/7 termo/Lab CD/decod_bcd/simulation/qsim
+vdecod_bcd
+Z1 !s110 1695068253
+!i10b 1
+!s100 aKg^5S1]gY_DOVd5`V45W1
+IMP_24]LA:<d=ClNM0IMgj1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1695068253
+Z4 8decod_bcd.vo
+Z5 Fdecod_bcd.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1695068253.000000
+Z8 !s107 decod_bcd.vo|
+Z9 !s90 -work|work|decod_bcd.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vdecod_bcd_vlg_vec_tst
+R1
+!i10b 1
+!s100 `hf9GA:UnU1Qn[<QKlgiF1
+I]Z54[8BOVc@ogY9dik4^e2
+R2
+R0
+w1695068252
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+vhard_block
+R1
+!i10b 1
+!s100 @EL[O6?`jTdZ>C7Y`^RWD0
+I7015Th1z4K:QS[XBmES002
+R2
+R0
+R3
+R4
+R5
+L0 371
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
