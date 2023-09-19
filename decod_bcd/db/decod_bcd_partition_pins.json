@@ -32,19 +32,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "Y",
-					"strict" : false
-				},
-				{
-					"name" : "W",
-					"strict" : false
-				},
-				{
 					"name" : "Z",
 					"strict" : false
 				},
 				{
+					"name" : "Y",
+					"strict" : false
+				},
+				{
 					"name" : "X",
+					"strict" : false
+				},
+				{
+					"name" : "W",
 					"strict" : false
 				}
 			]

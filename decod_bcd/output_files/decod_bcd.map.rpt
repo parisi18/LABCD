@@ -1,5 +1,5 @@
 Analysis & Synthesis report for decod_bcd
-Mon Sep 18 18:09:08 2023
+Tue Sep 19 17:27:14 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -42,13 +42,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Sep 18 18:09:08 2023       ;
+; Analysis & Synthesis Status        ; Successful - Tue Sep 19 17:27:14 2023       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; decod_bcd                                   ;
 ; Top-level Entity Name              ; decod_bcd                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 6                                           ;
-;     Total combinational functions  ; 6                                           ;
+; Total logic elements               ; 7                                           ;
+;     Total combinational functions  ; 7                                           ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 11                                          ;
@@ -161,16 +161,16 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                             ;
-+----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                             ; Library ;
-+----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------------+---------+
-; decod_bcd.bdf                    ; yes             ; User Block Diagram/Schematic File        ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/Lab CD/decod_bcd/decod_bcd.bdf           ;         ;
-; barra_maior_que_dez.bdf          ; yes             ; User Block Diagram/Schematic File        ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/Lab CD/decod_bcd/barra_maior_que_dez.bdf ;         ;
-; output_barrado.bdf               ; yes             ; User Block Diagram/Schematic File        ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/Lab CD/decod_bcd/output_barrado.bdf      ;         ;
-; bcd_box.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/Lab CD/decod_bcd/bcd_box.bdf             ;         ;
-+----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                            ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                            ; Library ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------------+---------+
+; decod_bcd.bdf                    ; yes             ; User Block Diagram/Schematic File        ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/decod_bcd/decod_bcd.bdf           ;         ;
+; barra_maior_que_dez.bdf          ; yes             ; User Block Diagram/Schematic File        ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/decod_bcd/barra_maior_que_dez.bdf ;         ;
+; output_barrado.bdf               ; yes             ; User Block Diagram/Schematic File        ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/decod_bcd/output_barrado.bdf      ;         ;
+; bcd_box.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/decod_bcd/bcd_box.bdf             ;         ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------+
@@ -178,16 +178,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+---------+
 ; Resource                                    ; Usage   ;
 +---------------------------------------------+---------+
-; Estimated Total logic elements              ; 6       ;
+; Estimated Total logic elements              ; 7       ;
 ;                                             ;         ;
-; Total combinational functions               ; 6       ;
+; Total combinational functions               ; 7       ;
 ; Logic element usage by number of LUT inputs ;         ;
-;     -- 4 input functions                    ; 5       ;
-;     -- 3 input functions                    ; 1       ;
+;     -- 4 input functions                    ; 7       ;
+;     -- 3 input functions                    ; 0       ;
 ;     -- <=2 input functions                  ; 0       ;
 ;                                             ;         ;
 ; Logic elements by mode                      ;         ;
-;     -- normal mode                          ; 6       ;
+;     -- normal mode                          ; 7       ;
 ;     -- arithmetic mode                      ; 0       ;
 ;                                             ;         ;
 ; Total registers                             ; 0       ;
@@ -198,21 +198,21 @@ refer to the applicable agreement for further details.
 ;                                             ;         ;
 ; Embedded Multiplier 9-bit elements          ; 0       ;
 ;                                             ;         ;
-; Maximum fan-out node                        ; Y~input ;
-; Maximum fan-out                             ; 6       ;
-; Total fan-out                               ; 41      ;
-; Average fan-out                             ; 1.46    ;
+; Maximum fan-out node                        ; Z~input ;
+; Maximum fan-out                             ; 7       ;
+; Total fan-out                               ; 46      ;
+; Average fan-out                             ; 1.59    ;
 +---------------------------------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+----------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Entity Name    ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+----------------+--------------+
-; |decod_bcd                 ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 11   ; 0            ; |decod_bcd                       ; decod_bcd      ; work         ;
-;    |output_barrado:inst11| ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decod_bcd|output_barrado:inst11 ; output_barrado ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+----------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                     ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------+----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name             ; Entity Name    ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------+----------------+--------------+
+; |decod_bcd                 ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 11   ; 0            ; |decod_bcd                      ; decod_bcd      ; work         ;
+;    |output_barrado:inst1|  ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decod_bcd|output_barrado:inst1 ; output_barrado ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -239,12 +239,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; boundary_port         ; 11                          ;
 ; cycloneiii_lcell_comb ; 7                           ;
 ;     normal            ; 7                           ;
-;         1 data inputs ; 1                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 5                           ;
+;         4 data inputs ; 7                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.45                        ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 1.00                        ;
 +-----------------------+-----------------------------+
 
 
@@ -263,7 +261,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Sep 18 18:09:01 2023
+    Info: Processing started: Tue Sep 19 17:27:04 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off decod_bcd -c decod_bcd
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -274,8 +272,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file barra_m
 Info (12021): Found 1 design units, including 1 entities, in source file output_barrado.bdf
     Info (12023): Found entity 1: output_barrado
 Info (12127): Elaborating entity "decod_bcd" for the top level hierarchy
-Info (12128): Elaborating entity "output_barrado" for hierarchy "output_barrado:inst11"
-Info (12128): Elaborating entity "barra_maior_que_dez" for hierarchy "barra_maior_que_dez:inst14"
+Info (12128): Elaborating entity "output_barrado" for hierarchy "output_barrado:inst1"
+Info (12128): Elaborating entity "barra_maior_que_dez" for hierarchy "barra_maior_que_dez:inst10"
 Warning (12125): Using design file bcd_box.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: bcd_box
 Info (12128): Elaborating entity "bcd_box" for hierarchy "bcd_box:inst"
@@ -283,14 +281,14 @@ Warning (275008): Primitive "NOT" of instance "inst" not used
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 17 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 18 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 6 logic cells
+    Info (21061): Implemented 7 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 4750 megabytes
-    Info: Processing ended: Mon Sep 18 18:09:08 2023
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:16
+    Info: Processing ended: Tue Sep 19 17:27:14 2023
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:21
 
 

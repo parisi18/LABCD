@@ -1,49 +1,50 @@
 |decod_bcd
-a <= output_barrado:inst11.a_barra
-Z => barra_maior_que_dez:inst14.Z
+a <= output_barrado:inst1.a_barra
+Z => barra_maior_que_dez:inst10.Z
 Z => bcd_box:inst.z
-Y => barra_maior_que_dez:inst14.Y
+Y => barra_maior_que_dez:inst10.Y
 Y => bcd_box:inst.y
-X => barra_maior_que_dez:inst14.X
+X => barra_maior_que_dez:inst10.X
 X => bcd_box:inst.x
 W => bcd_box:inst.w
-b <= output_barrado:inst11.b_barra
-c <= output_barrado:inst11.c_barra
-d <= output_barrado:inst11.d_barra
-e <= output_barrado:inst11.e_barra
-f <= output_barrado:inst11.f_barra
-g <= output_barrado:inst11.g_barra
+b <= output_barrado:inst1.b_barra
+c <= output_barrado:inst1.c_barra
+d <= output_barrado:inst1.d_barra
+e <= output_barrado:inst1.e_barra
+f <= output_barrado:inst1.f_barra
+g <= output_barrado:inst1.g_barra
 
 
-|decod_bcd|output_barrado:inst11
-a_barra <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-a_i => inst1.IN0
-barra => inst1.IN1
-barra => inst2.IN1
-barra => inst3.IN1
-barra => inst4.IN1
-barra => inst5.IN1
-barra => inst6.IN1
-barra => inst7.IN1
-b_barra <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-b_i => inst2.IN0
-c_barra <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-c_i => inst3.IN0
-d_barra <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-d_i => inst4.IN0
-e_barra <= inst5.DB_MAX_OUTPUT_PORT_TYPE
-e_i => inst5.IN0
-f_barra <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-f_i => inst6.IN0
-g_barra <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-g_i => inst7.IN0
+|decod_bcd|output_barrado:inst1
+a_barra <= inst.DB_MAX_OUTPUT_PORT_TYPE
+barra => inst.IN0
+barra => inst1.IN0
+barra => inst2.IN0
+barra => inst3.IN0
+barra => inst4.IN0
+barra => inst5.IN0
+barra => inst6.IN0
+a_i => inst.IN1
+b_barra <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+b_i => inst1.IN1
+c_barra <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c_i => inst2.IN1
+d_barra <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+d_i => inst3.IN1
+e_barra <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+e_i => inst4.IN1
+f_barra <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+f_i => inst5.IN1
+g_barra <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+g_i => inst6.IN1
 
 
-|decod_bcd|barra_maior_que_dez:inst14
+|decod_bcd|barra_maior_que_dez:inst10
 barra <= inst5.DB_MAX_OUTPUT_PORT_TYPE
-Z => inst2.IN0
-X => inst4.IN0
-Y => inst3.IN0
+Z => inst1.IN0
+Z => inst.IN0
+X => inst1.IN1
+Y => inst.IN1
 
 
 |decod_bcd|bcd_box:inst
