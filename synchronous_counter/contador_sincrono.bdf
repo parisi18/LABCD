@@ -266,7 +266,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 288 152 400 248)
+	(rect 280 152 392 248)
 	(text "contador_sincrono_box" (rect 5 0 140 19)(font "Intel Clear" (font_size 8)))
 	(text "inst6" (rect 8 75 30 92)(font "Intel Clear" ))
 	(port
@@ -353,22 +353,14 @@ refer to the applicable agreement for further details.
 	(pt 448 88)
 )
 (connector
+	(pt 392 184)
 	(pt 488 184)
-	(pt 400 184)
 )
 (connector
+	(pt 392 200)
 	(pt 488 200)
-	(pt 400 200)
 )
 (connector
+	(pt 392 216)
 	(pt 488 216)
-	(pt 400 216)
-)
-(connector
-	(pt 280 184)
-	(pt 288 184)
-)
-(connector
-	(pt 280 200)
-	(pt 288 200)
 )

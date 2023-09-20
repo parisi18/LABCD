@@ -8,6 +8,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "h_b_o",
+					"strict" : false
+				},
+				{
+					"name" : "h_c_o",
+					"strict" : false
+				},
+				{
 					"name" : "h_d_o",
 					"strict" : false
 				},

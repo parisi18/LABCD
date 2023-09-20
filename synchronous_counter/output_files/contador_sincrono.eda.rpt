@@ -1,5 +1,5 @@
 EDA Netlist Writer report for contador_sincrono
-Tue Sep 19 20:11:08 2023
+Wed Sep 20 13:43:38 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Sep 19 20:11:08 2023 ;
+; EDA Netlist Writer Status ; Successful - Wed Sep 20 13:43:38 2023 ;
 ; Revision Name             ; contador_sincrono                     ;
 ; Top-level Entity Name     ; contador_sincrono                     ;
 ; Family                    ; Cyclone IV E                          ;
@@ -65,13 +65,13 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                    ;
-+---------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                               ;
-+---------------------------------------------------------------------------------------------------------------+
-; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/contador_sincrono/simulation/qsim//contador_sincrono.vo ;
-+---------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                      ;
++-----------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                 ;
++-----------------------------------------------------------------------------------------------------------------+
+; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/synchronous_counter/simulation/qsim//contador_sincrono.vo ;
++-----------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -93,14 +93,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue Sep 19 20:11:07 2023
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/contador_sincrono/simulation/qsim/" contador_sincrono -c contador_sincrono
+    Info: Processing started: Wed Sep 20 13:43:38 2023
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/synchronous_counter/simulation/qsim/" contador_sincrono -c contador_sincrono
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file contador_sincrono.vo in folder "D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/contador_sincrono/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file contador_sincrono.vo in folder "D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/synchronous_counter/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4636 megabytes
-    Info: Processing ended: Tue Sep 19 20:11:08 2023
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4637 megabytes
+    Info: Processing ended: Wed Sep 20 13:43:38 2023
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 
