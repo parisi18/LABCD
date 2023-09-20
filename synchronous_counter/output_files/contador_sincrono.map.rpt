@@ -1,5 +1,5 @@
 Analysis & Synthesis report for contador_sincrono
-Tue Sep 19 23:10:59 2023
+Tue Sep 19 23:22:59 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Sep 19 23:10:59 2023       ;
+; Analysis & Synthesis Status        ; Successful - Tue Sep 19 23:22:59 2023       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; contador_sincrono                           ;
 ; Top-level Entity Name              ; contador_sincrono                           ;
@@ -281,7 +281,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Sep 19 23:10:50 2023
+    Info: Processing started: Tue Sep 19 23:22:49 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off contador_sincrono -c contador_sincrono
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -315,9 +315,9 @@ Info (21057): Implemented 14 device resources after synthesis - the final resour
     Info (21059): Implemented 7 output pins
     Info (21061): Implemented 5 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4760 megabytes
-    Info: Processing ended: Tue Sep 19 23:10:59 2023
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:21
+    Info: Peak virtual memory: 4763 megabytes
+    Info: Processing ended: Tue Sep 19 23:22:59 2023
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:24
 
 

@@ -1,0 +1,24 @@
+Quartus Prime Archive log --	D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/synchronous_counter/contador_sincrono.qarlog
+
+Archive:	D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/synchronous_counter/contador_sincrono.qar
+Date:		Tue Sep 19 23:29:49 2023
+Quartus Prime		17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/synchronous_counter/Waveform.vwf
+D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/synchronous_counter/Waveform1.vwf
+D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/synchronous_counter/Waveform2.vwf
+D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/synchronous_counter/Waveform3.vwf
+D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/synchronous_counter/barra_maior_que_dez.bdf
+D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/synchronous_counter/bcd_box.bdf
+D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/synchronous_counter/contador_sincrono.bdf
+D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/synchronous_counter/contador_sincrono.qpf
+D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/synchronous_counter/contador_sincrono.qsf
+D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/synchronous_counter/contador_sincrono_box.bdf
+D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/synchronous_counter/decod_bcd_box.bdf
+D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/synchronous_counter/output_barrado.bdf
+d:/users/rafaelparisi/documents/unifesp/quartus/quartus/bin64/assignment_defaults.qdf
+	======= Total: 13 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
