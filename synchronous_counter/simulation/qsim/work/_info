@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/contador_sincrono/simulation/qsim
+vcontador_sincrono
+Z1 !s110 1695165068
+!i10b 1
+!s100 hAT?7^>5RMI_JgE@?MDWV3
+I@0P?Bl[[hmS2C02SzA9]41
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1695165068
+Z4 8contador_sincrono.vo
+Z5 Fcontador_sincrono.vo
+Z6 L0 31
+Z7 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z8 !s108 1695165068.000000
+Z9 !s107 contador_sincrono.vo|
+Z10 !s90 -work|work|contador_sincrono.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vcontador_sincrono_box
+Z13 !s110 1695163997
+!i10b 1
+!s100 e8QPiR@NE2K2_9:_H^B^[3
+I0IdWJj98@_iG3052be>862
+R2
+R0
+w1695163997
+R4
+R5
+R6
+R7
+r1
+!s85 0
+31
+Z14 !s108 1695163997.000000
+R9
+R10
+!i113 1
+R11
+R12
+vcontador_sincrono_box_vlg_vec_tst
+R13
+!i10b 1
+!s100 NIP4fX;;^]oB@nb_2oLaQ1
+ICR<VL3c=DeR`Jidi3GID62
+R2
+R0
+w1695163996
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+Z15 L0 29
+R7
+r1
+!s85 0
+31
+R14
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R11
+R12
+vcontador_sincrono_vlg_vec_tst
+R1
+!i10b 1
+!s100 E9z?[dgP84RT`X75Af=Io0
+IYlnIT6<d_7>jO0]TC024;1
+R2
+R0
+w1695165067
+8Waveform3.vwf.vt
+FWaveform3.vwf.vt
+R15
+R7
+r1
+!s85 0
+31
+R8
+!s107 Waveform3.vwf.vt|
+!s90 -work|work|Waveform3.vwf.vt|
+!i113 1
+R11
+R12
+vhard_block
+R1
+!i10b 1
+!s100 DS<0c1Hz7hzVL4GlR16^Z3
+I@ZcPkJ`5GHLigLNBSA5b_2
+R2
+R0
+R3
+R4
+R5
+L0 403
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
