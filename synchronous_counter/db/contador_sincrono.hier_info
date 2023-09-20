@@ -94,10 +94,12 @@ g_o <= inst28.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |contador_sincrono|contador_sincrono_box:inst6
-Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 clear => inst5.IN0
+clock => inst2.CLK
+clock => inst1.CLK
 clock => inst3.CLK
-LSB <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-MSB <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LSB <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+MSB <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 

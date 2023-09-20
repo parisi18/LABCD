@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for contador_sincrono
-Tue Sep 19 21:18:28 2023
+Tue Sep 19 23:11:20 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -17,55 +17,43 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   9. Slow 1200mV 85C Model Recovery Summary
  10. Slow 1200mV 85C Model Removal Summary
  11. Slow 1200mV 85C Model Minimum Pulse Width Summary
- 12. Slow 1200mV 85C Model Setup: 'contador_sincrono_box:inst6|inst3'
- 13. Slow 1200mV 85C Model Setup: 'clock'
- 14. Slow 1200mV 85C Model Setup: 'contador_sincrono_box:inst6|inst6'
- 15. Slow 1200mV 85C Model Hold: 'contador_sincrono_box:inst6|inst6'
- 16. Slow 1200mV 85C Model Hold: 'clock'
- 17. Slow 1200mV 85C Model Hold: 'contador_sincrono_box:inst6|inst3'
- 18. Slow 1200mV 85C Model Metastability Summary
- 19. Slow 1200mV 0C Model Fmax Summary
- 20. Slow 1200mV 0C Model Setup Summary
- 21. Slow 1200mV 0C Model Hold Summary
- 22. Slow 1200mV 0C Model Recovery Summary
- 23. Slow 1200mV 0C Model Removal Summary
- 24. Slow 1200mV 0C Model Minimum Pulse Width Summary
- 25. Slow 1200mV 0C Model Setup: 'contador_sincrono_box:inst6|inst3'
- 26. Slow 1200mV 0C Model Setup: 'clock'
- 27. Slow 1200mV 0C Model Setup: 'contador_sincrono_box:inst6|inst6'
- 28. Slow 1200mV 0C Model Hold: 'contador_sincrono_box:inst6|inst6'
- 29. Slow 1200mV 0C Model Hold: 'clock'
- 30. Slow 1200mV 0C Model Hold: 'contador_sincrono_box:inst6|inst3'
- 31. Slow 1200mV 0C Model Metastability Summary
- 32. Fast 1200mV 0C Model Setup Summary
- 33. Fast 1200mV 0C Model Hold Summary
- 34. Fast 1200mV 0C Model Recovery Summary
- 35. Fast 1200mV 0C Model Removal Summary
- 36. Fast 1200mV 0C Model Minimum Pulse Width Summary
- 37. Fast 1200mV 0C Model Setup: 'clock'
- 38. Fast 1200mV 0C Model Setup: 'contador_sincrono_box:inst6|inst3'
- 39. Fast 1200mV 0C Model Setup: 'contador_sincrono_box:inst6|inst6'
- 40. Fast 1200mV 0C Model Hold: 'contador_sincrono_box:inst6|inst6'
- 41. Fast 1200mV 0C Model Hold: 'contador_sincrono_box:inst6|inst3'
- 42. Fast 1200mV 0C Model Hold: 'clock'
- 43. Fast 1200mV 0C Model Metastability Summary
- 44. Multicorner Timing Analysis Summary
- 45. Board Trace Model Assignments
- 46. Input Transition Times
- 47. Signal Integrity Metrics (Slow 1200mv 0c Model)
- 48. Signal Integrity Metrics (Slow 1200mv 85c Model)
- 49. Signal Integrity Metrics (Fast 1200mv 0c Model)
- 50. Setup Transfers
- 51. Hold Transfers
- 52. Report TCCS
- 53. Report RSKM
- 54. Unconstrained Paths Summary
- 55. Clock Status Summary
- 56. Unconstrained Input Ports
- 57. Unconstrained Output Ports
- 58. Unconstrained Input Ports
- 59. Unconstrained Output Ports
- 60. TimeQuest Timing Analyzer Messages
+ 12. Slow 1200mV 85C Model Setup: 'clock'
+ 13. Slow 1200mV 85C Model Hold: 'clock'
+ 14. Slow 1200mV 85C Model Metastability Summary
+ 15. Slow 1200mV 0C Model Fmax Summary
+ 16. Slow 1200mV 0C Model Setup Summary
+ 17. Slow 1200mV 0C Model Hold Summary
+ 18. Slow 1200mV 0C Model Recovery Summary
+ 19. Slow 1200mV 0C Model Removal Summary
+ 20. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 21. Slow 1200mV 0C Model Setup: 'clock'
+ 22. Slow 1200mV 0C Model Hold: 'clock'
+ 23. Slow 1200mV 0C Model Metastability Summary
+ 24. Fast 1200mV 0C Model Setup Summary
+ 25. Fast 1200mV 0C Model Hold Summary
+ 26. Fast 1200mV 0C Model Recovery Summary
+ 27. Fast 1200mV 0C Model Removal Summary
+ 28. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 29. Fast 1200mV 0C Model Setup: 'clock'
+ 30. Fast 1200mV 0C Model Hold: 'clock'
+ 31. Fast 1200mV 0C Model Metastability Summary
+ 32. Multicorner Timing Analysis Summary
+ 33. Board Trace Model Assignments
+ 34. Input Transition Times
+ 35. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 36. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 37. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 38. Setup Transfers
+ 39. Hold Transfers
+ 40. Report TCCS
+ 41. Report RSKM
+ 42. Unconstrained Paths Summary
+ 43. Clock Status Summary
+ 44. Unconstrained Input Ports
+ 45. Unconstrained Output Ports
+ 46. Unconstrained Input Ports
+ 47. Unconstrained Output Ports
+ 48. TimeQuest Timing Analyzer Messages
 
 
 
@@ -115,28 +103,27 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.1%      ;
+;     Processor 2            ;   0.2%      ;
+;     Processors 3-4         ;   0.1%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clocks                                                                                                                                                                                                                               ;
-+-----------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------------------+
-; Clock Name                        ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                               ;
-+-----------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------------------+
-; clock                             ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clock }                             ;
-; contador_sincrono_box:inst6|inst3 ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { contador_sincrono_box:inst6|inst3 } ;
-; contador_sincrono_box:inst6|inst6 ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { contador_sincrono_box:inst6|inst6 } ;
-+-----------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                            ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets   ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+; clock      ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clock } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 85C Model Fmax Summary                                                                                 ;
-+-------------+-----------------+-----------------------------------+------------------------------------------------+
-; Fmax        ; Restricted Fmax ; Clock Name                        ; Note                                           ;
-+-------------+-----------------+-----------------------------------+------------------------------------------------+
-; 1265.82 MHz ; 437.64 MHz      ; contador_sincrono_box:inst6|inst6 ; limit due to minimum period restriction (tmin) ;
-+-------------+-----------------+-----------------------------------+------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary                                                                        ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; 724.11 MHz ; 250.0 MHz       ; clock      ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -146,26 +133,22 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 HTML report is unavailable in plain text report export.
 
 
-+------------------------------------------------------------+
-; Slow 1200mV 85C Model Setup Summary                        ;
-+-----------------------------------+--------+---------------+
-; Clock                             ; Slack  ; End Point TNS ;
-+-----------------------------------+--------+---------------+
-; contador_sincrono_box:inst6|inst3 ; -0.721 ; -0.721        ;
-; clock                             ; -0.573 ; -0.573        ;
-; contador_sincrono_box:inst6|inst6 ; 0.210  ; 0.000         ;
-+-----------------------------------+--------+---------------+
++-------------------------------------+
+; Slow 1200mV 85C Model Setup Summary ;
++-------+--------+--------------------+
+; Clock ; Slack  ; End Point TNS      ;
++-------+--------+--------------------+
+; clock ; -0.381 ; -0.381             ;
++-------+--------+--------------------+
 
 
-+-----------------------------------------------------------+
-; Slow 1200mV 85C Model Hold Summary                        ;
-+-----------------------------------+-------+---------------+
-; Clock                             ; Slack ; End Point TNS ;
-+-----------------------------------+-------+---------------+
-; contador_sincrono_box:inst6|inst6 ; 0.445 ; 0.000         ;
-; clock                             ; 0.599 ; 0.000         ;
-; contador_sincrono_box:inst6|inst3 ; 0.698 ; 0.000         ;
-+-----------------------------------+-------+---------------+
++------------------------------------+
+; Slow 1200mV 85C Model Hold Summary ;
++-------+-------+--------------------+
+; Clock ; Slack ; End Point TNS      ;
++-------+-------+--------------------+
+; clock ; 0.445 ; 0.000              ;
++-------+-------+--------------------+
 
 
 ------------------------------------------
@@ -180,73 +163,35 @@ No paths to report.
 No paths to report.
 
 
-+------------------------------------------------------------+
-; Slow 1200mV 85C Model Minimum Pulse Width Summary          ;
-+-----------------------------------+--------+---------------+
-; Clock                             ; Slack  ; End Point TNS ;
-+-----------------------------------+--------+---------------+
-; clock                             ; -3.000 ; -4.285        ;
-; contador_sincrono_box:inst6|inst3 ; -1.285 ; -1.285        ;
-; contador_sincrono_box:inst6|inst6 ; -1.285 ; -1.285        ;
-+-----------------------------------+--------+---------------+
++---------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
++-------+--------+----------------------------------+
+; Clock ; Slack  ; End Point TNS                    ;
++-------+--------+----------------------------------+
+; clock ; -3.000 ; -5.570                           ;
++-------+--------+----------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 85C Model Setup: 'contador_sincrono_box:inst6|inst3'                                                                                                                                ;
-+--------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-; Slack  ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
-+--------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-; -0.721 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst3 ; 0.500        ; 1.614      ; 3.085      ;
-; -0.232 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst3 ; 1.000        ; 1.614      ; 3.096      ;
-+--------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Setup: 'clock'                                                                                                                 ;
++--------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                         ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.381 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 1.000        ; -0.050     ; 1.349      ;
+; -0.234 ; contador_sincrono_box:inst6|inst2 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 1.000        ; -0.050     ; 1.202      ;
+; 0.210  ; contador_sincrono_box:inst6|inst2 ; contador_sincrono_box:inst6|inst2 ; clock        ; clock       ; 1.000        ; -0.043     ; 0.765      ;
++--------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 85C Model Setup: 'clock'                                                                                                                                      ;
-+--------+-----------------------------------+-----------------------------------+-----------------------------------+-------------+--------------+------------+------------+
-; Slack  ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+--------+-----------------------------------+-----------------------------------+-----------------------------------+-------------+--------------+------------+------------+
-; -0.573 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; clock       ; 0.500        ; 2.074      ; 3.377      ;
-; -0.048 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; clock       ; 1.000        ; 2.074      ; 3.352      ;
-+--------+-----------------------------------+-----------------------------------+-----------------------------------+-------------+--------------+------------+------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 85C Model Setup: 'contador_sincrono_box:inst6|inst6'                                                                                                                               ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-; Slack ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-; 0.210 ; contador_sincrono_box:inst6|inst7 ; contador_sincrono_box:inst6|inst7 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; 1.000        ; -0.043     ; 0.765      ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 85C Model Hold: 'contador_sincrono_box:inst6|inst6'                                                                                                                                ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-; Slack ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-; 0.445 ; contador_sincrono_box:inst6|inst7 ; contador_sincrono_box:inst6|inst7 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; 0.000        ; 0.043      ; 0.674      ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 85C Model Hold: 'clock'                                                                                                                                      ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-------------+--------------+------------+------------+
-; Slack ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-------------+--------------+------------+------------+
-; 0.599 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; clock       ; 0.000        ; 2.163      ; 3.200      ;
-; 1.133 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; clock       ; -0.500       ; 2.163      ; 3.234      ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-------------+--------------+------------+------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 85C Model Hold: 'contador_sincrono_box:inst6|inst3'                                                                                                                                ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-; Slack ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-; 0.698 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst3 ; 0.000        ; 1.701      ; 2.817      ;
-; 1.150 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst3 ; -0.500       ; 1.701      ; 2.769      ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Hold: 'clock'                                                                                                                 ;
++-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                         ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.445 ; contador_sincrono_box:inst6|inst2 ; contador_sincrono_box:inst6|inst2 ; clock        ; clock       ; 0.000        ; 0.043      ; 0.674      ;
+; 0.833 ; contador_sincrono_box:inst6|inst2 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 0.000        ; 0.050      ; 1.069      ;
+; 0.959 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 0.000        ; 0.050      ; 1.195      ;
++-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
 
 
 -----------------------------------------------
@@ -255,36 +200,32 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 0C Model Fmax Summary                                                                                  ;
-+-------------+-----------------+-----------------------------------+------------------------------------------------+
-; Fmax        ; Restricted Fmax ; Clock Name                        ; Note                                           ;
-+-------------+-----------------+-----------------------------------+------------------------------------------------+
-; 1422.48 MHz ; 437.64 MHz      ; contador_sincrono_box:inst6|inst6 ; limit due to minimum period restriction (tmin) ;
-+-------------+-----------------+-----------------------------------+------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                                                                         ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; 804.51 MHz ; 250.0 MHz       ; clock      ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
-+------------------------------------------------------------+
-; Slow 1200mV 0C Model Setup Summary                         ;
-+-----------------------------------+--------+---------------+
-; Clock                             ; Slack  ; End Point TNS ;
-+-----------------------------------+--------+---------------+
-; contador_sincrono_box:inst6|inst3 ; -0.632 ; -0.632        ;
-; clock                             ; -0.439 ; -0.439        ;
-; contador_sincrono_box:inst6|inst6 ; 0.297  ; 0.000         ;
-+-----------------------------------+--------+---------------+
++------------------------------------+
+; Slow 1200mV 0C Model Setup Summary ;
++-------+--------+-------------------+
+; Clock ; Slack  ; End Point TNS     ;
++-------+--------+-------------------+
+; clock ; -0.243 ; -0.243            ;
++-------+--------+-------------------+
 
 
-+-----------------------------------------------------------+
-; Slow 1200mV 0C Model Hold Summary                         ;
-+-----------------------------------+-------+---------------+
-; Clock                             ; Slack ; End Point TNS ;
-+-----------------------------------+-------+---------------+
-; contador_sincrono_box:inst6|inst6 ; 0.398 ; 0.000         ;
-; clock                             ; 0.499 ; 0.000         ;
-; contador_sincrono_box:inst6|inst3 ; 0.664 ; 0.000         ;
-+-----------------------------------+-------+---------------+
++-----------------------------------+
+; Slow 1200mV 0C Model Hold Summary ;
++-------+-------+-------------------+
+; Clock ; Slack ; End Point TNS     ;
++-------+-------+-------------------+
+; clock ; 0.398 ; 0.000             ;
++-------+-------+-------------------+
 
 
 -----------------------------------------
@@ -299,73 +240,35 @@ No paths to report.
 No paths to report.
 
 
-+------------------------------------------------------------+
-; Slow 1200mV 0C Model Minimum Pulse Width Summary           ;
-+-----------------------------------+--------+---------------+
-; Clock                             ; Slack  ; End Point TNS ;
-+-----------------------------------+--------+---------------+
-; clock                             ; -3.000 ; -4.285        ;
-; contador_sincrono_box:inst6|inst3 ; -1.285 ; -1.285        ;
-; contador_sincrono_box:inst6|inst6 ; -1.285 ; -1.285        ;
-+-----------------------------------+--------+---------------+
++--------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
++-------+--------+---------------------------------+
+; Clock ; Slack  ; End Point TNS                   ;
++-------+--------+---------------------------------+
+; clock ; -3.000 ; -5.570                          ;
++-------+--------+---------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 0C Model Setup: 'contador_sincrono_box:inst6|inst3'                                                                                                                                 ;
-+--------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-; Slack  ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
-+--------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-; -0.632 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst3 ; 0.500        ; 1.442      ; 2.806      ;
-; -0.153 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst3 ; 1.000        ; 1.442      ; 2.827      ;
-+--------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Setup: 'clock'                                                                                                                  ;
++--------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                         ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.243 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 1.000        ; -0.045     ; 1.217      ;
+; -0.124 ; contador_sincrono_box:inst6|inst2 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 1.000        ; -0.045     ; 1.098      ;
+; 0.297  ; contador_sincrono_box:inst6|inst2 ; contador_sincrono_box:inst6|inst2 ; clock        ; clock       ; 1.000        ; -0.039     ; 0.683      ;
++--------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 0C Model Setup: 'clock'                                                                                                                                       ;
-+--------+-----------------------------------+-----------------------------------+-----------------------------------+-------------+--------------+------------+------------+
-; Slack  ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+--------+-----------------------------------+-----------------------------------+-----------------------------------+-------------+--------------+------------+------------+
-; -0.439 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; clock       ; 0.500        ; 1.948      ; 3.099      ;
-; 0.093  ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; clock       ; 1.000        ; 1.948      ; 3.067      ;
-+--------+-----------------------------------+-----------------------------------+-----------------------------------+-------------+--------------+------------+------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 0C Model Setup: 'contador_sincrono_box:inst6|inst6'                                                                                                                                ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-; Slack ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-; 0.297 ; contador_sincrono_box:inst6|inst7 ; contador_sincrono_box:inst6|inst7 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; 1.000        ; -0.039     ; 0.683      ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 0C Model Hold: 'contador_sincrono_box:inst6|inst6'                                                                                                                                 ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-; Slack ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-; 0.398 ; contador_sincrono_box:inst6|inst7 ; contador_sincrono_box:inst6|inst7 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; 0.000        ; 0.039      ; 0.608      ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 0C Model Hold: 'clock'                                                                                                                                       ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-------------+--------------+------------+------------+
-; Slack ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-------------+--------------+------------+------------+
-; 0.499 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; clock       ; 0.000        ; 2.027      ; 2.930      ;
-; 1.035 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; clock       ; -0.500       ; 2.027      ; 2.966      ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-------------+--------------+------------+------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 0C Model Hold: 'contador_sincrono_box:inst6|inst3'                                                                                                                                 ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-; Slack ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-; 0.664 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst3 ; 0.000        ; 1.521      ; 2.569      ;
-; 1.121 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst3 ; -0.500       ; 1.521      ; 2.526      ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Hold: 'clock'                                                                                                                  ;
++-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                         ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.398 ; contador_sincrono_box:inst6|inst2 ; contador_sincrono_box:inst6|inst2 ; clock        ; clock       ; 0.000        ; 0.039      ; 0.608      ;
+; 0.752 ; contador_sincrono_box:inst6|inst2 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 0.000        ; 0.045      ; 0.968      ;
+; 0.866 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 0.000        ; 0.045      ; 1.082      ;
++-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
 
 
 ----------------------------------------------
@@ -374,26 +277,22 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+------------------------------------------------------------+
-; Fast 1200mV 0C Model Setup Summary                         ;
-+-----------------------------------+--------+---------------+
-; Clock                             ; Slack  ; End Point TNS ;
-+-----------------------------------+--------+---------------+
-; clock                             ; -0.082 ; -0.082        ;
-; contador_sincrono_box:inst6|inst3 ; -0.015 ; -0.015        ;
-; contador_sincrono_box:inst6|inst6 ; 0.624  ; 0.000         ;
-+-----------------------------------+--------+---------------+
++------------------------------------+
+; Fast 1200mV 0C Model Setup Summary ;
++-------+-------+--------------------+
+; Clock ; Slack ; End Point TNS      ;
++-------+-------+--------------------+
+; clock ; 0.343 ; 0.000              ;
++-------+-------+--------------------+
 
 
-+-----------------------------------------------------------+
-; Fast 1200mV 0C Model Hold Summary                         ;
-+-----------------------------------+-------+---------------+
-; Clock                             ; Slack ; End Point TNS ;
-+-----------------------------------+-------+---------------+
-; contador_sincrono_box:inst6|inst6 ; 0.206 ; 0.000         ;
-; contador_sincrono_box:inst6|inst3 ; 0.251 ; 0.000         ;
-; clock                             ; 0.346 ; 0.000         ;
-+-----------------------------------+-------+---------------+
++-----------------------------------+
+; Fast 1200mV 0C Model Hold Summary ;
++-------+-------+-------------------+
+; Clock ; Slack ; End Point TNS     ;
++-------+-------+-------------------+
+; clock ; 0.208 ; 0.000             ;
++-------+-------+-------------------+
 
 
 -----------------------------------------
@@ -408,73 +307,35 @@ No paths to report.
 No paths to report.
 
 
-+------------------------------------------------------------+
-; Fast 1200mV 0C Model Minimum Pulse Width Summary           ;
-+-----------------------------------+--------+---------------+
-; Clock                             ; Slack  ; End Point TNS ;
-+-----------------------------------+--------+---------------+
-; clock                             ; -3.000 ; -4.098        ;
-; contador_sincrono_box:inst6|inst3 ; -1.000 ; -1.000        ;
-; contador_sincrono_box:inst6|inst6 ; -1.000 ; -1.000        ;
-+-----------------------------------+--------+---------------+
++--------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
++-------+--------+---------------------------------+
+; Clock ; Slack  ; End Point TNS                   ;
++-------+--------+---------------------------------+
+; clock ; -3.000 ; -5.206                          ;
++-------+--------+---------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fast 1200mV 0C Model Setup: 'clock'                                                                                                                                       ;
-+--------+-----------------------------------+-----------------------------------+-----------------------------------+-------------+--------------+------------+------------+
-; Slack  ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+--------+-----------------------------------+-----------------------------------+-----------------------------------+-------------+--------------+------------+------------+
-; -0.082 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; clock       ; 0.500        ; 0.991      ; 1.665      ;
-; 0.419  ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; clock       ; 1.000        ; 0.991      ; 1.664      ;
-+--------+-----------------------------------+-----------------------------------+-----------------------------------+-------------+--------------+------------+------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Setup: 'clock'                                                                                                                 ;
++-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                         ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.343 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 1.000        ; -0.025     ; 0.639      ;
+; 0.415 ; contador_sincrono_box:inst6|inst2 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 1.000        ; -0.025     ; 0.567      ;
+; 0.626 ; contador_sincrono_box:inst6|inst2 ; contador_sincrono_box:inst6|inst2 ; clock        ; clock       ; 1.000        ; -0.022     ; 0.359      ;
++-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fast 1200mV 0C Model Setup: 'contador_sincrono_box:inst6|inst3'                                                                                                                                 ;
-+--------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-; Slack  ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
-+--------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-; -0.015 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst3 ; 0.500        ; 0.849      ; 1.476      ;
-; 0.489  ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst3 ; 1.000        ; 0.849      ; 1.472      ;
-+--------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fast 1200mV 0C Model Setup: 'contador_sincrono_box:inst6|inst6'                                                                                                                                ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-; Slack ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-; 0.624 ; contador_sincrono_box:inst6|inst7 ; contador_sincrono_box:inst6|inst7 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; 1.000        ; -0.024     ; 0.359      ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fast 1200mV 0C Model Hold: 'contador_sincrono_box:inst6|inst6'                                                                                                                                 ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-; Slack ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-; 0.206 ; contador_sincrono_box:inst6|inst7 ; contador_sincrono_box:inst6|inst7 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; 0.000        ; 0.024      ; 0.314      ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fast 1200mV 0C Model Hold: 'contador_sincrono_box:inst6|inst3'                                                                                                                                 ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-; Slack ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-; 0.251 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst3 ; 0.000        ; 0.897      ; 1.337      ;
-; 0.732 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst3 ; -0.500       ; 0.897      ; 1.318      ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fast 1200mV 0C Model Hold: 'clock'                                                                                                                                       ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-------------+--------------+------------+------------+
-; Slack ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-------------+--------------+------------+------------+
-; 0.346 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; clock       ; 0.000        ; 1.035      ; 1.590      ;
-; 0.853 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; clock       ; -0.500       ; 1.035      ; 1.597      ;
-+-------+-----------------------------------+-----------------------------------+-----------------------------------+-------------+--------------+------------+------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Hold: 'clock'                                                                                                                  ;
++-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                         ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.208 ; contador_sincrono_box:inst6|inst2 ; contador_sincrono_box:inst6|inst2 ; clock        ; clock       ; 0.000        ; 0.022      ; 0.314      ;
+; 0.380 ; contador_sincrono_box:inst6|inst2 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 0.000        ; 0.025      ; 0.489      ;
+; 0.438 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 0.000        ; 0.025      ; 0.547      ;
++-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
 
 
 ----------------------------------------------
@@ -483,20 +344,16 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+------------------------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                                            ;
-+------------------------------------+--------+-------+----------+---------+---------------------+
-; Clock                              ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
-+------------------------------------+--------+-------+----------+---------+---------------------+
-; Worst-case Slack                   ; -0.721 ; 0.206 ; N/A      ; N/A     ; -3.000              ;
-;  clock                             ; -0.573 ; 0.346 ; N/A      ; N/A     ; -3.000              ;
-;  contador_sincrono_box:inst6|inst3 ; -0.721 ; 0.251 ; N/A      ; N/A     ; -1.285              ;
-;  contador_sincrono_box:inst6|inst6 ; 0.210  ; 0.206 ; N/A      ; N/A     ; -1.285              ;
-; Design-wide TNS                    ; -1.294 ; 0.0   ; 0.0      ; 0.0     ; -6.855              ;
-;  clock                             ; -0.573 ; 0.000 ; N/A      ; N/A     ; -4.285              ;
-;  contador_sincrono_box:inst6|inst3 ; -0.721 ; 0.000 ; N/A      ; N/A     ; -1.285              ;
-;  contador_sincrono_box:inst6|inst6 ; 0.000  ; 0.000 ; N/A      ; N/A     ; -1.285              ;
-+------------------------------------+--------+-------+----------+---------+---------------------+
++------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                          ;
++------------------+--------+-------+----------+---------+---------------------+
+; Clock            ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+--------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -0.381 ; 0.208 ; N/A      ; N/A     ; -3.000              ;
+;  clock           ; -0.381 ; 0.208 ; N/A      ; N/A     ; -3.000              ;
+; Design-wide TNS  ; -0.381 ; 0.0   ; 0.0      ; 0.0     ; -5.57               ;
+;  clock           ; -0.381 ; 0.000 ; N/A      ; N/A     ; -5.570              ;
++------------------+--------+-------+----------+---------+---------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -521,8 +378,8 @@ No synchronizer chains to report.
 +-------------------------+--------------+-----------------+-----------------+
 ; Pin                     ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
 +-------------------------+--------------+-----------------+-----------------+
-; clear                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; clock                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; clear                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_ASDO_DATA1~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_FLASH_nCE_nCSO~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_DATA0~          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
@@ -580,27 +437,23 @@ No synchronizer chains to report.
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------+
-; Setup Transfers                                                                                                   ;
-+-----------------------------------+-----------------------------------+----------+----------+----------+----------+
-; From Clock                        ; To Clock                          ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+-----------------------------------+-----------------------------------+----------+----------+----------+----------+
-; contador_sincrono_box:inst6|inst3 ; clock                             ; 1        ; 1        ; 0        ; 0        ;
-; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst3 ; 0        ; 0        ; 1        ; 1        ;
-; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; 0        ; 0        ; 0        ; 1        ;
-+-----------------------------------+-----------------------------------+----------+----------+----------+----------+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clock      ; clock    ; 3        ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
-+-------------------------------------------------------------------------------------------------------------------+
-; Hold Transfers                                                                                                    ;
-+-----------------------------------+-----------------------------------+----------+----------+----------+----------+
-; From Clock                        ; To Clock                          ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+-----------------------------------+-----------------------------------+----------+----------+----------+----------+
-; contador_sincrono_box:inst6|inst3 ; clock                             ; 1        ; 1        ; 0        ; 0        ;
-; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst3 ; 0        ; 0        ; 1        ; 1        ;
-; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; 0        ; 0        ; 0        ; 1        ;
-+-----------------------------------+-----------------------------------+----------+----------+----------+----------+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clock      ; clock    ; 3        ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
@@ -624,21 +477,19 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 1     ; 1    ;
-; Unconstrained Input Port Paths  ; 3     ; 3    ;
-; Unconstrained Output Ports      ; 7     ; 7    ;
-; Unconstrained Output Port Paths ; 21    ; 21   ;
+; Unconstrained Input Port Paths  ; 2     ; 2    ;
+; Unconstrained Output Ports      ; 5     ; 5    ;
+; Unconstrained Output Port Paths ; 8     ; 8    ;
 +---------------------------------+-------+------+
 
 
-+--------------------------------------------------------------------------------------------+
-; Clock Status Summary                                                                       ;
-+-----------------------------------+-----------------------------------+------+-------------+
-; Target                            ; Clock                             ; Type ; Status      ;
-+-----------------------------------+-----------------------------------+------+-------------+
-; clock                             ; clock                             ; Base ; Constrained ;
-; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; Base ; Constrained ;
-; contador_sincrono_box:inst6|inst6 ; contador_sincrono_box:inst6|inst6 ; Base ; Constrained ;
-+-----------------------------------+-----------------------------------+------+-------------+
++-------------------------------------+
+; Clock Status Summary                ;
++--------+-------+------+-------------+
+; Target ; Clock ; Type ; Status      ;
++--------+-------+------+-------------+
+; clock  ; clock ; Base ; Constrained ;
++--------+-------+------+-------------+
 
 
 +---------------------------------------------------------------------------------------------------+
@@ -656,8 +507,6 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
 ; h_a_o       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; h_b_o       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; h_c_o       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; h_d_o       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; h_e_o       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; h_f_o       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -680,8 +529,6 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
 ; h_a_o       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; h_b_o       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; h_c_o       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; h_d_o       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; h_e_o       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; h_f_o       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -695,7 +542,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Sep 19 21:18:26 2023
+    Info: Processing started: Tue Sep 19 23:11:18 2023
 Info: Command: quartus_sta contador_sincrono -c contador_sincrono
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -705,91 +552,71 @@ Info (21077): High junction temperature is 85 degrees C
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'contador_sincrono.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332105): Deriving Clocks
-    Info (332105): create_clock -period 1.000 -name contador_sincrono_box:inst6|inst3 contador_sincrono_box:inst6|inst3
     Info (332105): create_clock -period 1.000 -name clock clock
-    Info (332105): create_clock -period 1.000 -name contador_sincrono_box:inst6|inst6 contador_sincrono_box:inst6|inst6
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
-Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -0.721
+Info (332146): Worst-case setup slack is -0.381
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.721              -0.721 contador_sincrono_box:inst6|inst3 
-    Info (332119):    -0.573              -0.573 clock 
-    Info (332119):     0.210               0.000 contador_sincrono_box:inst6|inst6 
+    Info (332119):    -0.381              -0.381 clock 
 Info (332146): Worst-case hold slack is 0.445
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.445               0.000 contador_sincrono_box:inst6|inst6 
-    Info (332119):     0.599               0.000 clock 
-    Info (332119):     0.698               0.000 contador_sincrono_box:inst6|inst3 
+    Info (332119):     0.445               0.000 clock 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000              -4.285 clock 
-    Info (332119):    -1.285              -1.285 contador_sincrono_box:inst6|inst3 
-    Info (332119):    -1.285              -1.285 contador_sincrono_box:inst6|inst6 
+    Info (332119):    -3.000              -5.570 clock 
 Info: Analyzing Slow 1200mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -0.632
+Info (332146): Worst-case setup slack is -0.243
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.632              -0.632 contador_sincrono_box:inst6|inst3 
-    Info (332119):    -0.439              -0.439 clock 
-    Info (332119):     0.297               0.000 contador_sincrono_box:inst6|inst6 
+    Info (332119):    -0.243              -0.243 clock 
 Info (332146): Worst-case hold slack is 0.398
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.398               0.000 contador_sincrono_box:inst6|inst6 
-    Info (332119):     0.499               0.000 clock 
-    Info (332119):     0.664               0.000 contador_sincrono_box:inst6|inst3 
+    Info (332119):     0.398               0.000 clock 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000              -4.285 clock 
-    Info (332119):    -1.285              -1.285 contador_sincrono_box:inst6|inst3 
-    Info (332119):    -1.285              -1.285 contador_sincrono_box:inst6|inst6 
+    Info (332119):    -3.000              -5.570 clock 
 Info: Analyzing Fast 1200mV 0C Model
-Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332146): Worst-case setup slack is 0.343
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.343               0.000 clock 
+Info (332146): Worst-case hold slack is 0.208
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.208               0.000 clock 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -0.082
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):    -0.082              -0.082 clock 
-    Info (332119):    -0.015              -0.015 contador_sincrono_box:inst6|inst3 
-    Info (332119):     0.624               0.000 contador_sincrono_box:inst6|inst6 
-Info (332146): Worst-case hold slack is 0.206
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):     0.206               0.000 contador_sincrono_box:inst6|inst6 
-    Info (332119):     0.251               0.000 contador_sincrono_box:inst6|inst3 
-    Info (332119):     0.346               0.000 clock 
-Info (332140): No Recovery paths to report
-Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000              -4.098 clock 
-    Info (332119):    -1.000              -1.000 contador_sincrono_box:inst6|inst3 
-    Info (332119):    -1.000              -1.000 contador_sincrono_box:inst6|inst6 
+    Info (332119):    -3.000              -5.206 clock 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4846 megabytes
-    Info: Processing ended: Tue Sep 19 21:18:28 2023
+    Info: Peak virtual memory: 4832 megabytes
+    Info: Processing ended: Tue Sep 19 23:11:20 2023
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 
