@@ -4,43 +4,15 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "a",
+					"name" : "filter",
 					"strict" : false
 				},
 				{
-					"name" : "b",
+					"name" : "clk_manual",
 					"strict" : false
 				},
 				{
-					"name" : "c",
-					"strict" : false
-				},
-				{
-					"name" : "d",
-					"strict" : false
-				},
-				{
-					"name" : "e",
-					"strict" : false
-				},
-				{
-					"name" : "f",
-					"strict" : false
-				},
-				{
-					"name" : "g",
-					"strict" : false
-				},
-				{
-					"name" : "clear",
-					"strict" : false
-				},
-				{
-					"name" : "clock",
-					"strict" : false
-				},
-				{
-					"name" : "up/down",
+					"name" : "clk_fpga",
 					"strict" : false
 				}
 			]
