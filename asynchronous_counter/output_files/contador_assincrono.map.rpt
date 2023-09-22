@@ -1,5 +1,5 @@
 Analysis & Synthesis report for contador_assincrono
-Tue Sep 19 23:00:48 2023
+Wed Sep 20 17:20:33 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Sep 19 23:00:48 2023       ;
+; Analysis & Synthesis Status        ; Successful - Wed Sep 20 17:20:33 2023       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; contador_assincrono                         ;
 ; Top-level Entity Name              ; contador_assincrono                         ;
@@ -158,22 +158,23 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                          ;
-+----------------------------------+-----------------+------------------------------------------+-------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                                          ; Library ;
-+----------------------------------+-----------------+------------------------------------------+-------------------------------------------------------------------------------------------------------+---------+
-; contador_assincrono_box.bdf      ; yes             ; User Block Diagram/Schematic File        ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/contador_assincrono/contador_assincrono_box.bdf ;         ;
-; contador_assincrono.bdf          ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/contador_assincrono/contador_assincrono.bdf     ;         ;
-; decod_bcd_box.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/contador_assincrono/decod_bcd_box.bdf           ;         ;
-; output_barrado.bdf               ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/contador_assincrono/output_barrado.bdf          ;         ;
-; barra_maior_que_dez.bdf          ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/contador_assincrono/barra_maior_que_dez.bdf     ;         ;
-; bcd_box.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/contador_assincrono/bcd_box.bdf                 ;         ;
-+----------------------------------+-----------------+------------------------------------------+-------------------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                           ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                                           ; Library ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------------------------------------+---------+
+; contador_assincrono_box.bdf      ; yes             ; User Block Diagram/Schematic File        ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/asynchronous_counter/contador_assincrono_box.bdf ;         ;
+; contador_assincrono.bdf          ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/asynchronous_counter/contador_assincrono.bdf     ;         ;
+; decod_bcd_box.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/asynchronous_counter/decod_bcd_box.bdf           ;         ;
+; output_barrado.bdf               ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/asynchronous_counter/output_barrado.bdf          ;         ;
+; barra_maior_que_dez.bdf          ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/asynchronous_counter/barra_maior_que_dez.bdf     ;         ;
+; bcd_box.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/asynchronous_counter/bcd_box.bdf                 ;         ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------------------------------+
@@ -269,7 +270,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Sep 19 23:00:37 2023
+    Info: Processing started: Wed Sep 20 17:20:23 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off contador_assincrono -c contador_assincrono
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -300,9 +301,9 @@ Info (21057): Implemented 19 device resources after synthesis - the final resour
     Info (21059): Implemented 7 output pins
     Info (21061): Implemented 10 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4763 megabytes
-    Info: Processing ended: Tue Sep 19 23:00:48 2023
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Peak virtual memory: 4779 megabytes
+    Info: Processing ended: Wed Sep 20 17:20:33 2023
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:21
 
 

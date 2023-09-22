@@ -1,0 +1,45 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "h_a_o",
+					"strict" : false
+				},
+				{
+					"name" : "h_b_o",
+					"strict" : false
+				},
+				{
+					"name" : "h_c_o",
+					"strict" : false
+				},
+				{
+					"name" : "h_d_o",
+					"strict" : false
+				},
+				{
+					"name" : "h_e_o",
+					"strict" : false
+				},
+				{
+					"name" : "h_f_o",
+					"strict" : false
+				},
+				{
+					"name" : "h_g_o",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "clear",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -66,6 +66,6 @@ set_location_assignment PIN_AA21 -to d_o
 set_location_assignment PIN_AD24 -to e_o
 set_location_assignment PIN_AF23 -to f_o
 set_location_assignment PIN_Y19 -to g_o
-set_location_assignment PIN_Y17 -to clock
-set_location_assignment PIN_AG25 -to clear
+set_location_assignment PIN_R24 -to clock
+set_location_assignment PIN_Y23 -to clear
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for contador_assincrono
-Tue Sep 19 23:01:07 2023
+Wed Sep 20 17:20:52 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -17,8 +17,8 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   9. Slow 1200mV 85C Model Recovery Summary
  10. Slow 1200mV 85C Model Removal Summary
  11. Slow 1200mV 85C Model Minimum Pulse Width Summary
- 12. Slow 1200mV 85C Model Setup: 'contador_assincrono_box:inst|inst3'
- 13. Slow 1200mV 85C Model Setup: 'clock'
+ 12. Slow 1200mV 85C Model Setup: 'clock'
+ 13. Slow 1200mV 85C Model Setup: 'contador_assincrono_box:inst|inst3'
  14. Slow 1200mV 85C Model Setup: 'contador_assincrono_box:inst|inst6'
  15. Slow 1200mV 85C Model Hold: 'contador_assincrono_box:inst|inst6'
  16. Slow 1200mV 85C Model Hold: 'clock'
@@ -30,8 +30,8 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
  22. Slow 1200mV 0C Model Recovery Summary
  23. Slow 1200mV 0C Model Removal Summary
  24. Slow 1200mV 0C Model Minimum Pulse Width Summary
- 25. Slow 1200mV 0C Model Setup: 'contador_assincrono_box:inst|inst3'
- 26. Slow 1200mV 0C Model Setup: 'clock'
+ 25. Slow 1200mV 0C Model Setup: 'clock'
+ 26. Slow 1200mV 0C Model Setup: 'contador_assincrono_box:inst|inst3'
  27. Slow 1200mV 0C Model Setup: 'contador_assincrono_box:inst|inst6'
  28. Slow 1200mV 0C Model Hold: 'contador_assincrono_box:inst|inst6'
  29. Slow 1200mV 0C Model Hold: 'clock'
@@ -115,8 +115,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.2%      ;
-;     Processors 3-4         ;   0.2%      ;
+;     Processors 2-4         ;   0.2%      ;
 +----------------------------+-------------+
 
 
@@ -152,8 +151,8 @@ HTML report is unavailable in plain text report export.
 +------------------------------------+--------+---------------+
 ; Clock                              ; Slack  ; End Point TNS ;
 +------------------------------------+--------+---------------+
-; contador_assincrono_box:inst|inst3 ; -0.721 ; -0.721        ;
-; clock                              ; -0.573 ; -0.573        ;
+; clock                              ; -0.903 ; -0.903        ;
+; contador_assincrono_box:inst|inst3 ; -0.724 ; -0.724        ;
 ; contador_assincrono_box:inst|inst6 ; 0.210  ; 0.000         ;
 +------------------------------------+--------+---------------+
 
@@ -164,8 +163,8 @@ HTML report is unavailable in plain text report export.
 ; Clock                              ; Slack ; End Point TNS ;
 +------------------------------------+-------+---------------+
 ; contador_assincrono_box:inst|inst6 ; 0.445 ; 0.000         ;
-; clock                              ; 0.599 ; 0.000         ;
-; contador_assincrono_box:inst|inst3 ; 0.698 ; 0.000         ;
+; clock                              ; 0.716 ; 0.000         ;
+; contador_assincrono_box:inst|inst3 ; 0.838 ; 0.000         ;
 +------------------------------------+-------+---------------+
 
 
@@ -192,24 +191,24 @@ No paths to report.
 +------------------------------------+--------+---------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 85C Model Setup: 'contador_assincrono_box:inst|inst3'                                                                                                                                   ;
-+--------+------------------------------------+------------------------------------+------------------------------------+------------------------------------+--------------+------------+------------+
-; Slack  ; From Node                          ; To Node                            ; Launch Clock                       ; Latch Clock                        ; Relationship ; Clock Skew ; Data Delay ;
-+--------+------------------------------------+------------------------------------+------------------------------------+------------------------------------+--------------+------------+------------+
-; -0.721 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst3 ; 0.500        ; 1.614      ; 3.085      ;
-; -0.232 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst3 ; 1.000        ; 1.614      ; 3.096      ;
-+--------+------------------------------------+------------------------------------+------------------------------------+------------------------------------+--------------+------------+------------+
-
-
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Slow 1200mV 85C Model Setup: 'clock'                                                                                                                                         ;
 +--------+------------------------------------+------------------------------------+------------------------------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                          ; To Node                            ; Launch Clock                       ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+------------------------------------+------------------------------------+------------------------------------+-------------+--------------+------------+------------+
-; -0.573 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; clock       ; 0.500        ; 2.074      ; 3.377      ;
-; -0.048 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; clock       ; 1.000        ; 2.074      ; 3.352      ;
+; -0.903 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; clock       ; 0.500        ; 2.690      ; 4.323      ;
+; -0.396 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; clock       ; 1.000        ; 2.690      ; 4.316      ;
 +--------+------------------------------------+------------------------------------+------------------------------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Setup: 'contador_assincrono_box:inst|inst3'                                                                                                                                   ;
++--------+------------------------------------+------------------------------------+------------------------------------+------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                          ; To Node                            ; Launch Clock                       ; Latch Clock                        ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------+------------------------------------+------------------------------------+------------------------------------+--------------+------------+------------+
+; -0.724 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst3 ; 0.500        ; 1.986      ; 3.460      ;
+; -0.256 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst3 ; 1.000        ; 1.986      ; 3.492      ;
++--------+------------------------------------+------------------------------------+------------------------------------+------------------------------------+--------------+------------+------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -235,8 +234,8 @@ No paths to report.
 +-------+------------------------------------+------------------------------------+------------------------------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                          ; To Node                            ; Launch Clock                       ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+------------------------------------+------------------------------------+------------------------------------+-------------+--------------+------------+------------+
-; 0.599 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; clock       ; 0.000        ; 2.163      ; 3.200      ;
-; 1.133 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; clock       ; -0.500       ; 2.163      ; 3.234      ;
+; 0.716 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; clock       ; 0.000        ; 2.800      ; 3.954      ;
+; 1.244 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; clock       ; -0.500       ; 2.800      ; 3.982      ;
 +-------+------------------------------------+------------------------------------+------------------------------------+-------------+--------------+------------+------------+
 
 
@@ -245,8 +244,8 @@ No paths to report.
 +-------+------------------------------------+------------------------------------+------------------------------------+------------------------------------+--------------+------------+------------+
 ; Slack ; From Node                          ; To Node                            ; Launch Clock                       ; Latch Clock                        ; Relationship ; Clock Skew ; Data Delay ;
 +-------+------------------------------------+------------------------------------+------------------------------------+------------------------------------+--------------+------------+------------+
-; 0.698 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst3 ; 0.000        ; 1.701      ; 2.817      ;
-; 1.150 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst3 ; -0.500       ; 1.701      ; 2.769      ;
+; 0.838 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst3 ; 0.000        ; 2.089      ; 3.345      ;
+; 1.297 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst3 ; -0.500       ; 2.089      ; 3.304      ;
 +-------+------------------------------------+------------------------------------+------------------------------------+------------------------------------+--------------+------------+------------+
 
 
@@ -271,8 +270,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------+--------+---------------+
 ; Clock                              ; Slack  ; End Point TNS ;
 +------------------------------------+--------+---------------+
-; contador_assincrono_box:inst|inst3 ; -0.632 ; -0.632        ;
-; clock                              ; -0.439 ; -0.439        ;
+; clock                              ; -0.710 ; -0.710        ;
+; contador_assincrono_box:inst|inst3 ; -0.657 ; -0.657        ;
 ; contador_assincrono_box:inst|inst6 ; 0.297  ; 0.000         ;
 +------------------------------------+--------+---------------+
 
@@ -283,8 +282,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; Clock                              ; Slack ; End Point TNS ;
 +------------------------------------+-------+---------------+
 ; contador_assincrono_box:inst|inst6 ; 0.398 ; 0.000         ;
-; clock                              ; 0.499 ; 0.000         ;
-; contador_assincrono_box:inst|inst3 ; 0.664 ; 0.000         ;
+; clock                              ; 0.575 ; 0.000         ;
+; contador_assincrono_box:inst|inst3 ; 0.823 ; 0.000         ;
 +------------------------------------+-------+---------------+
 
 
@@ -311,24 +310,24 @@ No paths to report.
 +------------------------------------+--------+---------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 0C Model Setup: 'contador_assincrono_box:inst|inst3'                                                                                                                                    ;
-+--------+------------------------------------+------------------------------------+------------------------------------+------------------------------------+--------------+------------+------------+
-; Slack  ; From Node                          ; To Node                            ; Launch Clock                       ; Latch Clock                        ; Relationship ; Clock Skew ; Data Delay ;
-+--------+------------------------------------+------------------------------------+------------------------------------+------------------------------------+--------------+------------+------------+
-; -0.632 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst3 ; 0.500        ; 1.442      ; 2.806      ;
-; -0.153 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst3 ; 1.000        ; 1.442      ; 2.827      ;
-+--------+------------------------------------+------------------------------------+------------------------------------+------------------------------------+--------------+------------+------------+
-
-
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Slow 1200mV 0C Model Setup: 'clock'                                                                                                                                          ;
 +--------+------------------------------------+------------------------------------+------------------------------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                          ; To Node                            ; Launch Clock                       ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+------------------------------------+------------------------------------+------------------------------------+-------------+--------------+------------+------------+
-; -0.439 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; clock       ; 0.500        ; 1.948      ; 3.099      ;
-; 0.093  ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; clock       ; 1.000        ; 1.948      ; 3.067      ;
+; -0.710 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; clock       ; 0.500        ; 2.530      ; 3.952      ;
+; -0.190 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; clock       ; 1.000        ; 2.530      ; 3.932      ;
 +--------+------------------------------------+------------------------------------+------------------------------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Setup: 'contador_assincrono_box:inst|inst3'                                                                                                                                    ;
++--------+------------------------------------+------------------------------------+------------------------------------+------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                          ; To Node                            ; Launch Clock                       ; Latch Clock                        ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------+------------------------------------+------------------------------------+------------------------------------+--------------+------------+------------+
+; -0.657 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst3 ; 0.500        ; 1.768      ; 3.157      ;
+; -0.204 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst3 ; 1.000        ; 1.768      ; 3.204      ;
++--------+------------------------------------+------------------------------------+------------------------------------+------------------------------------+--------------+------------+------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -354,8 +353,8 @@ No paths to report.
 +-------+------------------------------------+------------------------------------+------------------------------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                          ; To Node                            ; Launch Clock                       ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+------------------------------------+------------------------------------+------------------------------------+-------------+--------------+------------+------------+
-; 0.499 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; clock       ; 0.000        ; 2.027      ; 2.930      ;
-; 1.035 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; clock       ; -0.500       ; 2.027      ; 2.966      ;
+; 0.575 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; clock       ; 0.000        ; 2.631      ; 3.610      ;
+; 1.104 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; clock       ; -0.500       ; 2.631      ; 3.639      ;
 +-------+------------------------------------+------------------------------------+------------------------------------+-------------+--------------+------------+------------+
 
 
@@ -364,8 +363,8 @@ No paths to report.
 +-------+------------------------------------+------------------------------------+------------------------------------+------------------------------------+--------------+------------+------------+
 ; Slack ; From Node                          ; To Node                            ; Launch Clock                       ; Latch Clock                        ; Relationship ; Clock Skew ; Data Delay ;
 +-------+------------------------------------+------------------------------------+------------------------------------+------------------------------------+--------------+------------+------------+
-; 0.664 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst3 ; 0.000        ; 1.521      ; 2.569      ;
-; 1.121 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst3 ; -0.500       ; 1.521      ; 2.526      ;
+; 0.823 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst3 ; 0.000        ; 1.860      ; 3.067      ;
+; 1.272 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst3 ; -0.500       ; 1.860      ; 3.016      ;
 +-------+------------------------------------+------------------------------------+------------------------------------+------------------------------------+--------------+------------+------------+
 
 
@@ -380,8 +379,8 @@ No synchronizer chains to report.
 +------------------------------------+--------+---------------+
 ; Clock                              ; Slack  ; End Point TNS ;
 +------------------------------------+--------+---------------+
-; clock                              ; -0.082 ; -0.082        ;
-; contador_assincrono_box:inst|inst3 ; -0.015 ; -0.015        ;
+; clock                              ; -0.288 ; -0.288        ;
+; contador_assincrono_box:inst|inst3 ; -0.030 ; -0.030        ;
 ; contador_assincrono_box:inst|inst6 ; 0.624  ; 0.000         ;
 +------------------------------------+--------+---------------+
 
@@ -392,8 +391,8 @@ No synchronizer chains to report.
 ; Clock                              ; Slack ; End Point TNS ;
 +------------------------------------+-------+---------------+
 ; contador_assincrono_box:inst|inst6 ; 0.206 ; 0.000         ;
-; contador_assincrono_box:inst|inst3 ; 0.251 ; 0.000         ;
-; clock                              ; 0.346 ; 0.000         ;
+; contador_assincrono_box:inst|inst3 ; 0.321 ; 0.000         ;
+; clock                              ; 0.424 ; 0.000         ;
 +------------------------------------+-------+---------------+
 
 
@@ -414,7 +413,7 @@ No paths to report.
 +------------------------------------+--------+---------------+
 ; Clock                              ; Slack  ; End Point TNS ;
 +------------------------------------+--------+---------------+
-; clock                              ; -3.000 ; -4.098        ;
+; clock                              ; -3.000 ; -4.157        ;
 ; contador_assincrono_box:inst|inst3 ; -1.000 ; -1.000        ;
 ; contador_assincrono_box:inst|inst6 ; -1.000 ; -1.000        ;
 +------------------------------------+--------+---------------+
@@ -425,8 +424,8 @@ No paths to report.
 +--------+------------------------------------+------------------------------------+------------------------------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                          ; To Node                            ; Launch Clock                       ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+------------------------------------+------------------------------------+------------------------------------+-------------+--------------+------------+------------+
-; -0.082 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; clock       ; 0.500        ; 0.991      ; 1.665      ;
-; 0.419  ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; clock       ; 1.000        ; 0.991      ; 1.664      ;
+; -0.288 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; clock       ; 0.500        ; 1.262      ; 2.142      ;
+; 0.227  ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; clock       ; 1.000        ; 1.262      ; 2.127      ;
 +--------+------------------------------------+------------------------------------+------------------------------------+-------------+--------------+------------+------------+
 
 
@@ -435,8 +434,8 @@ No paths to report.
 +--------+------------------------------------+------------------------------------+------------------------------------+------------------------------------+--------------+------------+------------+
 ; Slack  ; From Node                          ; To Node                            ; Launch Clock                       ; Latch Clock                        ; Relationship ; Clock Skew ; Data Delay ;
 +--------+------------------------------------+------------------------------------+------------------------------------+------------------------------------+--------------+------------+------------+
-; -0.015 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst3 ; 0.500        ; 0.849      ; 1.476      ;
-; 0.489  ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst3 ; 1.000        ; 0.849      ; 1.472      ;
+; -0.030 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst3 ; 0.500        ; 1.057      ; 1.699      ;
+; 0.477  ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst3 ; 1.000        ; 1.057      ; 1.692      ;
 +--------+------------------------------------+------------------------------------+------------------------------------+------------------------------------+--------------+------------+------------+
 
 
@@ -463,8 +462,8 @@ No paths to report.
 +-------+------------------------------------+------------------------------------+------------------------------------+------------------------------------+--------------+------------+------------+
 ; Slack ; From Node                          ; To Node                            ; Launch Clock                       ; Latch Clock                        ; Relationship ; Clock Skew ; Data Delay ;
 +-------+------------------------------------+------------------------------------+------------------------------------+------------------------------------+--------------+------------+------------+
-; 0.251 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst3 ; 0.000        ; 0.897      ; 1.337      ;
-; 0.732 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst3 ; -0.500       ; 0.897      ; 1.318      ;
+; 0.321 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst3 ; 0.000        ; 1.113      ; 1.623      ;
+; 0.821 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst6 ; contador_assincrono_box:inst|inst3 ; -0.500       ; 1.113      ; 1.623      ;
 +-------+------------------------------------+------------------------------------+------------------------------------+------------------------------------+--------------+------------+------------+
 
 
@@ -473,8 +472,8 @@ No paths to report.
 +-------+------------------------------------+------------------------------------+------------------------------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                          ; To Node                            ; Launch Clock                       ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+------------------------------------+------------------------------------+------------------------------------+-------------+--------------+------------+------------+
-; 0.346 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; clock       ; 0.000        ; 1.035      ; 1.590      ;
-; 0.853 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; clock       ; -0.500       ; 1.035      ; 1.597      ;
+; 0.424 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; clock       ; 0.000        ; 1.317      ; 1.950      ;
+; 0.946 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; contador_assincrono_box:inst|inst3 ; clock       ; -0.500       ; 1.317      ; 1.972      ;
 +-------+------------------------------------+------------------------------------+------------------------------------+-------------+--------------+------------+------------+
 
 
@@ -489,13 +488,13 @@ No synchronizer chains to report.
 +-------------------------------------+--------+-------+----------+---------+---------------------+
 ; Clock                               ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +-------------------------------------+--------+-------+----------+---------+---------------------+
-; Worst-case Slack                    ; -0.721 ; 0.206 ; N/A      ; N/A     ; -3.000              ;
-;  clock                              ; -0.573 ; 0.346 ; N/A      ; N/A     ; -3.000              ;
-;  contador_assincrono_box:inst|inst3 ; -0.721 ; 0.251 ; N/A      ; N/A     ; -1.285              ;
+; Worst-case Slack                    ; -0.903 ; 0.206 ; N/A      ; N/A     ; -3.000              ;
+;  clock                              ; -0.903 ; 0.424 ; N/A      ; N/A     ; -3.000              ;
+;  contador_assincrono_box:inst|inst3 ; -0.724 ; 0.321 ; N/A      ; N/A     ; -1.285              ;
 ;  contador_assincrono_box:inst|inst6 ; 0.210  ; 0.206 ; N/A      ; N/A     ; -1.285              ;
-; Design-wide TNS                     ; -1.294 ; 0.0   ; 0.0      ; 0.0     ; -6.855              ;
-;  clock                              ; -0.573 ; 0.000 ; N/A      ; N/A     ; -4.285              ;
-;  contador_assincrono_box:inst|inst3 ; -0.721 ; 0.000 ; N/A      ; N/A     ; -1.285              ;
+; Design-wide TNS                     ; -1.627 ; 0.0   ; 0.0      ; 0.0     ; -6.855              ;
+;  clock                              ; -0.903 ; 0.000 ; N/A      ; N/A     ; -4.285              ;
+;  contador_assincrono_box:inst|inst3 ; -0.724 ; 0.000 ; N/A      ; N/A     ; -1.285              ;
 ;  contador_assincrono_box:inst|inst6 ; 0.000  ; 0.000 ; N/A      ; N/A     ; -1.285              ;
 +-------------------------------------+--------+-------+----------+---------+---------------------+
 
@@ -696,7 +695,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Sep 19 23:01:05 2023
+    Info: Processing started: Wed Sep 20 17:20:50 2023
 Info: Command: quartus_sta contador_assincrono -c contador_assincrono
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -715,18 +714,18 @@ Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -0.721
+Info (332146): Worst-case setup slack is -0.903
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.721              -0.721 contador_assincrono_box:inst|inst3 
-    Info (332119):    -0.573              -0.573 clock 
+    Info (332119):    -0.903              -0.903 clock 
+    Info (332119):    -0.724              -0.724 contador_assincrono_box:inst|inst3 
     Info (332119):     0.210               0.000 contador_assincrono_box:inst|inst6 
 Info (332146): Worst-case hold slack is 0.445
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.445               0.000 contador_assincrono_box:inst|inst6 
-    Info (332119):     0.599               0.000 clock 
-    Info (332119):     0.698               0.000 contador_assincrono_box:inst|inst3 
+    Info (332119):     0.716               0.000 clock 
+    Info (332119):     0.838               0.000 contador_assincrono_box:inst|inst3 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
@@ -741,18 +740,18 @@ Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -0.632
+Info (332146): Worst-case setup slack is -0.710
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.632              -0.632 contador_assincrono_box:inst|inst3 
-    Info (332119):    -0.439              -0.439 clock 
+    Info (332119):    -0.710              -0.710 clock 
+    Info (332119):    -0.657              -0.657 contador_assincrono_box:inst|inst3 
     Info (332119):     0.297               0.000 contador_assincrono_box:inst|inst6 
 Info (332146): Worst-case hold slack is 0.398
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.398               0.000 contador_assincrono_box:inst|inst6 
-    Info (332119):     0.499               0.000 clock 
-    Info (332119):     0.664               0.000 contador_assincrono_box:inst|inst3 
+    Info (332119):     0.575               0.000 clock 
+    Info (332119):     0.823               0.000 contador_assincrono_box:inst|inst3 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
@@ -765,32 +764,32 @@ Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -0.082
+Info (332146): Worst-case setup slack is -0.288
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.082              -0.082 clock 
-    Info (332119):    -0.015              -0.015 contador_assincrono_box:inst|inst3 
+    Info (332119):    -0.288              -0.288 clock 
+    Info (332119):    -0.030              -0.030 contador_assincrono_box:inst|inst3 
     Info (332119):     0.624               0.000 contador_assincrono_box:inst|inst6 
 Info (332146): Worst-case hold slack is 0.206
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.206               0.000 contador_assincrono_box:inst|inst6 
-    Info (332119):     0.251               0.000 contador_assincrono_box:inst|inst3 
-    Info (332119):     0.346               0.000 clock 
+    Info (332119):     0.321               0.000 contador_assincrono_box:inst|inst3 
+    Info (332119):     0.424               0.000 clock 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000              -4.098 clock 
+    Info (332119):    -3.000              -4.157 clock 
     Info (332119):    -1.000              -1.000 contador_assincrono_box:inst|inst3 
     Info (332119):    -1.000              -1.000 contador_assincrono_box:inst|inst6 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 4833 megabytes
-    Info: Processing ended: Tue Sep 19 23:01:07 2023
+    Info: Processing ended: Wed Sep 20 17:20:52 2023
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 

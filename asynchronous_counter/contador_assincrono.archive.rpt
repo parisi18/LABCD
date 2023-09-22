@@ -1,5 +1,5 @@
 Archive Project report for contador_assincrono
-Tue Sep 19 23:40:43 2023
+Wed Sep 20 17:23:24 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -35,7 +35,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Tue Sep 19 23:40:43 2023 ;
+; Archive Project Status ; Successful - Wed Sep 20 17:23:24 2023 ;
 ; Revision Name          ; contador_assincrono                   ;
 ; Top-level Entity Name  ; contador_assincrono                   ;
 ; Family                 ; Cyclone IV E                          ;
@@ -60,8 +60,8 @@ Info: Generated report 'contador_assincrono.archive.rpt'
 Info (23030): Evaluation of Tcl script d:/users/rafaelparisi/documents/unifesp/quartus/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4819 megabytes
-    Info: Processing ended: Tue Sep 19 23:40:43 2023
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Wed Sep 20 17:23:24 2023
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 

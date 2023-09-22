@@ -1,0 +1,136 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/contador_sincrono/simulation/qsim
+vcontador_sincrono
+!s110 1695228218
+!i10b 1
+!s100 bz7M3k[h@Bm[T^agbH13g0
+Ic?^XSed3h>=NfbFnRXS6J1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/synchronous_counter/simulation/qsim
+w1695228218
+Z3 8contador_sincrono.vo
+Z4 Fcontador_sincrono.vo
+Z5 L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1695228218.000000
+Z7 !s107 contador_sincrono.vo|
+Z8 !s90 -work|work|contador_sincrono.vo|
+!i113 1
+Z9 o-work work
+Z10 tCvgOpt 0
+vcontador_sincrono_box
+Z11 !s110 1695163997
+!i10b 1
+!s100 e8QPiR@NE2K2_9:_H^B^[3
+I0IdWJj98@_iG3052be>862
+R1
+R0
+w1695163997
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z12 !s108 1695163997.000000
+R7
+R8
+!i113 1
+R9
+R10
+vcontador_sincrono_box_vlg_vec_tst
+R11
+!i10b 1
+!s100 NIP4fX;;^]oB@nb_2oLaQ1
+ICR<VL3c=DeR`Jidi3GID62
+R1
+R0
+w1695163996
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+Z13 L0 29
+R6
+r1
+!s85 0
+31
+R12
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R9
+R10
+vcontador_sincrono_vlg_vec_tst
+!s110 1695228219
+!i10b 1
+!s100 U`bQO@oCHYUJWfhBmnjMg0
+I;U`4DnWP]aI2=gO=gR?z<2
+R1
+R2
+w1695228217
+8Waveform5.vwf.vt
+FWaveform5.vwf.vt
+R13
+R6
+r1
+!s85 0
+31
+!s108 1695228219.000000
+!s107 Waveform5.vwf.vt|
+!s90 -work|work|Waveform5.vwf.vt|
+!i113 1
+R9
+R10
+vhard_block
+Z14 !s110 1695265189
+!i10b 1
+!s100 =1>O;TT_RzoFdIaK?=O3_0
+IbRH81_dAUICkH^<=RG40X1
+R1
+Z15 dD:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/up_and_down_counter/simulation/qsim
+Z16 w1695265188
+Z17 8up_and_down_counter.vo
+Z18 Fup_and_down_counter.vo
+L0 397
+R6
+r1
+!s85 0
+31
+Z19 !s108 1695265189.000000
+Z20 !s107 up_and_down_counter.vo|
+Z21 !s90 -work|work|up_and_down_counter.vo|
+!i113 1
+R9
+R10
+vup_and_down_counter
+R14
+!i10b 1
+!s100 XRHB43^e7SiU64z6]4MXI0
+I=Y=Zm@JW=D:oMQln?KhTP1
+R1
+R15
+R16
+R17
+R18
+R5
+R6
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 1
+R9
+R10
