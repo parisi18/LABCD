@@ -57,9 +57,9 @@ set_location_assignment PIN_W22 -to d
 set_location_assignment PIN_W25 -to e
 set_location_assignment PIN_U23 -to f
 set_location_assignment PIN_U24 -to g
-set_location_assignment PIN_AG25 -to clear
-set_location_assignment PIN_Y17 -to clock
-set_location_assignment PIN_Y16 -to up/down
+set_location_assignment PIN_Y23 -to clear
+set_location_assignment PIN_R24 -to clock
+set_location_assignment PIN_AB28 -to up/down
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top

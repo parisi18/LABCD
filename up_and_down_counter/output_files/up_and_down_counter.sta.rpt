@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for up_and_down_counter
-Fri Sep 22 13:28:48 2023
+Fri Sep 22 15:32:38 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -104,13 +104,13 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.00        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.3%      ;
-;     Processors 3-4         ;   0.2%      ;
+;     Processor 2            ;   0.2%      ;
+;     Processors 3-4         ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -313,8 +313,8 @@ No paths to report.
 +-------+-------------------------------------+-------------------------------------+------------------------------------+------------------------------------+--------------+------------+------------+
 ; Slack ; From Node                           ; To Node                             ; Launch Clock                       ; Latch Clock                        ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-------------------------------------+-------------------------------------+------------------------------------+------------------------------------+--------------+------------+------------+
-; 0.398 ; up_and_down_counter_box:inst5|inst6 ; up_and_down_counter_box:inst5|inst6 ; up_and_down_counter_box:inst5|inst ; up_and_down_counter_box:inst5|inst ; 0.000        ; 0.039      ; 0.608      ;
 ; 0.398 ; up_and_down_counter_box:inst5|inst5 ; up_and_down_counter_box:inst5|inst5 ; up_and_down_counter_box:inst5|inst ; up_and_down_counter_box:inst5|inst ; 0.000        ; 0.039      ; 0.608      ;
+; 0.398 ; up_and_down_counter_box:inst5|inst6 ; up_and_down_counter_box:inst5|inst6 ; up_and_down_counter_box:inst5|inst ; up_and_down_counter_box:inst5|inst ; 0.000        ; 0.039      ; 0.608      ;
 +-------+-------------------------------------+-------------------------------------+------------------------------------+------------------------------------+--------------+------------+------------+
 
 
@@ -361,7 +361,7 @@ No paths to report.
 +------------------------------------+--------+---------------+
 ; Clock                              ; Slack  ; End Point TNS ;
 +------------------------------------+--------+---------------+
-; clock                              ; -3.000 ; -5.220        ;
+; clock                              ; -3.000 ; -5.266        ;
 ; up_and_down_counter_box:inst5|inst ; -1.000 ; -2.000        ;
 +------------------------------------+--------+---------------+
 
@@ -620,7 +620,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Sep 22 13:28:46 2023
+    Info: Processing started: Fri Sep 22 15:32:37 2023
 Info: Command: quartus_sta up_and_down_counter -c up_and_down_counter
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -706,14 +706,14 @@ Critical Warning (332148): Timing requirements not met
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000              -5.220 clock 
+    Info (332119):    -3.000              -5.266 clock 
     Info (332119):    -1.000              -2.000 up_and_down_counter_box:inst5|inst 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 4832 megabytes
-    Info: Processing ended: Fri Sep 22 13:28:48 2023
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Fri Sep 22 15:32:38 2023
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

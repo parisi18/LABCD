@@ -1,5 +1,5 @@
 Analysis & Synthesis report for up_and_down_counter
-Fri Sep 22 13:28:34 2023
+Fri Sep 22 15:32:22 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Sep 22 13:28:34 2023       ;
+; Analysis & Synthesis Status        ; Successful - Fri Sep 22 15:32:22 2023       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; up_and_down_counter                         ;
 ; Top-level Entity Name              ; up_and_down_counter                         ;
@@ -271,7 +271,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Sep 22 13:28:26 2023
+    Info: Processing started: Fri Sep 22 15:32:15 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off up_and_down_counter -c up_and_down_counter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -303,8 +303,8 @@ Info (21057): Implemented 23 device resources after synthesis - the final resour
     Info (21061): Implemented 13 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 4763 megabytes
-    Info: Processing ended: Fri Sep 22 13:28:34 2023
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Processing ended: Fri Sep 22 15:32:22 2023
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:16
 
 

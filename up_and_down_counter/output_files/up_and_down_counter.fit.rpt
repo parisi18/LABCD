@@ -1,5 +1,5 @@
 Fitter report for up_and_down_counter
-Fri Sep 22 13:28:42 2023
+Fri Sep 22 15:32:32 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Sep 22 13:28:42 2023       ;
+; Fitter Status                      ; Successful - Fri Sep 22 15:32:32 2023       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; up_and_down_counter                         ;
 ; Top-level Entity Name              ; up_and_down_counter                         ;
@@ -155,7 +155,8 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.1%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -243,7 +244,7 @@ The pin-out file can be found in D:/Users/RafaelParisi/Documents/UNIFESP/7 termo
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )          ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )          ;
 ; Average interconnect usage (total/H/V)      ; 0.0% / 0.0% / 0.0%     ;
-; Peak interconnect usage (total/H/V)         ; 0.3% / 0.3% / 0.5%     ;
+; Peak interconnect usage (total/H/V)         ; 0.1% / 0.0% / 0.3%     ;
 ; Maximum fan-out                             ; 9                      ;
 ; Highest non-global fan-out                  ; 9                      ;
 ; Total fan-out                               ; 61                     ;
@@ -327,9 +328,9 @@ The pin-out file can be found in D:/Users/RafaelParisi/Documents/UNIFESP/7 termo
 +---------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name    ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +---------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; clear   ; AG25  ; 4        ; 91           ; 0            ; 21           ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; clock   ; Y17   ; 4        ; 96           ; 0            ; 21           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; up/down ; Y16   ; 4        ; 96           ; 0            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; clear   ; Y23   ; 5        ; 115          ; 14           ; 7            ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; clock   ; R24   ; 5        ; 115          ; 35           ; 21           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; up/down ; AB28  ; 5        ; 115          ; 17           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 +---------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -369,20 +370,20 @@ The pin-out file can be found in D:/Users/RafaelParisi/Documents/UNIFESP/7 termo
 +----------+-----------------------------+--------------------------+-------------------------+---------------------------+
 
 
-+----------------------------------------------------------+
-; I/O Bank Usage                                           ;
-+----------+----------------+---------------+--------------+
-; I/O Bank ; Usage          ; VCCIO Voltage ; VREF Voltage ;
-+----------+----------------+---------------+--------------+
-; 1        ; 4 / 56 ( 7 % ) ; 2.5V          ; --           ;
-; 2        ; 0 / 63 ( 0 % ) ; 2.5V          ; --           ;
-; 3        ; 0 / 73 ( 0 % ) ; 2.5V          ; --           ;
-; 4        ; 3 / 71 ( 4 % ) ; 2.5V          ; --           ;
-; 5        ; 6 / 65 ( 9 % ) ; 2.5V          ; --           ;
-; 6        ; 2 / 58 ( 3 % ) ; 2.5V          ; --           ;
-; 7        ; 0 / 72 ( 0 % ) ; 2.5V          ; --           ;
-; 8        ; 0 / 71 ( 0 % ) ; 2.5V          ; --           ;
-+----------+----------------+---------------+--------------+
++-----------------------------------------------------------+
+; I/O Bank Usage                                            ;
++----------+-----------------+---------------+--------------+
+; I/O Bank ; Usage           ; VCCIO Voltage ; VREF Voltage ;
++----------+-----------------+---------------+--------------+
+; 1        ; 4 / 56 ( 7 % )  ; 2.5V          ; --           ;
+; 2        ; 0 / 63 ( 0 % )  ; 2.5V          ; --           ;
+; 3        ; 0 / 73 ( 0 % )  ; 2.5V          ; --           ;
+; 4        ; 0 / 71 ( 0 % )  ; 2.5V          ; --           ;
+; 5        ; 9 / 65 ( 14 % ) ; 2.5V          ; --           ;
+; 6        ; 2 / 58 ( 3 % )  ; 2.5V          ; --           ;
+; 7        ; 0 / 72 ( 0 % )  ; 2.5V          ; --           ;
+; 8        ; 0 / 71 ( 0 % )  ; 2.5V          ; --           ;
++----------+-----------------+---------------+--------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -471,7 +472,7 @@ The pin-out file can be found in D:/Users/RafaelParisi/Documents/UNIFESP/7 termo
 ; AB25     ; 292        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; AB26     ; 291        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; AB27     ; 296        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; AB28     ; 295        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; AB28     ; 295        ; 5        ; up/down                                                   ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; AC1      ; 94         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; AC2      ; 93         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; AC3      ; 95         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -608,7 +609,7 @@ The pin-out file can be found in D:/Users/RafaelParisi/Documents/UNIFESP/7 termo
 ; AG22     ; 227        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AG23     ; 229        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AG24     ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; AG25     ; 245        ; 4        ; clear                                                     ; input  ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; AG25     ; 245        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AG26     ; 270        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AG27     ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AG28     ;            ; 5        ; VCCIO5                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
@@ -1025,7 +1026,7 @@ The pin-out file can be found in D:/Users/RafaelParisi/Documents/UNIFESP/7 termo
 ; R21      ; 333        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; R22      ; 332        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; R23      ; 331        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; R24      ; 330        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; R24      ; 330        ; 5        ; clock                                                     ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; R25      ; 327        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; R26      ; 326        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; R27      ; 329        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -1157,14 +1158,14 @@ The pin-out file can be found in D:/Users/RafaelParisi/Documents/UNIFESP/7 termo
 ; Y13      ; 189        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; Y14      ; 197        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; Y15      ; 198        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; Y16      ; 250        ; 4        ; up/down                                                   ; input  ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
-; Y17      ; 249        ; 4        ; clock                                                     ; input  ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; Y16      ; 250        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; Y17      ; 249        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; Y18      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; Y19      ; 263        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; Y20      ;            ;          ; VCCD_PLL4                                                 ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; Y21      ;            ; --       ; VCCA4                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; Y22      ; 320        ; 5        ; b                                                         ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
-; Y23      ; 288        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; Y23      ; 288        ; 5        ; clear                                                     ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; Y24      ; 287        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; Y25      ; 298        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; Y26      ; 297        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -1240,16 +1241,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------+-------------------+---------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                 ;
-+-------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name                                ; Location          ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+-------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; clear                               ; PIN_AG25          ; 3       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; clock                               ; PIN_Y17           ; 2       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; up_and_down_counter_box:inst5|inst1 ; LCCOMB_X96_Y5_N24 ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; up_and_down_counter_box:inst5|inst2 ; LCCOMB_X96_Y5_N18 ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
-+-------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                   ;
++-------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                                ; Location            ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++-------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; clear                               ; PIN_Y23             ; 3       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; clock                               ; PIN_R24             ; 2       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; up_and_down_counter_box:inst5|inst1 ; LCCOMB_X114_Y24_N20 ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; up_and_down_counter_box:inst5|inst2 ; LCCOMB_X114_Y24_N8  ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
++-------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
 +------------------------------------------------+
@@ -1257,14 +1258,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+------------------------+
 ; Routing Resource Type ; Usage                  ;
 +-----------------------+------------------------+
-; Block interconnects   ; 13 / 342,891 ( < 1 % ) ;
-; C16 interconnects     ; 16 / 10,120 ( < 1 % )  ;
-; C4 interconnects      ; 12 / 209,544 ( < 1 % ) ;
+; Block interconnects   ; 14 / 342,891 ( < 1 % ) ;
+; C16 interconnects     ; 0 / 10,120 ( 0 % )     ;
+; C4 interconnects      ; 22 / 209,544 ( < 1 % ) ;
 ; Direct links          ; 2 / 342,891 ( < 1 % )  ;
 ; Global clocks         ; 0 / 20 ( 0 % )         ;
 ; Local interconnects   ; 4 / 119,088 ( < 1 % )  ;
-; R24 interconnects     ; 8 / 9,963 ( < 1 % )    ;
-; R4 interconnects      ; 21 / 289,782 ( < 1 % ) ;
+; R24 interconnects     ; 0 / 9,963 ( 0 % )      ;
+; R4 interconnects      ; 2 / 289,782 ( < 1 % )  ;
 +-----------------------+------------------------+
 
 
@@ -1512,23 +1513,23 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X92_Y0 to location X103_Y11
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X104_Y24 to location X115_Y36
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.04 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.05 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/up_and_down_counter/output_files/up_and_down_counter.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 5683 megabytes
-    Info: Processing ended: Fri Sep 22 13:28:43 2023
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:12
+    Info: Peak virtual memory: 5671 megabytes
+    Info: Processing ended: Fri Sep 22 15:32:32 2023
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:14
 
 
 +----------------------------+

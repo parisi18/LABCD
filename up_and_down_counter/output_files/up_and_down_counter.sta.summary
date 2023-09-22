@@ -68,7 +68,7 @@ TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -5.220
+TNS   : -5.266
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'up_and_down_counter_box:inst5|inst'
 Slack : -1.000
