@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for contador_sincrono
-Wed Sep 20 17:27:07 2023
+Fri Sep 22 20:31:45 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -19,41 +19,49 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
  11. Slow 1200mV 85C Model Minimum Pulse Width Summary
  12. Slow 1200mV 85C Model Setup: 'clock'
  13. Slow 1200mV 85C Model Hold: 'clock'
- 14. Slow 1200mV 85C Model Metastability Summary
- 15. Slow 1200mV 0C Model Fmax Summary
- 16. Slow 1200mV 0C Model Setup Summary
- 17. Slow 1200mV 0C Model Hold Summary
- 18. Slow 1200mV 0C Model Recovery Summary
- 19. Slow 1200mV 0C Model Removal Summary
- 20. Slow 1200mV 0C Model Minimum Pulse Width Summary
- 21. Slow 1200mV 0C Model Setup: 'clock'
- 22. Slow 1200mV 0C Model Hold: 'clock'
- 23. Slow 1200mV 0C Model Metastability Summary
- 24. Fast 1200mV 0C Model Setup Summary
- 25. Fast 1200mV 0C Model Hold Summary
- 26. Fast 1200mV 0C Model Recovery Summary
- 27. Fast 1200mV 0C Model Removal Summary
- 28. Fast 1200mV 0C Model Minimum Pulse Width Summary
- 29. Fast 1200mV 0C Model Setup: 'clock'
- 30. Fast 1200mV 0C Model Hold: 'clock'
- 31. Fast 1200mV 0C Model Metastability Summary
- 32. Multicorner Timing Analysis Summary
- 33. Board Trace Model Assignments
- 34. Input Transition Times
- 35. Signal Integrity Metrics (Slow 1200mv 0c Model)
- 36. Signal Integrity Metrics (Slow 1200mv 85c Model)
- 37. Signal Integrity Metrics (Fast 1200mv 0c Model)
- 38. Setup Transfers
- 39. Hold Transfers
- 40. Report TCCS
- 41. Report RSKM
- 42. Unconstrained Paths Summary
- 43. Clock Status Summary
- 44. Unconstrained Input Ports
- 45. Unconstrained Output Ports
- 46. Unconstrained Input Ports
- 47. Unconstrained Output Ports
- 48. TimeQuest Timing Analyzer Messages
+ 14. Slow 1200mV 85C Model Recovery: 'clock'
+ 15. Slow 1200mV 85C Model Removal: 'clock'
+ 16. Slow 1200mV 85C Model Metastability Summary
+ 17. Slow 1200mV 0C Model Fmax Summary
+ 18. Slow 1200mV 0C Model Setup Summary
+ 19. Slow 1200mV 0C Model Hold Summary
+ 20. Slow 1200mV 0C Model Recovery Summary
+ 21. Slow 1200mV 0C Model Removal Summary
+ 22. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 23. Slow 1200mV 0C Model Setup: 'clock'
+ 24. Slow 1200mV 0C Model Hold: 'clock'
+ 25. Slow 1200mV 0C Model Recovery: 'clock'
+ 26. Slow 1200mV 0C Model Removal: 'clock'
+ 27. Slow 1200mV 0C Model Metastability Summary
+ 28. Fast 1200mV 0C Model Setup Summary
+ 29. Fast 1200mV 0C Model Hold Summary
+ 30. Fast 1200mV 0C Model Recovery Summary
+ 31. Fast 1200mV 0C Model Removal Summary
+ 32. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 33. Fast 1200mV 0C Model Setup: 'clock'
+ 34. Fast 1200mV 0C Model Hold: 'clock'
+ 35. Fast 1200mV 0C Model Recovery: 'clock'
+ 36. Fast 1200mV 0C Model Removal: 'clock'
+ 37. Fast 1200mV 0C Model Metastability Summary
+ 38. Multicorner Timing Analysis Summary
+ 39. Board Trace Model Assignments
+ 40. Input Transition Times
+ 41. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 42. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 43. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 44. Setup Transfers
+ 45. Hold Transfers
+ 46. Recovery Transfers
+ 47. Removal Transfers
+ 48. Report TCCS
+ 49. Report RSKM
+ 50. Unconstrained Paths Summary
+ 51. Clock Status Summary
+ 52. Unconstrained Input Ports
+ 53. Unconstrained Output Ports
+ 54. Unconstrained Input Ports
+ 55. Unconstrained Output Ports
+ 56. TimeQuest Timing Analyzer Messages
 
 
 
@@ -123,7 +131,7 @@ refer to the applicable agreement for further details.
 +------------+-----------------+------------+---------------------------------------------------------------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
 +------------+-----------------+------------+---------------------------------------------------------------+
-; 868.81 MHz ; 250.0 MHz       ; clock      ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 883.39 MHz ; 250.0 MHz       ; clock      ; limit due to minimum period restriction (max I/O toggle rate) ;
 +------------+-----------------+------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -139,7 +147,7 @@ HTML report is unavailable in plain text report export.
 +-------+--------+--------------------+
 ; Clock ; Slack  ; End Point TNS      ;
 +-------+--------+--------------------+
-; clock ; -0.151 ; -0.151             ;
+; clock ; -0.132 ; -0.132             ;
 +-------+--------+--------------------+
 
 
@@ -152,16 +160,22 @@ HTML report is unavailable in plain text report export.
 +-------+-------+--------------------+
 
 
-------------------------------------------
++----------------------------------------+
 ; Slow 1200mV 85C Model Recovery Summary ;
-------------------------------------------
-No paths to report.
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; clock ; -0.525 ; -1.575                ;
++-------+--------+-----------------------+
 
 
------------------------------------------
++---------------------------------------+
 ; Slow 1200mV 85C Model Removal Summary ;
------------------------------------------
-No paths to report.
++-------+-------+-----------------------+
+; Clock ; Slack ; End Point TNS         ;
++-------+-------+-----------------------+
+; clock ; 0.701 ; 0.000                 ;
++-------+-------+-----------------------+
 
 
 +---------------------------------------------------+
@@ -178,12 +192,12 @@ No paths to report.
 +--------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                         ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
-; -0.151 ; contador_sincrono_box:inst6|inst2 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 1.000        ; -0.049     ; 1.120      ;
-; 0.137  ; contador_sincrono_box:inst6|inst1 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 1.000        ; -0.049     ; 0.832      ;
-; 0.138  ; contador_sincrono_box:inst6|inst1 ; contador_sincrono_box:inst6|inst2 ; clock        ; clock       ; 1.000        ; -0.049     ; 0.831      ;
-; 0.210  ; contador_sincrono_box:inst6|inst1 ; contador_sincrono_box:inst6|inst1 ; clock        ; clock       ; 1.000        ; -0.043     ; 0.765      ;
-; 0.210  ; contador_sincrono_box:inst6|inst2 ; contador_sincrono_box:inst6|inst2 ; clock        ; clock       ; 1.000        ; -0.043     ; 0.765      ;
-; 0.210  ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 1.000        ; -0.043     ; 0.765      ;
+; -0.132 ; contador_sincrono_box:inst7|inst2 ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; 1.000        ; -0.051     ; 1.099      ;
+; 0.135  ; contador_sincrono_box:inst7|inst1 ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; 1.000        ; -0.051     ; 0.832      ;
+; 0.135  ; contador_sincrono_box:inst7|inst1 ; contador_sincrono_box:inst7|inst2 ; clock        ; clock       ; 1.000        ; -0.051     ; 0.832      ;
+; 0.210  ; contador_sincrono_box:inst7|inst1 ; contador_sincrono_box:inst7|inst1 ; clock        ; clock       ; 1.000        ; -0.043     ; 0.765      ;
+; 0.210  ; contador_sincrono_box:inst7|inst3 ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; 1.000        ; -0.043     ; 0.765      ;
+; 0.210  ; contador_sincrono_box:inst7|inst2 ; contador_sincrono_box:inst7|inst2 ; clock        ; clock       ; 1.000        ; -0.043     ; 0.765      ;
 +--------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -192,13 +206,41 @@ No paths to report.
 +-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                         ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.440 ; contador_sincrono_box:inst6|inst2 ; contador_sincrono_box:inst6|inst2 ; clock        ; clock       ; 0.000        ; 0.043      ; 0.669      ;
-; 0.440 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 0.000        ; 0.043      ; 0.669      ;
-; 0.445 ; contador_sincrono_box:inst6|inst1 ; contador_sincrono_box:inst6|inst1 ; clock        ; clock       ; 0.000        ; 0.043      ; 0.674      ;
-; 0.481 ; contador_sincrono_box:inst6|inst1 ; contador_sincrono_box:inst6|inst2 ; clock        ; clock       ; 0.000        ; 0.049      ; 0.716      ;
-; 0.482 ; contador_sincrono_box:inst6|inst1 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 0.000        ; 0.049      ; 0.717      ;
-; 0.713 ; contador_sincrono_box:inst6|inst2 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 0.000        ; 0.049      ; 0.948      ;
+; 0.440 ; contador_sincrono_box:inst7|inst2 ; contador_sincrono_box:inst7|inst2 ; clock        ; clock       ; 0.000        ; 0.043      ; 0.669      ;
+; 0.440 ; contador_sincrono_box:inst7|inst3 ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; 0.000        ; 0.043      ; 0.669      ;
+; 0.445 ; contador_sincrono_box:inst7|inst1 ; contador_sincrono_box:inst7|inst1 ; clock        ; clock       ; 0.000        ; 0.043      ; 0.674      ;
+; 0.480 ; contador_sincrono_box:inst7|inst1 ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; 0.000        ; 0.051      ; 0.717      ;
+; 0.480 ; contador_sincrono_box:inst7|inst1 ; contador_sincrono_box:inst7|inst2 ; clock        ; clock       ; 0.000        ; 0.051      ; 0.717      ;
+; 0.690 ; contador_sincrono_box:inst7|inst2 ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; 0.000        ; 0.051      ; 0.927      ;
 +-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Recovery: 'clock'                                                                                      ;
++--------+-----------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.525 ; clock     ; contador_sincrono_box:inst7|inst1 ; clock        ; clock       ; 0.500        ; 1.910      ; 2.953      ;
+; -0.525 ; clock     ; contador_sincrono_box:inst7|inst2 ; clock        ; clock       ; 0.500        ; 1.910      ; 2.953      ;
+; -0.525 ; clock     ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; 0.500        ; 1.910      ; 2.953      ;
+; -0.046 ; clock     ; contador_sincrono_box:inst7|inst1 ; clock        ; clock       ; 1.000        ; 1.910      ; 2.974      ;
+; -0.046 ; clock     ; contador_sincrono_box:inst7|inst2 ; clock        ; clock       ; 1.000        ; 1.910      ; 2.974      ;
+; -0.046 ; clock     ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; 1.000        ; 1.910      ; 2.974      ;
++--------+-----------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Removal: 'clock'                                                                                      ;
++-------+-----------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.701 ; clock     ; contador_sincrono_box:inst7|inst1 ; clock        ; clock       ; 0.000        ; 1.984      ; 2.871      ;
+; 0.701 ; clock     ; contador_sincrono_box:inst7|inst2 ; clock        ; clock       ; 0.000        ; 1.984      ; 2.871      ;
+; 0.701 ; clock     ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; 0.000        ; 1.984      ; 2.871      ;
+; 1.175 ; clock     ; contador_sincrono_box:inst7|inst1 ; clock        ; clock       ; -0.500       ; 1.984      ; 2.845      ;
+; 1.175 ; clock     ; contador_sincrono_box:inst7|inst2 ; clock        ; clock       ; -0.500       ; 1.984      ; 2.845      ;
+; 1.175 ; clock     ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; -0.500       ; 1.984      ; 2.845      ;
++-------+-----------+-----------------------------------+--------------+-------------+--------------+------------+------------+
 
 
 -----------------------------------------------
@@ -212,7 +254,7 @@ No synchronizer chains to report.
 +------------+-----------------+------------+---------------------------------------------------------------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
 +------------+-----------------+------------+---------------------------------------------------------------+
-; 965.25 MHz ; 250.0 MHz       ; clock      ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 980.39 MHz ; 250.0 MHz       ; clock      ; limit due to minimum period restriction (max I/O toggle rate) ;
 +------------+-----------------+------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -222,7 +264,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+-------------------+
 ; Clock ; Slack  ; End Point TNS     ;
 +-------+--------+-------------------+
-; clock ; -0.036 ; -0.036            ;
+; clock ; -0.020 ; -0.020            ;
 +-------+--------+-------------------+
 
 
@@ -235,16 +277,22 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+-------------------+
 
 
------------------------------------------
++---------------------------------------+
 ; Slow 1200mV 0C Model Recovery Summary ;
------------------------------------------
-No paths to report.
++-------+--------+----------------------+
+; Clock ; Slack  ; End Point TNS        ;
++-------+--------+----------------------+
+; clock ; -0.475 ; -1.425               ;
++-------+--------+----------------------+
 
 
-----------------------------------------
++--------------------------------------+
 ; Slow 1200mV 0C Model Removal Summary ;
-----------------------------------------
-No paths to report.
++-------+-------+----------------------+
+; Clock ; Slack ; End Point TNS        ;
++-------+-------+----------------------+
+; clock ; 0.648 ; 0.000                ;
++-------+-------+----------------------+
 
 
 +--------------------------------------------------+
@@ -261,12 +309,12 @@ No paths to report.
 +--------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                         ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
-; -0.036 ; contador_sincrono_box:inst6|inst2 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 1.000        ; -0.044     ; 1.011      ;
-; 0.219  ; contador_sincrono_box:inst6|inst1 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 1.000        ; -0.044     ; 0.756      ;
-; 0.220  ; contador_sincrono_box:inst6|inst1 ; contador_sincrono_box:inst6|inst2 ; clock        ; clock       ; 1.000        ; -0.044     ; 0.755      ;
-; 0.297  ; contador_sincrono_box:inst6|inst1 ; contador_sincrono_box:inst6|inst1 ; clock        ; clock       ; 1.000        ; -0.039     ; 0.683      ;
-; 0.297  ; contador_sincrono_box:inst6|inst2 ; contador_sincrono_box:inst6|inst2 ; clock        ; clock       ; 1.000        ; -0.039     ; 0.683      ;
-; 0.297  ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 1.000        ; -0.039     ; 0.683      ;
+; -0.020 ; contador_sincrono_box:inst7|inst2 ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; 1.000        ; -0.047     ; 0.992      ;
+; 0.217  ; contador_sincrono_box:inst7|inst1 ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; 1.000        ; -0.047     ; 0.755      ;
+; 0.217  ; contador_sincrono_box:inst7|inst1 ; contador_sincrono_box:inst7|inst2 ; clock        ; clock       ; 1.000        ; -0.047     ; 0.755      ;
+; 0.297  ; contador_sincrono_box:inst7|inst1 ; contador_sincrono_box:inst7|inst1 ; clock        ; clock       ; 1.000        ; -0.039     ; 0.683      ;
+; 0.297  ; contador_sincrono_box:inst7|inst2 ; contador_sincrono_box:inst7|inst2 ; clock        ; clock       ; 1.000        ; -0.039     ; 0.683      ;
+; 0.297  ; contador_sincrono_box:inst7|inst3 ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; 1.000        ; -0.039     ; 0.683      ;
 +--------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -275,13 +323,41 @@ No paths to report.
 +-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                         ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.387 ; contador_sincrono_box:inst6|inst2 ; contador_sincrono_box:inst6|inst2 ; clock        ; clock       ; 0.000        ; 0.039      ; 0.597      ;
-; 0.387 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 0.000        ; 0.039      ; 0.597      ;
-; 0.398 ; contador_sincrono_box:inst6|inst1 ; contador_sincrono_box:inst6|inst1 ; clock        ; clock       ; 0.000        ; 0.039      ; 0.608      ;
-; 0.435 ; contador_sincrono_box:inst6|inst1 ; contador_sincrono_box:inst6|inst2 ; clock        ; clock       ; 0.000        ; 0.044      ; 0.650      ;
-; 0.436 ; contador_sincrono_box:inst6|inst1 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 0.000        ; 0.044      ; 0.651      ;
-; 0.649 ; contador_sincrono_box:inst6|inst2 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 0.000        ; 0.044      ; 0.864      ;
+; 0.387 ; contador_sincrono_box:inst7|inst2 ; contador_sincrono_box:inst7|inst2 ; clock        ; clock       ; 0.000        ; 0.039      ; 0.597      ;
+; 0.387 ; contador_sincrono_box:inst7|inst3 ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; 0.000        ; 0.039      ; 0.597      ;
+; 0.398 ; contador_sincrono_box:inst7|inst1 ; contador_sincrono_box:inst7|inst1 ; clock        ; clock       ; 0.000        ; 0.039      ; 0.608      ;
+; 0.432 ; contador_sincrono_box:inst7|inst1 ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; 0.000        ; 0.047      ; 0.650      ;
+; 0.432 ; contador_sincrono_box:inst7|inst1 ; contador_sincrono_box:inst7|inst2 ; clock        ; clock       ; 0.000        ; 0.047      ; 0.650      ;
+; 0.629 ; contador_sincrono_box:inst7|inst2 ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; 0.000        ; 0.047      ; 0.847      ;
 +-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Recovery: 'clock'                                                                                       ;
++--------+-----------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.475 ; clock     ; contador_sincrono_box:inst7|inst1 ; clock        ; clock       ; 0.500        ; 1.744      ; 2.738      ;
+; -0.475 ; clock     ; contador_sincrono_box:inst7|inst2 ; clock        ; clock       ; 0.500        ; 1.744      ; 2.738      ;
+; -0.475 ; clock     ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; 0.500        ; 1.744      ; 2.738      ;
+; 0.040  ; clock     ; contador_sincrono_box:inst7|inst1 ; clock        ; clock       ; 1.000        ; 1.744      ; 2.723      ;
+; 0.040  ; clock     ; contador_sincrono_box:inst7|inst2 ; clock        ; clock       ; 1.000        ; 1.744      ; 2.723      ;
+; 0.040  ; clock     ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; 1.000        ; 1.744      ; 2.723      ;
++--------+-----------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Removal: 'clock'                                                                                       ;
++-------+-----------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.648 ; clock     ; contador_sincrono_box:inst7|inst1 ; clock        ; clock       ; 0.000        ; 1.811      ; 2.630      ;
+; 0.648 ; clock     ; contador_sincrono_box:inst7|inst2 ; clock        ; clock       ; 0.000        ; 1.811      ; 2.630      ;
+; 0.648 ; clock     ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; 0.000        ; 1.811      ; 2.630      ;
+; 1.157 ; clock     ; contador_sincrono_box:inst7|inst1 ; clock        ; clock       ; -0.500       ; 1.811      ; 2.639      ;
+; 1.157 ; clock     ; contador_sincrono_box:inst7|inst2 ; clock        ; clock       ; -0.500       ; 1.811      ; 2.639      ;
+; 1.157 ; clock     ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; -0.500       ; 1.811      ; 2.639      ;
++-------+-----------+-----------------------------------+--------------+-------------+--------------+------------+------------+
 
 
 ----------------------------------------------
@@ -295,7 +371,7 @@ No synchronizer chains to report.
 +-------+-------+--------------------+
 ; Clock ; Slack ; End Point TNS      ;
 +-------+-------+--------------------+
-; clock ; 0.447 ; 0.000              ;
+; clock ; 0.456 ; 0.000              ;
 +-------+-------+--------------------+
 
 
@@ -304,20 +380,26 @@ No synchronizer chains to report.
 +-------+-------+-------------------+
 ; Clock ; Slack ; End Point TNS     ;
 +-------+-------+-------------------+
-; clock ; 0.201 ; 0.000             ;
+; clock ; 0.199 ; 0.000             ;
 +-------+-------+-------------------+
 
 
------------------------------------------
++---------------------------------------+
 ; Fast 1200mV 0C Model Recovery Summary ;
------------------------------------------
-No paths to report.
++-------+-------+-----------------------+
+; Clock ; Slack ; End Point TNS         ;
++-------+-------+-----------------------+
+; clock ; 0.379 ; 0.000                 ;
++-------+-------+-----------------------+
 
 
-----------------------------------------
++--------------------------------------+
 ; Fast 1200mV 0C Model Removal Summary ;
-----------------------------------------
-No paths to report.
++-------+-------+----------------------+
+; Clock ; Slack ; End Point TNS        ;
++-------+-------+----------------------+
+; clock ; 0.316 ; 0.000                ;
++-------+-------+----------------------+
 
 
 +--------------------------------------------------+
@@ -325,7 +407,7 @@ No paths to report.
 +-------+--------+---------------------------------+
 ; Clock ; Slack  ; End Point TNS                   ;
 +-------+--------+---------------------------------+
-; clock ; -3.000 ; -6.261                          ;
+; clock ; -3.000 ; -6.390                          ;
 +-------+--------+---------------------------------+
 
 
@@ -334,12 +416,12 @@ No paths to report.
 +-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                         ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.447 ; contador_sincrono_box:inst6|inst2 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 1.000        ; -0.025     ; 0.535      ;
-; 0.591 ; contador_sincrono_box:inst6|inst1 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 1.000        ; -0.025     ; 0.391      ;
-; 0.593 ; contador_sincrono_box:inst6|inst1 ; contador_sincrono_box:inst6|inst2 ; clock        ; clock       ; 1.000        ; -0.025     ; 0.389      ;
-; 0.626 ; contador_sincrono_box:inst6|inst1 ; contador_sincrono_box:inst6|inst1 ; clock        ; clock       ; 1.000        ; -0.022     ; 0.359      ;
-; 0.626 ; contador_sincrono_box:inst6|inst2 ; contador_sincrono_box:inst6|inst2 ; clock        ; clock       ; 1.000        ; -0.022     ; 0.359      ;
-; 0.626 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 1.000        ; -0.022     ; 0.359      ;
+; 0.456 ; contador_sincrono_box:inst7|inst2 ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; 1.000        ; -0.027     ; 0.524      ;
+; 0.589 ; contador_sincrono_box:inst7|inst1 ; contador_sincrono_box:inst7|inst2 ; clock        ; clock       ; 1.000        ; -0.027     ; 0.391      ;
+; 0.590 ; contador_sincrono_box:inst7|inst1 ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; 1.000        ; -0.027     ; 0.390      ;
+; 0.624 ; contador_sincrono_box:inst7|inst1 ; contador_sincrono_box:inst7|inst1 ; clock        ; clock       ; 1.000        ; -0.024     ; 0.359      ;
+; 0.624 ; contador_sincrono_box:inst7|inst2 ; contador_sincrono_box:inst7|inst2 ; clock        ; clock       ; 1.000        ; -0.024     ; 0.359      ;
+; 0.624 ; contador_sincrono_box:inst7|inst3 ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; 1.000        ; -0.024     ; 0.359      ;
 +-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -348,13 +430,41 @@ No paths to report.
 +-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                         ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.201 ; contador_sincrono_box:inst6|inst2 ; contador_sincrono_box:inst6|inst2 ; clock        ; clock       ; 0.000        ; 0.022      ; 0.307      ;
-; 0.201 ; contador_sincrono_box:inst6|inst3 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 0.000        ; 0.022      ; 0.307      ;
-; 0.208 ; contador_sincrono_box:inst6|inst1 ; contador_sincrono_box:inst6|inst1 ; clock        ; clock       ; 0.000        ; 0.022      ; 0.314      ;
-; 0.220 ; contador_sincrono_box:inst6|inst1 ; contador_sincrono_box:inst6|inst2 ; clock        ; clock       ; 0.000        ; 0.025      ; 0.329      ;
-; 0.221 ; contador_sincrono_box:inst6|inst1 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 0.000        ; 0.025      ; 0.330      ;
-; 0.329 ; contador_sincrono_box:inst6|inst2 ; contador_sincrono_box:inst6|inst3 ; clock        ; clock       ; 0.000        ; 0.025      ; 0.438      ;
+; 0.199 ; contador_sincrono_box:inst7|inst3 ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; 0.000        ; 0.024      ; 0.307      ;
+; 0.199 ; contador_sincrono_box:inst7|inst2 ; contador_sincrono_box:inst7|inst2 ; clock        ; clock       ; 0.000        ; 0.024      ; 0.307      ;
+; 0.206 ; contador_sincrono_box:inst7|inst1 ; contador_sincrono_box:inst7|inst1 ; clock        ; clock       ; 0.000        ; 0.024      ; 0.314      ;
+; 0.218 ; contador_sincrono_box:inst7|inst1 ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; 0.000        ; 0.027      ; 0.329      ;
+; 0.219 ; contador_sincrono_box:inst7|inst1 ; contador_sincrono_box:inst7|inst2 ; clock        ; clock       ; 0.000        ; 0.027      ; 0.330      ;
+; 0.315 ; contador_sincrono_box:inst7|inst2 ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; 0.000        ; 0.027      ; 0.426      ;
 +-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Recovery: 'clock'                                                                                      ;
++-------+-----------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.379 ; clock     ; contador_sincrono_box:inst7|inst1 ; clock        ; clock       ; 0.500        ; 1.258      ; 1.386      ;
+; 0.379 ; clock     ; contador_sincrono_box:inst7|inst2 ; clock        ; clock       ; 0.500        ; 1.258      ; 1.386      ;
+; 0.379 ; clock     ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; 0.500        ; 1.258      ; 1.386      ;
+; 0.517 ; clock     ; contador_sincrono_box:inst7|inst1 ; clock        ; clock       ; 1.000        ; 1.258      ; 1.748      ;
+; 0.517 ; clock     ; contador_sincrono_box:inst7|inst2 ; clock        ; clock       ; 1.000        ; 1.258      ; 1.748      ;
+; 0.517 ; clock     ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; 1.000        ; 1.258      ; 1.748      ;
++-------+-----------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Removal: 'clock'                                                                                       ;
++-------+-----------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.316 ; clock     ; contador_sincrono_box:inst7|inst1 ; clock        ; clock       ; 0.000        ; 1.297      ; 1.697      ;
+; 0.316 ; clock     ; contador_sincrono_box:inst7|inst2 ; clock        ; clock       ; 0.000        ; 1.297      ; 1.697      ;
+; 0.316 ; clock     ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; 0.000        ; 1.297      ; 1.697      ;
+; 0.447 ; clock     ; contador_sincrono_box:inst7|inst1 ; clock        ; clock       ; -0.500       ; 1.297      ; 1.328      ;
+; 0.447 ; clock     ; contador_sincrono_box:inst7|inst2 ; clock        ; clock       ; -0.500       ; 1.297      ; 1.328      ;
+; 0.447 ; clock     ; contador_sincrono_box:inst7|inst3 ; clock        ; clock       ; -0.500       ; 1.297      ; 1.328      ;
++-------+-----------+-----------------------------------+--------------+-------------+--------------+------------+------------+
 
 
 ----------------------------------------------
@@ -368,10 +478,10 @@ No synchronizer chains to report.
 +------------------+--------+-------+----------+---------+---------------------+
 ; Clock            ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+--------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -0.151 ; 0.201 ; N/A      ; N/A     ; -3.000              ;
-;  clock           ; -0.151 ; 0.201 ; N/A      ; N/A     ; -3.000              ;
-; Design-wide TNS  ; -0.151 ; 0.0   ; 0.0      ; 0.0     ; -6.855              ;
-;  clock           ; -0.151 ; 0.000 ; N/A      ; N/A     ; -6.855              ;
+; Worst-case Slack ; -0.132 ; 0.199 ; -0.525   ; 0.316   ; -3.000              ;
+;  clock           ; -0.132 ; 0.199 ; -0.525   ; 0.316   ; -3.000              ;
+; Design-wide TNS  ; -0.132 ; 0.0   ; -1.575   ; 0.0     ; -6.855              ;
+;  clock           ; -0.132 ; 0.000 ; -1.575   ; 0.000   ; -6.855              ;
 +------------------+--------+-------+----------+---------+---------------------+
 
 
@@ -461,7 +571,7 @@ No synchronizer chains to report.
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clock      ; clock    ; 6        ; 0        ; 0        ; 0        ;
+; clock      ; clock    ; 0        ; 0        ; 0        ; 6        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -471,7 +581,27 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clock      ; clock    ; 6        ; 0        ; 0        ; 0        ;
+; clock      ; clock    ; 0        ; 0        ; 0        ; 6        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Recovery Transfers                                                ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clock      ; clock    ; 0        ; 0        ; 3        ; 3        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Removal Transfers                                                 ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clock      ; clock    ; 0        ; 0        ; 3        ; 3        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -565,7 +695,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Sep 20 17:27:05 2023
+    Info: Processing started: Fri Sep 22 20:31:43 2023
 Info: Command: quartus_sta contador_sincrono -c contador_sincrono
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -582,16 +712,22 @@ Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -0.151
+Info (332146): Worst-case setup slack is -0.132
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.151              -0.151 clock 
+    Info (332119):    -0.132              -0.132 clock 
 Info (332146): Worst-case hold slack is 0.440
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.440               0.000 clock 
-Info (332140): No Recovery paths to report
-Info (332140): No Removal paths to report
+Info (332146): Worst-case recovery slack is -0.525
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.525              -1.575 clock 
+Info (332146): Worst-case removal slack is 0.701
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.701               0.000 clock 
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -602,43 +738,55 @@ Info (334004): Delay annotation completed successfully
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -0.036
+Info (332146): Worst-case setup slack is -0.020
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.036              -0.036 clock 
+    Info (332119):    -0.020              -0.020 clock 
 Info (332146): Worst-case hold slack is 0.387
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.387               0.000 clock 
-Info (332140): No Recovery paths to report
-Info (332140): No Removal paths to report
+Info (332146): Worst-case recovery slack is -0.475
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.475              -1.425 clock 
+Info (332146): Worst-case removal slack is 0.648
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.648               0.000 clock 
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -3.000              -6.855 clock 
 Info: Analyzing Fast 1200mV 0C Model
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
-Info (332146): Worst-case setup slack is 0.447
+Info (332146): Worst-case setup slack is 0.456
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.447               0.000 clock 
-Info (332146): Worst-case hold slack is 0.201
+    Info (332119):     0.456               0.000 clock 
+Info (332146): Worst-case hold slack is 0.199
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.201               0.000 clock 
-Info (332140): No Recovery paths to report
-Info (332140): No Removal paths to report
+    Info (332119):     0.199               0.000 clock 
+Info (332146): Worst-case recovery slack is 0.379
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.379               0.000 clock 
+Info (332146): Worst-case removal slack is 0.316
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.316               0.000 clock 
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000              -6.261 clock 
+    Info (332119):    -3.000              -6.390 clock 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4832 megabytes
-    Info: Processing ended: Wed Sep 20 17:27:07 2023
+    Info: Peak virtual memory: 4833 megabytes
+    Info: Processing ended: Fri Sep 22 20:31:45 2023
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 

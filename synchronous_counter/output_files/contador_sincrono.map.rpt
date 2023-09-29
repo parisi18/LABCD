@@ -1,5 +1,5 @@
 Analysis & Synthesis report for contador_sincrono
-Wed Sep 20 17:26:53 2023
+Fri Sep 22 20:31:30 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -42,13 +42,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Sep 20 17:26:53 2023       ;
+; Analysis & Synthesis Status        ; Successful - Fri Sep 22 20:31:30 2023       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; contador_sincrono                           ;
 ; Top-level Entity Name              ; contador_sincrono                           ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 10                                          ;
-;     Total combinational functions  ; 10                                          ;
+; Total logic elements               ; 11                                          ;
+;     Total combinational functions  ; 11                                          ;
 ;     Dedicated logic registers      ; 3                                           ;
 ; Total registers                    ; 3                                           ;
 ; Total pins                         ; 9                                           ;
@@ -181,16 +181,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------------------------------+
 ; Resource                                    ; Usage                             ;
 +---------------------------------------------+-----------------------------------+
-; Estimated Total logic elements              ; 10                                ;
+; Estimated Total logic elements              ; 11                                ;
 ;                                             ;                                   ;
-; Total combinational functions               ; 10                                ;
+; Total combinational functions               ; 11                                ;
 ; Logic element usage by number of LUT inputs ;                                   ;
 ;     -- 4 input functions                    ; 0                                 ;
 ;     -- 3 input functions                    ; 8                                 ;
-;     -- <=2 input functions                  ; 2                                 ;
+;     -- <=2 input functions                  ; 3                                 ;
 ;                                             ;                                   ;
 ; Logic elements by mode                      ;                                   ;
-;     -- normal mode                          ; 10                                ;
+;     -- normal mode                          ; 11                                ;
 ;     -- arithmetic mode                      ; 0                                 ;
 ;                                             ;                                   ;
 ; Total registers                             ; 3                                 ;
@@ -201,10 +201,10 @@ refer to the applicable agreement for further details.
 ;                                             ;                                   ;
 ; Embedded Multiplier 9-bit elements          ; 0                                 ;
 ;                                             ;                                   ;
-; Maximum fan-out node                        ; contador_sincrono_box:inst6|inst1 ;
+; Maximum fan-out node                        ; contador_sincrono_box:inst7|inst1 ;
 ; Maximum fan-out                             ; 10                                ;
-; Total fan-out                               ; 52                                ;
-; Average fan-out                             ; 1.68                              ;
+; Total fan-out                               ; 54                                ;
+; Average fan-out                             ; 1.69                              ;
 +---------------------------------------------+-----------------------------------+
 
 
@@ -213,8 +213,8 @@ refer to the applicable agreement for further details.
 +----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+-----------------------+--------------+
 ; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                ; Entity Name           ; Library Name ;
 +----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+-----------------------+--------------+
-; |contador_sincrono               ; 10 (0)              ; 3 (0)                     ; 0           ; 0            ; 0       ; 0         ; 9    ; 0            ; |contador_sincrono                                 ; contador_sincrono     ; work         ;
-;    |contador_sincrono_box:inst6| ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |contador_sincrono|contador_sincrono_box:inst6     ; contador_sincrono_box ; work         ;
+; |contador_sincrono               ; 11 (0)              ; 3 (0)                     ; 0           ; 0            ; 0       ; 0         ; 9    ; 0            ; |contador_sincrono                                 ; contador_sincrono     ; work         ;
+;    |contador_sincrono_box:inst7| ; 4 (4)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |contador_sincrono|contador_sincrono_box:inst7     ; contador_sincrono_box ; work         ;
 ;    |decod_bcd_box:inst|          ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |contador_sincrono|decod_bcd_box:inst              ; decod_bcd_box         ; work         ;
 ;       |bcd_box:inst|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |contador_sincrono|decod_bcd_box:inst|bcd_box:inst ; bcd_box               ; work         ;
 +----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+-----------------------+--------------+
@@ -244,14 +244,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; boundary_port         ; 9                           ;
 ; cycloneiii_ff         ; 3                           ;
 ;     CLR               ; 3                           ;
-; cycloneiii_lcell_comb ; 16                          ;
-;     normal            ; 16                          ;
+; cycloneiii_lcell_comb ; 17                          ;
+;     normal            ; 17                          ;
 ;         1 data inputs ; 7                           ;
-;         2 data inputs ; 1                           ;
+;         2 data inputs ; 2                           ;
 ;         3 data inputs ; 8                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.62                        ;
+; Average LUT depth     ; 1.68                        ;
 +-----------------------+-----------------------------+
 
 
@@ -270,7 +270,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Sep 20 17:26:45 2023
+    Info: Processing started: Fri Sep 22 20:31:23 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off contador_sincrono -c contador_sincrono
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -292,18 +292,18 @@ Warning (12125): Using design file bcd_box.bdf, which is not specified as a desi
     Info (12023): Found entity 1: bcd_box
 Info (12128): Elaborating entity "bcd_box" for hierarchy "decod_bcd_box:inst|bcd_box:inst"
 Warning (275008): Primitive "NOT" of instance "inst" not used
-Info (12128): Elaborating entity "contador_sincrono_box" for hierarchy "contador_sincrono_box:inst6"
+Info (12128): Elaborating entity "contador_sincrono_box" for hierarchy "contador_sincrono_box:inst7"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 19 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 20 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 10 logic cells
+    Info (21061): Implemented 11 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4763 megabytes
-    Info: Processing ended: Wed Sep 20 17:26:53 2023
-    Info: Elapsed time: 00:00:08
+    Info: Peak virtual memory: 4761 megabytes
+    Info: Processing ended: Fri Sep 22 20:31:30 2023
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:17
 
 

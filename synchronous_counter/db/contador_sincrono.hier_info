@@ -1,7 +1,7 @@
 |contador_sincrono
 h_a_o <= decod_bcd_box:inst.a
-clock => contador_sincrono_box:inst6.clock
-clear => contador_sincrono_box:inst6.clear
+clear => contador_sincrono_box:inst7.clear
+clock => contador_sincrono_box:inst7.clock
 h_b_o <= decod_bcd_box:inst.b
 h_c_o <= decod_bcd_box:inst.c
 h_d_o <= decod_bcd_box:inst.d
@@ -93,12 +93,10 @@ f_o <= inst24.DB_MAX_OUTPUT_PORT_TYPE
 g_o <= inst28.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|contador_sincrono|contador_sincrono_box:inst6
+|contador_sincrono|contador_sincrono_box:inst7
 Q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-clear => inst5.IN0
-clock => inst1.CLK
-clock => inst2.CLK
-clock => inst3.CLK
+clear => inst.IN0
+clock => inst7.IN0
 LSB <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 MSB <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 

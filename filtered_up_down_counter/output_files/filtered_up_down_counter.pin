@@ -114,7 +114,7 @@ RESERVED_INPUT               : AA17      :        :                   :         
 VCCIO4                       : AA18      : power  :                   : 2.5V    : 4         :                
 RESERVED_INPUT               : AA19      :        :                   :         : 4         :                
 GNDA4                        : AA20      : gnd    :                   :         :           :                
-d                            : AA21      : output : 2.5 V             :         : 4         : Y              
+RESERVED_INPUT               : AA21      :        :                   :         : 4         :                
 RESERVED_INPUT               : AA22      :        :                   :         : 5         :                
 RESERVED_INPUT               : AA23      :        :                   :         : 5         :                
 RESERVED_INPUT               : AA24      :        :                   :         : 5         :                
@@ -141,7 +141,7 @@ RESERVED_INPUT               : AB16      :        :                   :         
 RESERVED_INPUT               : AB17      :        :                   :         : 4         :                
 RESERVED_INPUT               : AB18      :        :                   :         : 4         :                
 RESERVED_INPUT               : AB19      :        :                   :         : 4         :                
-c                            : AB20      : output : 2.5 V             :         : 4         : Y              
+RESERVED_INPUT               : AB20      :        :                   :         : 4         :                
 RESERVED_INPUT               : AB21      :        :                   :         : 4         :                
 RESERVED_INPUT               : AB22      :        :                   :         : 4         :                
 RESERVED_INPUT               : AB23      :        :                   :         : 5         :                
@@ -149,7 +149,7 @@ RESERVED_INPUT               : AB24      :        :                   :         
 RESERVED_INPUT               : AB25      :        :                   :         : 5         :                
 RESERVED_INPUT               : AB26      :        :                   :         : 5         :                
 RESERVED_INPUT               : AB27      :        :                   :         : 5         :                
-RESERVED_INPUT               : AB28      :        :                   :         : 5         :                
+up/down                      : AB28      : input  : 2.5 V             :         : 5         : Y              
 RESERVED_INPUT               : AC1       :        :                   :         : 2         :                
 RESERVED_INPUT               : AC2       :        :                   :         : 2         :                
 RESERVED_INPUT               : AC3       :        :                   :         : 2         :                
@@ -201,7 +201,7 @@ VCCIO4                       : AD20      : power  :                   : 2.5V    
 RESERVED_INPUT               : AD21      :        :                   :         : 4         :                
 RESERVED_INPUT               : AD22      :        :                   :         : 4         :                
 VCCIO4                       : AD23      : power  :                   : 2.5V    : 4         :                
-e                            : AD24      : output : 2.5 V             :         : 4         : Y              
+RESERVED_INPUT               : AD24      :        :                   :         : 4         :                
 RESERVED_INPUT               : AD25      :        :                   :         : 4         :                
 RESERVED_INPUT               : AD26      :        :                   :         : 5         :                
 RESERVED_INPUT               : AD27      :        :                   :         : 5         :                
@@ -256,7 +256,7 @@ RESERVED_INPUT               : AF19      :        :                   :         
 RESERVED_INPUT               : AF20      :        :                   :         : 4         :                
 RESERVED_INPUT               : AF21      :        :                   :         : 4         :                
 RESERVED_INPUT               : AF22      :        :                   :         : 4         :                
-f                            : AF23      : output : 2.5 V             :         : 4         : Y              
+RESERVED_INPUT               : AF23      :        :                   :         : 4         :                
 RESERVED_INPUT               : AF24      :        :                   :         : 4         :                
 RESERVED_INPUT               : AF25      :        :                   :         : 4         :                
 RESERVED_INPUT               : AF26      :        :                   :         : 4         :                
@@ -286,7 +286,7 @@ RESERVED_INPUT               : AG21      :        :                   :         
 RESERVED_INPUT               : AG22      :        :                   :         : 4         :                
 RESERVED_INPUT               : AG23      :        :                   :         : 4         :                
 GND                          : AG24      : gnd    :                   :         :           :                
-clear                        : AG25      : input  : 2.5 V             :         : 4         : Y              
+RESERVED_INPUT               : AG25      :        :                   :         : 4         :                
 RESERVED_INPUT               : AG26      :        :                   :         : 4         :                
 GND                          : AG27      : gnd    :                   :         :           :                
 VCCIO5                       : AG28      : power  :                   : 2.5V    : 5         :                
@@ -619,7 +619,7 @@ GND                          : M20       : gnd    :                   :         
 RESERVED_INPUT               : M21       :        :                   :         : 6         :                
 MSEL2                        : M22       :        :                   :         : 6         :                
 RESERVED_INPUT               : M23       :        :                   :         : 6         :                
-RESERVED_INPUT               : M24       :        :                   :         : 6         :                
+a                            : M24       : output : 2.5 V             :         : 6         : Y              
 RESERVED_INPUT               : M25       :        :                   :         : 6         :                
 RESERVED_INPUT               : M26       :        :                   :         : 6         :                
 RESERVED_INPUT               : M27       :        :                   :         : 6         :                
@@ -703,7 +703,7 @@ VCCINT                       : R20       : power  :                   : 1.2V    
 RESERVED_INPUT               : R21       :        :                   :         : 5         :                
 RESERVED_INPUT               : R22       :        :                   :         : 5         :                
 RESERVED_INPUT               : R23       :        :                   :         : 5         :                
-RESERVED_INPUT               : R24       :        :                   :         : 5         :                
+clk_manual                   : R24       : input  : 2.5 V             :         : 5         : Y              
 RESERVED_INPUT               : R25       :        :                   :         : 5         :                
 RESERVED_INPUT               : R26       :        :                   :         : 5         :                
 RESERVED_INPUT               : R27       :        :                   :         : 5         :                
@@ -756,10 +756,10 @@ GND                          : U17       : gnd    :                   :         
 VCCINT                       : U18       : power  :                   : 1.2V    :           :                
 GND                          : U19       : gnd    :                   :         :           :                
 VCCINT                       : U20       : power  :                   : 1.2V    :           :                
-b                            : U21       : output : 2.5 V             :         : 5         : Y              
+RESERVED_INPUT               : U21       :        :                   :         : 5         :                
 RESERVED_INPUT               : U22       :        :                   :         : 5         :                
-RESERVED_INPUT               : U23       :        :                   :         : 5         :                
-RESERVED_INPUT               : U24       :        :                   :         : 5         :                
+f                            : U23       : output : 2.5 V             :         : 5         : Y              
+g                            : U24       : output : 2.5 V             :         : 5         : Y              
 RESERVED_INPUT               : U25       :        :                   :         : 5         :                
 RESERVED_INPUT               : U26       :        :                   :         : 5         :                
 RESERVED_INPUT               : U27       :        :                   :         : 5         :                
@@ -784,7 +784,7 @@ VCCINT                       : V17       : power  :                   : 1.2V    
 GND                          : V18       : gnd    :                   :         :           :                
 VCCINT                       : V19       : power  :                   : 1.2V    :           :                
 GND                          : V20       : gnd    :                   :         :           :                
-a                            : V21       : output : 2.5 V             :         : 5         : Y              
+RESERVED_INPUT               : V21       :        :                   :         : 5         :                
 RESERVED_INPUT               : V22       :        :                   :         : 5         :                
 RESERVED_INPUT               : V23       :        :                   :         : 5         :                
 RESERVED_INPUT               : V24       :        :                   :         : 5         :                
@@ -812,11 +812,11 @@ GND                          : W17       : gnd    :                   :         
 VCCINT                       : W18       : power  :                   : 1.2V    :           :                
 GND                          : W19       : gnd    :                   :         :           :                
 VCCINT                       : W20       : power  :                   : 1.2V    :           :                
-RESERVED_INPUT               : W21       :        :                   :         : 5         :                
-RESERVED_INPUT               : W22       :        :                   :         : 5         :                
+c                            : W21       : output : 2.5 V             :         : 5         : Y              
+d                            : W22       : output : 2.5 V             :         : 5         : Y              
 GND                          : W23       : gnd    :                   :         :           :                
 VCCIO5                       : W24       : power  :                   : 2.5V    : 5         :                
-RESERVED_INPUT               : W25       :        :                   :         : 5         :                
+e                            : W25       : output : 2.5 V             :         : 5         : Y              
 RESERVED_INPUT               : W26       :        :                   :         : 5         :                
 RESERVED_INPUT               : W27       :        :                   :         : 5         :                
 RESERVED_INPUT               : W28       :        :                   :         : 5         :                
@@ -835,14 +835,14 @@ RESERVED_INPUT               : Y12       :        :                   :         
 RESERVED_INPUT               : Y13       :        :                   :         : 3         :                
 RESERVED_INPUT               : Y14       :        :                   :         : 3         :                
 RESERVED_INPUT               : Y15       :        :                   :         : 3         :                
-up/down                      : Y16       : input  : 2.5 V             :         : 4         : Y              
-clk_manual                   : Y17       : input  : 2.5 V             :         : 4         : Y              
+RESERVED_INPUT               : Y16       :        :                   :         : 4         :                
+RESERVED_INPUT               : Y17       :        :                   :         : 4         :                
 GND                          : Y18       : gnd    :                   :         :           :                
-g                            : Y19       : output : 2.5 V             :         : 4         : Y              
+RESERVED_INPUT               : Y19       :        :                   :         : 4         :                
 VCCD_PLL4                    : Y20       : power  :                   : 1.2V    :           :                
 VCCA4                        : Y21       : power  :                   : 2.5V    :           :                
-RESERVED_INPUT               : Y22       :        :                   :         : 5         :                
-RESERVED_INPUT               : Y23       :        :                   :         : 5         :                
+b                            : Y22       : output : 2.5 V             :         : 5         : Y              
+clear                        : Y23       : input  : 2.5 V             :         : 5         : Y              
 RESERVED_INPUT               : Y24       :        :                   :         : 5         :                
 RESERVED_INPUT               : Y25       :        :                   :         : 5         :                
 RESERVED_INPUT               : Y26       :        :                   :         : 5         :                

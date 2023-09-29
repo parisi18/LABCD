@@ -1,8 +1,106 @@
-|digital_filter
-filter <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-clk_fpga => inst.CLK
-clk_fpga => inst1.CLK
-clk_fpga => inst2.CLK
-clk_manual => inst.DATAIN
+|up_and_down_counter
+a <= decod_bcd_box:inst2.a
+up/down => up_and_down_counter_box:inst5.up/down
+clock => up_and_down_counter_box:inst5.clock
+clear => up_and_down_counter_box:inst5.clear
+b <= decod_bcd_box:inst2.b
+c <= decod_bcd_box:inst2.c
+d <= decod_bcd_box:inst2.d
+e <= decod_bcd_box:inst2.e
+f <= decod_bcd_box:inst2.f
+g <= decod_bcd_box:inst2.g
+
+
+|up_and_down_counter|decod_bcd_box:inst2
+a <= output_barrado:inst1.a_barra
+Z => barra_maior_que_dez:inst10.Z
+Z => bcd_box:inst.z
+Y => barra_maior_que_dez:inst10.Y
+Y => bcd_box:inst.y
+X => barra_maior_que_dez:inst10.X
+X => bcd_box:inst.x
+W => bcd_box:inst.w
+b <= output_barrado:inst1.b_barra
+c <= output_barrado:inst1.c_barra
+d <= output_barrado:inst1.d_barra
+e <= output_barrado:inst1.e_barra
+f <= output_barrado:inst1.f_barra
+g <= output_barrado:inst1.g_barra
+
+
+|up_and_down_counter|decod_bcd_box:inst2|output_barrado:inst1
+a_barra <= inst.DB_MAX_OUTPUT_PORT_TYPE
+barra => inst.IN0
+barra => inst1.IN0
+barra => inst2.IN0
+barra => inst3.IN0
+barra => inst4.IN0
+barra => inst5.IN0
+barra => inst6.IN0
+a_i => inst.IN1
+b_barra <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+b_i => inst1.IN1
+c_barra <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c_i => inst2.IN1
+d_barra <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+d_i => inst3.IN1
+e_barra <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+e_i => inst4.IN1
+f_barra <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+f_i => inst5.IN1
+g_barra <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+g_i => inst6.IN1
+
+
+|up_and_down_counter|decod_bcd_box:inst2|barra_maior_que_dez:inst10
+barra <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Z => inst1.IN0
+Z => inst.IN0
+X => inst1.IN1
+Y => inst.IN1
+
+
+|up_and_down_counter|decod_bcd_box:inst2|bcd_box:inst
+a_o <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+z => inst6.IN0
+z => inst16.IN0
+z => inst24.IN0
+z => inst28.IN0
+y => inst11.IN0
+y => inst3.IN0
+y => inst10.IN2
+y => inst21.IN0
+y => inst26.IN0
+y => inst27.IN0
+y => inst31.IN0
+w => inst11.IN1
+w => inst5.IN0
+w => inst14.IN1
+w => inst10.IN1
+w => inst21.IN2
+x => inst6.IN3
+x => inst4.IN0
+x => inst14.IN0
+x => inst18.IN1
+x => inst17.IN0
+x => inst23.IN0
+x => inst30.IN1
+x => inst29.IN0
+b_o <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+c_o <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+d_o <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+e_o <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+f_o <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+g_o <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|up_and_down_counter|up_and_down_counter_box:inst5
+LSB <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+clear => inst7.IN0
+clock => inst3.CLK
+clock => inst.CLK
+MSB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+up/down => inst.DATAIN
+Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 
 

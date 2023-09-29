@@ -2,40 +2,76 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'clk_fpga'
-Slack : -0.074
-TNS   : -0.074
-
-Type  : Slow 1200mV 85C Model Hold 'clk_fpga'
-Slack : 0.435
+Type  : Slow 1200mV 85C Model Setup 'clock'
+Slack : 0.210
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_fpga'
+Type  : Slow 1200mV 85C Model Setup 'up_and_down_counter_box:inst5|inst'
+Slack : 0.210
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clock'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'up_and_down_counter_box:inst5|inst'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -6.855
+TNS   : -5.570
 
-Type  : Slow 1200mV 0C Model Setup 'clk_fpga'
-Slack : 0.022
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'up_and_down_counter_box:inst5|inst'
+Slack : -1.285
+TNS   : -2.570
+
+Type  : Slow 1200mV 0C Model Setup 'clock'
+Slack : 0.297
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'clk_fpga'
-Slack : 0.402
+Type  : Slow 1200mV 0C Model Setup 'up_and_down_counter_box:inst5|inst'
+Slack : 0.297
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_fpga'
+Type  : Slow 1200mV 0C Model Hold 'clock'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'up_and_down_counter_box:inst5|inst'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -6.855
+TNS   : -5.570
 
-Type  : Fast 1200mV 0C Model Setup 'clk_fpga'
-Slack : 0.497
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'up_and_down_counter_box:inst5|inst'
+Slack : -1.285
+TNS   : -2.570
+
+Type  : Fast 1200mV 0C Model Setup 'clock'
+Slack : 0.626
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'clk_fpga'
-Slack : 0.193
+Type  : Fast 1200mV 0C Model Setup 'up_and_down_counter_box:inst5|inst'
+Slack : 0.626
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_fpga'
+Type  : Fast 1200mV 0C Model Hold 'clock'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'up_and_down_counter_box:inst5|inst'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -6.186
+TNS   : -5.266
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'up_and_down_counter_box:inst5|inst'
+Slack : -1.000
+TNS   : -2.000
 
 ------------------------------------------------------------

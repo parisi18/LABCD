@@ -55,7 +55,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 224 240 392 256)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "up/down" (rect 5 0 46 12)(font "Arial" ))
+	(text "up/down" (rect 5 0 45 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -71,7 +71,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 224 376 392 392)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "clear" (rect 5 0 29 17)(font "Intel Clear" ))
+	(text "clear" (rect 5 0 28 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -196,6 +196,35 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
+	(rect 464 264 616 360)
+	(text "digital_filter" (rect 5 0 78 19)(font "Intel Clear" (font_size 8)))
+	(text "inst2" (rect 8 75 30 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk_manual" (rect 0 0 67 19)(font "Intel Clear" (font_size 8)))
+		(text "clk_manual" (rect 21 27 88 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "clk_fpga" (rect 0 0 50 19)(font "Intel Clear" (font_size 8)))
+		(text "clk_fpga" (rect 21 43 71 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 152 32)
+		(output)
+		(text "filter" (rect 0 0 28 19)(font "Intel Clear" (font_size 8)))
+		(text "filter" (rect 103 27 131 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 32)(pt 136 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 136 80))
+	)
+)
+(symbol
 	(rect 728 248 840 408)
 	(text "up_and_down_counter" (rect 5 0 139 19)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 139 24 156)(font "Intel Clear" ))
@@ -271,35 +300,6 @@ refer to the applicable agreement for further details.
 	)
 	(drawing
 		(rectangle (rect 16 16 96 144))
-	)
-)
-(symbol
-	(rect 464 264 616 360)
-	(text "digital_filter" (rect 5 0 78 19)(font "Intel Clear" (font_size 8)))
-	(text "inst2" (rect 8 75 30 92)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "clk_manual" (rect 0 0 67 19)(font "Intel Clear" (font_size 8)))
-		(text "clk_manual" (rect 21 27 88 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "clk_fpga" (rect 0 0 50 19)(font "Intel Clear" (font_size 8)))
-		(text "clk_fpga" (rect 21 43 71 62)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 152 32)
-		(output)
-		(text "filter" (rect 0 0 28 19)(font "Intel Clear" (font_size 8)))
-		(text "filter" (rect 103 27 131 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 152 32)(pt 136 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 136 80))
 	)
 )
 (connector

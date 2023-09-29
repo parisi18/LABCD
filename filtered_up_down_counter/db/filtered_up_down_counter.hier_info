@@ -14,9 +14,9 @@ g <= up_and_down_counter:inst.g
 
 |filtered_up_down_counter|up_and_down_counter:inst
 a <= decod_bcd_box:inst2.a
-up/down => up_and_down_counter_box:inst5.up/down
-clock => up_and_down_counter_box:inst5.clock
-clear => up_and_down_counter_box:inst5.clear
+up/down => up_and_down_counter_box:inst.up/down
+clock => up_and_down_counter_box:inst.clock
+clear => up_and_down_counter_box:inst.clear
 b <= decod_bcd_box:inst2.b
 c <= decod_bcd_box:inst2.c
 d <= decod_bcd_box:inst2.d
@@ -108,13 +108,13 @@ f_o <= inst24.DB_MAX_OUTPUT_PORT_TYPE
 g_o <= inst28.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|filtered_up_down_counter|up_and_down_counter:inst|up_and_down_counter_box:inst5
+|filtered_up_down_counter|up_and_down_counter:inst|up_and_down_counter_box:inst
 LSB <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 clear => inst7.IN0
 clock => inst3.CLK
-clock => inst.CLK
 MSB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-up/down => inst.DATAIN
+up/down => inst2.IN0
+up/down => inst1.IN0
 Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 
 

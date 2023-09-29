@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Fri Sep 22 16:09:57 2023
+Analysis & Synthesis Status : Successful - Fri Sep 22 19:48:29 2023
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : up_and_down_counter
-Top-level Entity Name : digital_filter
+Top-level Entity Name : up_and_down_counter
 Family : Cyclone IV E
-Total logic elements : 4
-    Total combinational functions : 1
-    Dedicated logic registers : 3
-Total registers : 3
-Total pins : 3
+Total logic elements : 13
+    Total combinational functions : 12
+    Dedicated logic registers : 4
+Total registers : 4
+Total pins : 10
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

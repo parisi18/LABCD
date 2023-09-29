@@ -282,9 +282,9 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 520 248 656 344)
+	(rect 512 248 648 344)
 	(text "up_and_down_counter_box" (rect 5 0 167 19)(font "Intel Clear" (font_size 8)))
-	(text "inst5" (rect 8 75 30 92)(font "Intel Clear" ))
+	(text "inst" (rect 8 75 24 92)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -340,22 +340,6 @@ refer to the applicable agreement for further details.
 	(pt 752 184)
 )
 (connector
-	(pt 688 280)
-	(pt 656 280)
-)
-(connector
-	(pt 408 280)
-	(pt 520 280)
-)
-(connector
-	(pt 408 296)
-	(pt 520 296)
-)
-(connector
-	(pt 408 312)
-	(pt 520 312)
-)
-(connector
 	(pt 768 272)
 	(pt 776 272)
 )
@@ -398,14 +382,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 896 304)
 	(pt 872 304)
-)
-(connector
-	(pt 664 312)
-	(pt 664 304)
-)
-(connector
-	(pt 656 312)
-	(pt 664 312)
 )
 (connector
 	(pt 664 304)
@@ -464,18 +440,42 @@ refer to the applicable agreement for further details.
 	(pt 776 320)
 )
 (connector
-	(pt 688 280)
-	(pt 688 320)
-)
-(connector
-	(pt 672 296)
-	(pt 672 288)
-)
-(connector
-	(pt 656 296)
-	(pt 672 296)
-)
-(connector
 	(pt 672 288)
 	(pt 776 288)
+)
+(connector
+	(pt 408 280)
+	(pt 512 280)
+)
+(connector
+	(pt 408 296)
+	(pt 512 296)
+)
+(connector
+	(pt 408 312)
+	(pt 512 312)
+)
+(connector
+	(pt 664 304)
+	(pt 664 312)
+)
+(connector
+	(pt 688 320)
+	(pt 688 280)
+)
+(connector
+	(pt 672 288)
+	(pt 672 296)
+)
+(connector
+	(pt 648 280)
+	(pt 688 280)
+)
+(connector
+	(pt 648 296)
+	(pt 672 296)
+)
+(connector
+	(pt 648 312)
+	(pt 664 312)
 )

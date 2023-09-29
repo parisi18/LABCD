@@ -21,7 +21,7 @@ refer to the applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 112 176 280 192)
+	(rect 64 192 232 208)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "clock" (rect 5 0 30 12)(font "Arial" ))
 	(pt 168 8)
@@ -37,7 +37,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 112 192 280 208)
+	(rect 64 176 232 192)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "clear" (rect 5 0 28 17)(font "Intel Clear" ))
 	(pt 168 8)
@@ -266,42 +266,42 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 280 152 392 248)
+	(rect 248 152 360 248)
 	(text "contador_sincrono_box" (rect 5 0 140 19)(font "Intel Clear" (font_size 8)))
-	(text "inst6" (rect 8 75 30 92)(font "Intel Clear" ))
+	(text "inst7" (rect 8 75 30 92)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "clock" (rect 0 0 29 19)(font "Intel Clear" (font_size 8)))
-		(text "clock" (rect 21 27 50 46)(font "Intel Clear" (font_size 8)))
+		(text "clear" (rect 0 0 28 19)(font "Intel Clear" (font_size 8)))
+		(text "clear" (rect 21 27 49 46)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 32)(pt 16 32))
 	)
 	(port
 		(pt 0 48)
 		(input)
-		(text "clear" (rect 0 0 28 19)(font "Intel Clear" (font_size 8)))
-		(text "clear" (rect 21 43 49 62)(font "Intel Clear" (font_size 8)))
+		(text "clock" (rect 0 0 29 19)(font "Intel Clear" (font_size 8)))
+		(text "clock" (rect 21 43 50 62)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 48)(pt 16 48))
 	)
 	(port
 		(pt 112 32)
 		(output)
-		(text "MSB" (rect 0 0 27 19)(font "Intel Clear" (font_size 8)))
-		(text "MSB" (rect 64 27 91 46)(font "Intel Clear" (font_size 8)))
+		(text "Q" (rect 0 0 9 19)(font "Intel Clear" (font_size 8)))
+		(text "Q" (rect 82 27 91 46)(font "Intel Clear" (font_size 8)))
 		(line (pt 112 32)(pt 96 32))
 	)
 	(port
 		(pt 112 48)
 		(output)
-		(text "Q" (rect 0 0 9 19)(font "Intel Clear" (font_size 8)))
-		(text "Q" (rect 82 43 91 62)(font "Intel Clear" (font_size 8)))
+		(text "LSB" (rect 0 0 23 19)(font "Intel Clear" (font_size 8)))
+		(text "LSB" (rect 68 43 91 62)(font "Intel Clear" (font_size 8)))
 		(line (pt 112 48)(pt 96 48))
 	)
 	(port
 		(pt 112 64)
 		(output)
-		(text "LSB" (rect 0 0 23 19)(font "Intel Clear" (font_size 8)))
-		(text "LSB" (rect 68 59 91 78)(font "Intel Clear" (font_size 8)))
+		(text "MSB" (rect 0 0 27 19)(font "Intel Clear" (font_size 8)))
+		(text "MSB" (rect 64 59 91 78)(font "Intel Clear" (font_size 8)))
 		(line (pt 112 64)(pt 96 64))
 	)
 	(drawing
@@ -353,14 +353,54 @@ refer to the applicable agreement for further details.
 	(pt 448 88)
 )
 (connector
-	(pt 392 184)
-	(pt 488 184)
-)
-(connector
-	(pt 392 200)
+	(pt 432 200)
 	(pt 488 200)
 )
 (connector
-	(pt 392 216)
+	(pt 400 216)
 	(pt 488 216)
+)
+(connector
+	(pt 392 232)
+	(pt 456 232)
+)
+(connector
+	(pt 456 184)
+	(pt 488 184)
+)
+(connector
+	(pt 456 184)
+	(pt 456 232)
+)
+(connector
+	(pt 432 200)
+	(pt 432 184)
+)
+(connector
+	(pt 400 216)
+	(pt 400 200)
+)
+(connector
+	(pt 392 232)
+	(pt 392 216)
+)
+(connector
+	(pt 360 184)
+	(pt 432 184)
+)
+(connector
+	(pt 360 200)
+	(pt 400 200)
+)
+(connector
+	(pt 360 216)
+	(pt 392 216)
+)
+(connector
+	(pt 232 200)
+	(pt 248 200)
+)
+(connector
+	(pt 232 184)
+	(pt 248 184)
 )

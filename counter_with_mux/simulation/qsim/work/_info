@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/counter_with_mux/simulation/qsim
+vautomatic_counter_with_mux
+Z1 !s110 1696022566
+!i10b 1
+!s100 ^59=i3jKTcjn6WDN`3dkX1
+IMQkN:5U2GMheXndQoklHi2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1696022565
+Z4 8counter_with_mux.vo
+Z5 Fcounter_with_mux.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1696022566.000000
+Z8 !s107 counter_with_mux.vo|
+Z9 !s90 -work|work|counter_with_mux.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vautomatic_counter_with_mux_vlg_vec_tst
+R1
+!i10b 1
+!s100 DMlZoA^GkIlmm]EV_ji<>3
+I[;4=4:o2UQX8aj^alL`MJ0
+R2
+R0
+w1696022564
+8Waveform4.vwf.vt
+FWaveform4.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform4.vwf.vt|
+!s90 -work|work|Waveform4.vwf.vt|
+!i113 1
+R10
+R11
+vhard_block
+R1
+!i10b 1
+!s100 bJQ@2FF:eWNCgNl;JaTc62
+IN5<T]78]XSO3hg76oeJ2K2
+R2
+R0
+R3
+R4
+R5
+L0 2492
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

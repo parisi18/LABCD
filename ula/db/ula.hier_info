@@ -1,0 +1,7 @@
+|somador_sem_carry
+soma <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst1.IN0
+B => inst.IN0
+A => inst.IN1
+
+

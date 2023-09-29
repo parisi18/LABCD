@@ -47,9 +47,6 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name BDF_FILE filtered_up_down_counter.bdf
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name ENABLE_OCT_DONE OFF
 set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "PASSIVE SERIAL"
 set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
@@ -60,14 +57,19 @@ set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
 set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
 set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
 set_location_assignment PIN_Y2 -to clk_fpga
-set_location_assignment PIN_Y17 -to clk_manual
-set_location_assignment PIN_Y16 -to up/down
-set_location_assignment PIN_V21 -to a
-set_location_assignment PIN_U21 -to b
-set_location_assignment PIN_AB20 -to c
-set_location_assignment PIN_AG25 -to clear
-set_location_assignment PIN_AA21 -to d
-set_location_assignment PIN_AD24 -to e
-set_location_assignment PIN_AF23 -to f
-set_location_assignment PIN_Y19 -to g
+set_location_assignment PIN_R24 -to clk_manual
+set_location_assignment PIN_AB28 -to up/down
+set_location_assignment PIN_M24 -to a
+set_location_assignment PIN_Y22 -to b
+set_location_assignment PIN_W21 -to c
+set_location_assignment PIN_Y23 -to clear
+set_location_assignment PIN_W22 -to d
+set_location_assignment PIN_W25 -to e
+set_location_assignment PIN_U23 -to f
+set_location_assignment PIN_U24 -to g
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
