@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE115F29C7
-set_global_assignment -name TOP_LEVEL_ENTITY somador_sem_carry
+set_global_assignment -name TOP_LEVEL_ENTITY ula
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:21:28  SEPTEMBER 29, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "17.1.0 Lite Edition"
@@ -46,12 +46,54 @@ set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
-set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
-set_global_assignment -name BDF_FILE somador_sem_carry.bdf
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name BDF_FILE full_bit_adder.bdf
+set_global_assignment -name BDF_FILE full_adder.bdf
+set_global_assignment -name BDF_FILE bit_bit_adder.bdf
+set_global_assignment -name BDF_FILE bcd_with_adder.bdf
+set_global_assignment -name BDF_FILE full_and.bdf
+set_global_assignment -name BDF_FILE ula.bdf
+set_global_assignment -name BDF_FILE full_or.bdf
+set_global_assignment -name BDF_FILE ula_mux.bdf
+set_global_assignment -name BDF_FILE sum_sub_select.bdf
+set_global_assignment -name BDF_FILE select_or_and.bdf
+set_global_assignment -name BDF_FILE 4bit_not.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name BDF_FILE carry_de_saida.bdf
+set_location_assignment PIN_AF22 -to a2
+set_location_assignment PIN_AF21 -to a_LSB
+set_location_assignment PIN_AD22 -to a3
+set_location_assignment PIN_AG25 -to a_MSB
+set_location_assignment PIN_AE21 -to b_LSB
+set_location_assignment PIN_AF25 -to b2
+set_location_assignment PIN_AC22 -to b3
+set_location_assignment PIN_AE22 -to b_MSB
+set_location_assignment PIN_AF24 -to c_in
+set_location_assignment PIN_AD19 -to bb
+set_location_assignment PIN_Y16 -to SEL0
+set_location_assignment PIN_AD21 -to SEL1
+set_location_assignment PIN_G18 -to a_o
+set_location_assignment PIN_F22 -to b_o
+set_location_assignment PIN_E17 -to c_o
+set_location_assignment PIN_L26 -to d_o
+set_location_assignment PIN_L25 -to e_o
+set_location_assignment PIN_J22 -to f_o
+set_location_assignment PIN_H22 -to g_o
+set_location_assignment PIN_E21 -to cout
+set_location_assignment PIN_F21 -to Msb
+set_location_assignment PIN_E19 -to Lsb2
+set_location_assignment PIN_F19 -to Lsb1
+set_location_assignment PIN_G19 -to Lsb0
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "PASSIVE SERIAL"
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_WEAK_PULLUP "AS INPUT TRI-STATED"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf

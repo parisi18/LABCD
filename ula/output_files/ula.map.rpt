@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ula
-Fri Sep 29 13:23:37 2023
+Thu Oct 26 19:47:52 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -42,16 +42,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Sep 29 13:23:37 2023       ;
+; Analysis & Synthesis Status        ; Successful - Thu Oct 26 19:47:52 2023       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; ula                                         ;
-; Top-level Entity Name              ; somador_sem_carry                           ;
+; Top-level Entity Name              ; ula                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1                                           ;
-;     Total combinational functions  ; 1                                           ;
+; Total logic elements               ; 20                                          ;
+;     Total combinational functions  ; 20                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 4                                           ;
+; Total pins                         ; 24                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -65,7 +65,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                                      ; somador_sem_carry  ; ula                ;
+; Top-level entity name                                                      ; ula                ; ula                ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -161,54 +161,68 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                              ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                    ; Library ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
-; somador_sem_carry.bdf            ; yes             ; User Block Diagram/Schematic File  ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/ula/somador_sem_carry.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                ; Library ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------+---------+
+; full_adder.bdf                   ; yes             ; User Block Diagram/Schematic File        ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/ula/full_adder.bdf    ;         ;
+; bit_bit_adder.bdf                ; yes             ; User Block Diagram/Schematic File        ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/ula/bit_bit_adder.bdf ;         ;
+; full_and.bdf                     ; yes             ; User Block Diagram/Schematic File        ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/ula/full_and.bdf      ;         ;
+; ula.bdf                          ; yes             ; User Block Diagram/Schematic File        ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/ula/ula.bdf           ;         ;
+; full_or.bdf                      ; yes             ; User Block Diagram/Schematic File        ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/ula/full_or.bdf       ;         ;
+; ula_mux.bdf                      ; yes             ; User Block Diagram/Schematic File        ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/ula/ula_mux.bdf       ;         ;
+; 4bit_not.bdf                     ; yes             ; User Block Diagram/Schematic File        ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/ula/4bit_not.bdf      ;         ;
+; bcd_box.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/ula/bcd_box.bdf       ;         ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary           ;
-+---------------------------------------------+---------+
-; Resource                                    ; Usage   ;
-+---------------------------------------------+---------+
-; Estimated Total logic elements              ; 1       ;
-;                                             ;         ;
-; Total combinational functions               ; 1       ;
-; Logic element usage by number of LUT inputs ;         ;
-;     -- 4 input functions                    ; 0       ;
-;     -- 3 input functions                    ; 1       ;
-;     -- <=2 input functions                  ; 0       ;
-;                                             ;         ;
-; Logic elements by mode                      ;         ;
-;     -- normal mode                          ; 1       ;
-;     -- arithmetic mode                      ; 0       ;
-;                                             ;         ;
-; Total registers                             ; 0       ;
-;     -- Dedicated logic registers            ; 0       ;
-;     -- I/O registers                        ; 0       ;
-;                                             ;         ;
-; I/O pins                                    ; 4       ;
-;                                             ;         ;
-; Embedded Multiplier 9-bit elements          ; 0       ;
-;                                             ;         ;
-; Maximum fan-out node                        ; inst1~0 ;
-; Maximum fan-out                             ; 1       ;
-; Total fan-out                               ; 8       ;
-; Average fan-out                             ; 0.89    ;
-+---------------------------------------------+---------+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+; Estimated Total logic elements              ; 20       ;
+;                                             ;          ;
+; Total combinational functions               ; 20       ;
+; Logic element usage by number of LUT inputs ;          ;
+;     -- 4 input functions                    ; 16       ;
+;     -- 3 input functions                    ; 3        ;
+;     -- <=2 input functions                  ; 1        ;
+;                                             ;          ;
+; Logic elements by mode                      ;          ;
+;     -- normal mode                          ; 20       ;
+;     -- arithmetic mode                      ; 0        ;
+;                                             ;          ;
+; Total registers                             ; 0        ;
+;     -- Dedicated logic registers            ; 0        ;
+;     -- I/O registers                        ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 24       ;
+;                                             ;          ;
+; Embedded Multiplier 9-bit elements          ; 0        ;
+;                                             ;          ;
+; Maximum fan-out node                        ; bb~input ;
+; Maximum fan-out                             ; 8        ;
+; Total fan-out                               ; 109      ;
+; Average fan-out                             ; 1.60     ;
++---------------------------------------------+----------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                            ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name       ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------------+--------------+
-; |somador_sem_carry         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 4    ; 0            ; |somador_sem_carry  ; somador_sem_carry ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                               ;
++-----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+---------------+--------------+
+; Compilation Hierarchy Node  ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                       ; Entity Name   ; Library Name ;
++-----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+---------------+--------------+
+; |ula                        ; 20 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 24   ; 0            ; |ula                                      ; ula           ; work         ;
+;    |bcd_box:inst|           ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|bcd_box:inst                         ; bcd_box       ; work         ;
+;    |full_adder:inst5|       ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|full_adder:inst5                     ; full_adder    ; work         ;
+;       |bit_bit_adder:inst6| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|full_adder:inst5|bit_bit_adder:inst6 ; bit_bit_adder ; work         ;
+;       |bit_bit_adder:inst7| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|full_adder:inst5|bit_bit_adder:inst7 ; bit_bit_adder ; work         ;
+;       |bit_bit_adder:inst8| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|full_adder:inst5|bit_bit_adder:inst8 ; bit_bit_adder ; work         ;
+;       |bit_bit_adder:inst|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|full_adder:inst5|bit_bit_adder:inst  ; bit_bit_adder ; work         ;
+;    |full_or:inst12|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|full_or:inst12                       ; full_or       ; work         ;
++-----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -232,13 +246,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 4                           ;
-; cycloneiii_lcell_comb ; 1                           ;
-;     normal            ; 1                           ;
-;         3 data inputs ; 1                           ;
+; boundary_port         ; 24                          ;
+; cycloneiii_lcell_comb ; 23                          ;
+;     normal            ; 23                          ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 3                           ;
+;         4 data inputs ; 16                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 1.00                        ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 4.06                        ;
 +-----------------------+-----------------------------+
 
 
@@ -257,24 +275,57 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Sep 29 13:23:27 2023
+    Info: Processing started: Thu Oct 26 19:47:42 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ula -c ula
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file somador_sem_carry.bdf
-    Info (12023): Found entity 1: somador_sem_carry
-Info (12127): Elaborating entity "somador_sem_carry" for the top level hierarchy
+Info (12021): Found 1 design units, including 1 entities, in source file full_bit_adder.bdf
+    Info (12023): Found entity 1: full_bit_adder
+Info (12021): Found 1 design units, including 1 entities, in source file full_adder.bdf
+    Info (12023): Found entity 1: full_adder
+Info (12021): Found 1 design units, including 1 entities, in source file bit_bit_adder.bdf
+    Info (12023): Found entity 1: bit_bit_adder
+Info (12021): Found 1 design units, including 1 entities, in source file bcd_with_adder.bdf
+    Info (12023): Found entity 1: bcd_with_adder
+Info (12021): Found 1 design units, including 1 entities, in source file full_and.bdf
+    Info (12023): Found entity 1: full_and
+Info (12021): Found 1 design units, including 1 entities, in source file ula.bdf
+    Info (12023): Found entity 1: ula
+Info (12021): Found 1 design units, including 1 entities, in source file full_or.bdf
+    Info (12023): Found entity 1: full_or
+Info (12021): Found 1 design units, including 1 entities, in source file ula_mux.bdf
+    Info (12023): Found entity 1: ula_mux
+Info (12021): Found 1 design units, including 1 entities, in source file sum_sub_select.bdf
+    Info (12023): Found entity 1: sum_sub_select
+Info (12021): Found 1 design units, including 1 entities, in source file select_or_and.bdf
+    Info (12023): Found entity 1: select_or_and
+Info (12021): Found 1 design units, including 1 entities, in source file 4bit_not.bdf
+    Info (12023): Found entity 1: 4bit_not
+Info (12127): Elaborating entity "ula" for the top level hierarchy
+Warning (12125): Using design file bcd_box.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: bcd_box
+Info (12128): Elaborating entity "bcd_box" for hierarchy "bcd_box:inst"
+Warning (275008): Primitive "NOT" of instance "inst" not used
+Info (12128): Elaborating entity "full_or" for hierarchy "full_or:inst12"
+Info (12128): Elaborating entity "full_adder" for hierarchy "full_adder:inst5"
+Info (12128): Elaborating entity "bit_bit_adder" for hierarchy "full_adder:inst5|bit_bit_adder:inst8"
+Info (12128): Elaborating entity "4bit_not" for hierarchy "4bit_not:inst2"
+Info (12128): Elaborating entity "full_and" for hierarchy "full_and:inst4"
+Info (12128): Elaborating entity "ula_mux" for hierarchy "ula_mux:inst1"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "c_o" is stuck at VCC
+    Warning (13410): Pin "Lsb1" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 5 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 1 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4757 megabytes
-    Info: Processing ended: Fri Sep 29 13:23:37 2023
+Info (21057): Implemented 44 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
+    Info (21059): Implemented 12 output pins
+    Info (21061): Implemented 20 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4749 megabytes
+    Info: Processing ended: Thu Oct 26 19:47:52 2023
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:21
+    Info: Total CPU time (on all processors): 00:00:22
 
 

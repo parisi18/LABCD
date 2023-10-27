@@ -1,0 +1,148 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 152 208)
+	(text "sum_sub_select" (rect 5 0 99 19)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 171 24 188)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "sum_sub" (rect 0 0 53 19)(font "Intel Clear" (font_size 8)))
+		(text "sum_sub" (rect 21 27 74 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "a1" (rect 0 0 15 19)(font "Intel Clear" (font_size 8)))
+		(text "a1" (rect 21 43 36 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "b1" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "b1" (rect 21 59 37 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "a2" (rect 0 0 15 19)(font "Intel Clear" (font_size 8)))
+		(text "a2" (rect 21 75 36 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "b2" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "b2" (rect 21 91 37 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "c1" (rect 0 0 14 19)(font "Intel Clear" (font_size 8)))
+		(text "c1" (rect 21 107 35 126)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "c2" (rect 0 0 14 19)(font "Intel Clear" (font_size 8)))
+		(text "c2" (rect 21 123 35 142)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "d1" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "d1" (rect 21 139 37 158)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "d2" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "d2" (rect 21 155 37 174)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "a1_o" (rect 0 0 29 19)(font "Intel Clear" (font_size 8)))
+		(text "a1_o" (rect 86 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(port
+		(pt 136 48)
+		(output)
+		(text "b1_o" (rect 0 0 30 19)(font "Intel Clear" (font_size 8)))
+		(text "b1_o" (rect 85 43 115 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 48)(pt 120 48))
+	)
+	(port
+		(pt 136 64)
+		(output)
+		(text "a2_o" (rect 0 0 29 19)(font "Intel Clear" (font_size 8)))
+		(text "a2_o" (rect 86 59 115 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 64)(pt 120 64))
+	)
+	(port
+		(pt 136 80)
+		(output)
+		(text "b2_o" (rect 0 0 30 19)(font "Intel Clear" (font_size 8)))
+		(text "b2_o" (rect 85 75 115 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 80)(pt 120 80))
+	)
+	(port
+		(pt 136 96)
+		(output)
+		(text "a3_o" (rect 0 0 29 19)(font "Intel Clear" (font_size 8)))
+		(text "a3_o" (rect 86 91 115 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 96)(pt 120 96))
+	)
+	(port
+		(pt 136 112)
+		(output)
+		(text "b3_o" (rect 0 0 30 19)(font "Intel Clear" (font_size 8)))
+		(text "b3_o" (rect 85 107 115 126)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 112)(pt 120 112))
+	)
+	(port
+		(pt 136 128)
+		(output)
+		(text "a4_o" (rect 0 0 29 19)(font "Intel Clear" (font_size 8)))
+		(text "a4_o" (rect 86 123 115 142)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 128)(pt 120 128))
+	)
+	(port
+		(pt 136 144)
+		(output)
+		(text "b4_o" (rect 0 0 30 19)(font "Intel Clear" (font_size 8)))
+		(text "b4_o" (rect 85 139 115 158)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 144)(pt 120 144))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 176))
+	)
+)
