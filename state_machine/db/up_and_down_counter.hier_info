@@ -1,0 +1,291 @@
+|up_and_down_counter
+a <= decod_bcd_box:inst2.a
+up/down => up_and_down_counter_box:inst4.up_down
+up/down => up_down.DATAIN
+clock => up_and_down_counter_box:inst4.clock
+clock => clk.DATAIN
+b <= decod_bcd_box:inst2.b
+c <= decod_bcd_box:inst2.c
+d <= decod_bcd_box:inst2.d
+e <= decod_bcd_box:inst2.e
+f <= decod_bcd_box:inst2.f
+g <= decod_bcd_box:inst2.g
+q_msb <= up_and_down_counter_box:inst4.q_msb
+q2 <= up_and_down_counter_box:inst4.q2
+q1 <= up_and_down_counter_box:inst4.q1
+q_lsb <= up_and_down_counter_box:inst4.q_lsb
+clk <= clock.DB_MAX_OUTPUT_PORT_TYPE
+up_down <= up/down.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|up_and_down_counter|decod_bcd_box:inst2
+a <= output_barrado:inst1.a_barra
+Z => barra_maior_que_dez:inst10.Z
+Z => bcd_box:inst.z
+Y => barra_maior_que_dez:inst10.Y
+Y => bcd_box:inst.y
+X => barra_maior_que_dez:inst10.X
+X => bcd_box:inst.x
+W => bcd_box:inst.w
+b <= output_barrado:inst1.b_barra
+c <= output_barrado:inst1.c_barra
+d <= output_barrado:inst1.d_barra
+e <= output_barrado:inst1.e_barra
+f <= output_barrado:inst1.f_barra
+g <= output_barrado:inst1.g_barra
+
+
+|up_and_down_counter|decod_bcd_box:inst2|output_barrado:inst1
+a_barra <= inst.DB_MAX_OUTPUT_PORT_TYPE
+barra => inst.IN0
+barra => inst1.IN0
+barra => inst2.IN0
+barra => inst3.IN0
+barra => inst4.IN0
+barra => inst5.IN0
+barra => inst6.IN0
+a_i => inst.IN1
+b_barra <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+b_i => inst1.IN1
+c_barra <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c_i => inst2.IN1
+d_barra <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+d_i => inst3.IN1
+e_barra <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+e_i => inst4.IN1
+f_barra <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+f_i => inst5.IN1
+g_barra <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+g_i => inst6.IN1
+
+
+|up_and_down_counter|decod_bcd_box:inst2|barra_maior_que_dez:inst10
+barra <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Z => inst1.IN0
+Z => inst.IN0
+X => inst1.IN1
+Y => inst.IN1
+
+
+|up_and_down_counter|decod_bcd_box:inst2|bcd_box:inst
+a_o <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+z => inst6.IN0
+z => inst16.IN0
+z => inst24.IN0
+z => inst28.IN0
+y => inst11.IN0
+y => inst3.IN0
+y => inst10.IN2
+y => inst21.IN0
+y => inst26.IN0
+y => inst27.IN0
+y => inst31.IN0
+w => inst11.IN1
+w => inst5.IN0
+w => inst14.IN1
+w => inst10.IN1
+w => inst21.IN2
+x => inst6.IN3
+x => inst4.IN0
+x => inst14.IN0
+x => inst18.IN1
+x => inst17.IN0
+x => inst23.IN0
+x => inst30.IN1
+x => inst29.IN0
+b_o <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+c_o <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+d_o <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+e_o <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+f_o <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+g_o <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|up_and_down_counter|comb_output:inst
+a_bcd <= a_out:inst.a_o
+A => a_out:inst.A
+A => b_out:inst2.A
+A => c_out:inst9.A
+A => d_out:inst10.A
+B => a_out:inst.B
+B => b_out:inst2.B
+B => c_out:inst9.B
+B => d_out:inst10.B
+C => a_out:inst.C
+C => b_out:inst2.C
+C => c_out:inst9.C
+C => d_out:inst10.C
+D => a_out:inst.D
+D => b_out:inst2.D
+D => c_out:inst9.D
+D => d_out:inst10.D
+b_bcd <= b_out:inst2.b_o
+c_bcd <= c_out:inst9.c_o
+d_bcd <= d_out:inst10.d_o
+
+
+|up_and_down_counter|comb_output:inst|a_out:inst
+a_o <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst4.IN0
+C => inst2.IN2
+C => inst6.IN0
+D => inst2.IN3
+D => inst3.IN3
+D => inst8.IN0
+
+
+|up_and_down_counter|comb_output:inst|b_out:inst2
+b_o <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst.IN0
+B => inst4.IN0
+B => inst2.IN1
+C => inst6.IN0
+D => inst3.IN3
+D => inst2.IN2
+
+
+|up_and_down_counter|comb_output:inst|c_out:inst9
+c_o <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+B => inst3.IN1
+B => inst4.IN0
+D => inst8.IN0
+D => inst2.IN2
+C => inst6.IN0
+
+
+|up_and_down_counter|comb_output:inst|d_out:inst10
+d_o <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst12.IN0
+A => inst.IN0
+B => inst4.IN0
+B => inst11.IN1
+C => inst6.IN0
+C => inst11.IN2
+D => inst13.IN2
+
+
+|up_and_down_counter|up_and_down_counter_box:inst4
+q_lsb <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+up_down => PREdown:inst1.UD
+up_down => CLRdown:inst2.UD
+up_down => PREup:inst14.UD
+up_down => CLRup:inst7.UD
+up_down => PREdown:inst20.UD
+up_down => CLRdown:inst21.UD
+up_down => PREup:inst15.UD
+up_down => CLRup:inst10.UD
+up_down => PREdown:inst22.UD
+up_down => CLRdown:inst23.UD
+up_down => PREup:inst17.UD
+up_down => CLRup:inst16.UD
+up_down => PREdown:inst24.UD
+up_down => CLRdown:inst25.UD
+up_down => PREup:inst19.UD
+up_down => CLRup:inst18.UD
+clock => inst99.CLK
+clock => inst3.CLK
+q1 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+q2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+q_msb <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|up_and_down_counter|up_and_down_counter_box:inst4|PREup:inst14
+PREup <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+UD => inst9.IN0
+Qd => inst.IN0
+
+
+|up_and_down_counter|up_and_down_counter_box:inst4|PREdown:inst1
+PREdown <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+UD => inst1.IN0
+Qu => inst.IN0
+
+
+|up_and_down_counter|up_and_down_counter_box:inst4|CLRdown:inst2
+CLRdown <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+UD => inst.IN0
+Qu => inst9.IN1
+
+
+|up_and_down_counter|up_and_down_counter_box:inst4|CLRup:inst7
+CLRup <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+UD => inst9.IN0
+Qd => inst9.IN1
+
+
+|up_and_down_counter|up_and_down_counter_box:inst4|PREup:inst15
+PREup <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+UD => inst9.IN0
+Qd => inst.IN0
+
+
+|up_and_down_counter|up_and_down_counter_box:inst4|PREdown:inst20
+PREdown <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+UD => inst1.IN0
+Qu => inst.IN0
+
+
+|up_and_down_counter|up_and_down_counter_box:inst4|CLRdown:inst21
+CLRdown <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+UD => inst.IN0
+Qu => inst9.IN1
+
+
+|up_and_down_counter|up_and_down_counter_box:inst4|CLRup:inst10
+CLRup <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+UD => inst9.IN0
+Qd => inst9.IN1
+
+
+|up_and_down_counter|up_and_down_counter_box:inst4|PREup:inst17
+PREup <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+UD => inst9.IN0
+Qd => inst.IN0
+
+
+|up_and_down_counter|up_and_down_counter_box:inst4|PREdown:inst22
+PREdown <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+UD => inst1.IN0
+Qu => inst.IN0
+
+
+|up_and_down_counter|up_and_down_counter_box:inst4|CLRdown:inst23
+CLRdown <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+UD => inst.IN0
+Qu => inst9.IN1
+
+
+|up_and_down_counter|up_and_down_counter_box:inst4|CLRup:inst16
+CLRup <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+UD => inst9.IN0
+Qd => inst9.IN1
+
+
+|up_and_down_counter|up_and_down_counter_box:inst4|PREup:inst19
+PREup <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+UD => inst9.IN0
+Qd => inst.IN0
+
+
+|up_and_down_counter|up_and_down_counter_box:inst4|PREdown:inst24
+PREdown <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+UD => inst1.IN0
+Qu => inst.IN0
+
+
+|up_and_down_counter|up_and_down_counter_box:inst4|CLRdown:inst25
+CLRdown <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+UD => inst.IN0
+Qu => inst9.IN1
+
+
+|up_and_down_counter|up_and_down_counter_box:inst4|CLRup:inst18
+CLRup <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+UD => inst9.IN0
+Qd => inst9.IN1
+
+
