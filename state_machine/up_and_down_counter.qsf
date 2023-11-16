@@ -57,8 +57,7 @@ set_location_assignment PIN_L26 -to d
 set_location_assignment PIN_L25 -to e
 set_location_assignment PIN_J22 -to f
 set_location_assignment PIN_H22 -to g
-set_location_assignment PIN_AC15 -to clock
-set_location_assignment PIN_AG25 -to up/down
+set_location_assignment PIN_Y2 -to clock
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name BDF_FILE digital_filter.bdf
 set_global_assignment -name ENABLE_OCT_DONE OFF
@@ -86,6 +85,24 @@ set_global_assignment -name BDF_FILE PREup.bdf
 set_global_assignment -name BDF_FILE PREdown.bdf
 set_global_assignment -name BDF_FILE CLRup.bdf
 set_global_assignment -name BDF_FILE CLRdown.bdf
+set_global_assignment -name BDF_FILE load_box.bdf
+set_global_assignment -name BDF_FILE load_bits.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform3.vwf
+set_global_assignment -name BDF_FILE enable.bdf
+set_global_assignment -name BDF_FILE or_output.bdf
+set_global_assignment -name BDF_FILE load_fft.bdf
+set_global_assignment -name BDF_FILE mux.bdf
+set_global_assignment -name BDF_FILE preup_mux.bdf
+set_global_assignment -name BDF_FILE preup2.bdf
+set_global_assignment -name BDF_FILE msb_mux.bdf
+set_global_assignment -name BDF_FILE lsb_mux.bdf
+set_global_assignment -name BDF_FILE mux_op.bdf
+set_global_assignment -name BDF_FILE freq_div.bdf
+set_global_assignment -name BDF_FILE clrup_mux.bdf
+set_location_assignment PIN_Y23 -to SW17
+set_location_assignment PIN_Y24 -to SW16
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

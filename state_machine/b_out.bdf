@@ -376,19 +376,9 @@ refer to the applicable agreement for further details.
 	(pt 754 328)
 )
 (connector
-	(text "D" (rect 751 344 758 361)(font "Intel Clear" (font_size 6)))
-	(pt 784 360)
-	(pt 754 360)
-)
-(connector
 	(text "A" (rect 745 296 750 313)(font "Intel Clear" (font_size 6)))
 	(pt 784 312)
 	(pt 754 312)
-)
-(connector
-	(text "nC" (rect 745 328 756 345)(font "Intel Clear" (font_size 6)))
-	(pt 784 344)
-	(pt 754 344)
 )
 (connector
 	(pt 984 232)
@@ -468,6 +458,16 @@ refer to the applicable agreement for further details.
 	(text "D" (rect 760 112 767 129)(font "Intel Clear" (font_size 6)))
 	(pt 792 128)
 	(pt 752 128)
+)
+(connector
+	(text "C" (rect 745 328 750 345)(font "Intel Clear" (font_size 6)))
+	(pt 784 344)
+	(pt 754 344)
+)
+(connector
+	(text "nD" (rect 751 344 763 361)(font "Intel Clear" (font_size 6)))
+	(pt 784 360)
+	(pt 754 360)
 )
 (junction (pt 480 120))
 (junction (pt 480 216))

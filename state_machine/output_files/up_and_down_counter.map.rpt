@@ -1,5 +1,5 @@
 Analysis & Synthesis report for up_and_down_counter
-Wed Nov 01 22:14:27 2023
+Fri Nov 03 20:43:05 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -42,15 +42,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 01 22:14:27 2023       ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 03 20:43:05 2023       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; up_and_down_counter                         ;
 ; Top-level Entity Name              ; up_and_down_counter                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 30                                          ;
-;     Total combinational functions  ; 30                                          ;
-;     Dedicated logic registers      ; 8                                           ;
-; Total registers                    ; 8                                           ;
+; Total logic elements               ; 80                                          ;
+;     Total combinational functions  ; 80                                          ;
+;     Dedicated logic registers      ; 35                                          ;
+; Total registers                    ; 35                                          ;
 ; Total pins                         ; 15                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -158,8 +158,8 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processors 3-4         ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -179,57 +179,98 @@ refer to the applicable agreement for further details.
 ; PREdown.bdf                      ; yes             ; User Block Diagram/Schematic File        ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/state_machine/PREdown.bdf                 ;         ;
 ; CLRup.bdf                        ; yes             ; User Block Diagram/Schematic File        ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/state_machine/CLRup.bdf                   ;         ;
 ; CLRdown.bdf                      ; yes             ; User Block Diagram/Schematic File        ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/state_machine/CLRdown.bdf                 ;         ;
+; load_box.bdf                     ; yes             ; User Block Diagram/Schematic File        ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/state_machine/load_box.bdf                ;         ;
+; load_fft.bdf                     ; yes             ; User Block Diagram/Schematic File        ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/state_machine/load_fft.bdf                ;         ;
+; preup_mux.bdf                    ; yes             ; User Block Diagram/Schematic File        ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/state_machine/preup_mux.bdf               ;         ;
+; msb_mux.bdf                      ; yes             ; User Block Diagram/Schematic File        ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/state_machine/msb_mux.bdf                 ;         ;
+; mux_op.bdf                       ; yes             ; User Block Diagram/Schematic File        ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/state_machine/mux_op.bdf                  ;         ;
+; freq_div.bdf                     ; yes             ; User Block Diagram/Schematic File        ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/state_machine/freq_div.bdf                ;         ;
 ; decod_bcd_box.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/state_machine/decod_bcd_box.bdf           ;         ;
 ; output_barrado.bdf               ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/state_machine/output_barrado.bdf          ;         ;
 ; barra_maior_que_dez.bdf          ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/state_machine/barra_maior_que_dez.bdf     ;         ;
 ; bcd_box.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/state_machine/bcd_box.bdf                 ;         ;
+; ff_box.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/state_machine/ff_box.bdf                  ;         ;
 +----------------------------------+-----------------+------------------------------------------+-------------------------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                 ;
-+---------------------------------------------+---------------+
-; Resource                                    ; Usage         ;
-+---------------------------------------------+---------------+
-; Estimated Total logic elements              ; 30            ;
-;                                             ;               ;
-; Total combinational functions               ; 30            ;
-; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 13            ;
-;     -- 3 input functions                    ; 9             ;
-;     -- <=2 input functions                  ; 8             ;
-;                                             ;               ;
-; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 30            ;
-;     -- arithmetic mode                      ; 0             ;
-;                                             ;               ;
-; Total registers                             ; 8             ;
-;     -- Dedicated logic registers            ; 8             ;
-;     -- I/O registers                        ; 0             ;
-;                                             ;               ;
-; I/O pins                                    ; 15            ;
-;                                             ;               ;
-; Embedded Multiplier 9-bit elements          ; 0             ;
-;                                             ;               ;
-; Maximum fan-out node                        ; up/down~input ;
-; Maximum fan-out                             ; 25            ;
-; Total fan-out                               ; 147           ;
-; Average fan-out                             ; 2.16          ;
-+---------------------------------------------+---------------+
++---------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                         ;
++---------------------------------------------+-----------------------+
+; Resource                                    ; Usage                 ;
++---------------------------------------------+-----------------------+
+; Estimated Total logic elements              ; 80                    ;
+;                                             ;                       ;
+; Total combinational functions               ; 80                    ;
+; Logic element usage by number of LUT inputs ;                       ;
+;     -- 4 input functions                    ; 28                    ;
+;     -- 3 input functions                    ; 9                     ;
+;     -- <=2 input functions                  ; 43                    ;
+;                                             ;                       ;
+; Logic elements by mode                      ;                       ;
+;     -- normal mode                          ; 80                    ;
+;     -- arithmetic mode                      ; 0                     ;
+;                                             ;                       ;
+; Total registers                             ; 35                    ;
+;     -- Dedicated logic registers            ; 35                    ;
+;     -- I/O registers                        ; 0                     ;
+;                                             ;                       ;
+; I/O pins                                    ; 15                    ;
+;                                             ;                       ;
+; Embedded Multiplier 9-bit elements          ; 0                     ;
+;                                             ;                       ;
+; Maximum fan-out node                        ; freq_div:inst6|inst59 ;
+; Maximum fan-out                             ; 25                    ;
+; Total fan-out                               ; 330                   ;
+; Average fan-out                             ; 2.28                  ;
++---------------------------------------------+-----------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                    ;
-+------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------+-------------------------+--------------+
-; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                           ; Entity Name             ; Library Name ;
-+------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------+-------------------------+--------------+
-; |up_and_down_counter               ; 30 (0)              ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 15   ; 0            ; |up_and_down_counter                                          ; up_and_down_counter     ; work         ;
-;    |comb_output:inst|              ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|comb_output:inst                         ; comb_output             ; work         ;
-;       |b_out:inst2|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|comb_output:inst|b_out:inst2             ; b_out                   ; work         ;
-;    |decod_bcd_box:inst2|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|decod_bcd_box:inst2                      ; decod_bcd_box           ; work         ;
-;       |output_barrado:inst1|       ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|decod_bcd_box:inst2|output_barrado:inst1 ; output_barrado          ; work         ;
-;    |up_and_down_counter_box:inst4| ; 24 (24)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|up_and_down_counter_box:inst4            ; up_and_down_counter_box ; work         ;
-+------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------+-------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                          ;
++------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+-------------------------+--------------+
+; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                 ; Entity Name             ; Library Name ;
++------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+-------------------------+--------------+
+; |up_and_down_counter               ; 80 (0)              ; 35 (0)                    ; 0           ; 0            ; 0       ; 0         ; 15   ; 0            ; |up_and_down_counter                                                ; up_and_down_counter     ; work         ;
+;    |decod_bcd_box:inst2|           ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|decod_bcd_box:inst2                            ; decod_bcd_box           ; work         ;
+;       |output_barrado:inst1|       ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|decod_bcd_box:inst2|output_barrado:inst1       ; output_barrado          ; work         ;
+;    |freq_div:inst6|                ; 34 (9)              ; 27 (2)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|freq_div:inst6                                 ; freq_div                ; work         ;
+;       |ff_box:inst10|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|freq_div:inst6|ff_box:inst10                   ; ff_box                  ; work         ;
+;       |ff_box:inst14|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|freq_div:inst6|ff_box:inst14                   ; ff_box                  ; work         ;
+;       |ff_box:inst15|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|freq_div:inst6|ff_box:inst15                   ; ff_box                  ; work         ;
+;       |ff_box:inst17|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|freq_div:inst6|ff_box:inst17                   ; ff_box                  ; work         ;
+;       |ff_box:inst18|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|freq_div:inst6|ff_box:inst18                   ; ff_box                  ; work         ;
+;       |ff_box:inst19|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|freq_div:inst6|ff_box:inst19                   ; ff_box                  ; work         ;
+;       |ff_box:inst20|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|freq_div:inst6|ff_box:inst20                   ; ff_box                  ; work         ;
+;       |ff_box:inst22|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|freq_div:inst6|ff_box:inst22                   ; ff_box                  ; work         ;
+;       |ff_box:inst23|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|freq_div:inst6|ff_box:inst23                   ; ff_box                  ; work         ;
+;       |ff_box:inst24|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|freq_div:inst6|ff_box:inst24                   ; ff_box                  ; work         ;
+;       |ff_box:inst25|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|freq_div:inst6|ff_box:inst25                   ; ff_box                  ; work         ;
+;       |ff_box:inst27|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|freq_div:inst6|ff_box:inst27                   ; ff_box                  ; work         ;
+;       |ff_box:inst28|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|freq_div:inst6|ff_box:inst28                   ; ff_box                  ; work         ;
+;       |ff_box:inst29|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|freq_div:inst6|ff_box:inst29                   ; ff_box                  ; work         ;
+;       |ff_box:inst30|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|freq_div:inst6|ff_box:inst30                   ; ff_box                  ; work         ;
+;       |ff_box:inst32|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|freq_div:inst6|ff_box:inst32                   ; ff_box                  ; work         ;
+;       |ff_box:inst33|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|freq_div:inst6|ff_box:inst33                   ; ff_box                  ; work         ;
+;       |ff_box:inst34|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|freq_div:inst6|ff_box:inst34                   ; ff_box                  ; work         ;
+;       |ff_box:inst35|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|freq_div:inst6|ff_box:inst35                   ; ff_box                  ; work         ;
+;       |ff_box:inst5|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|freq_div:inst6|ff_box:inst5                    ; ff_box                  ; work         ;
+;       |ff_box:inst61|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|freq_div:inst6|ff_box:inst61                   ; ff_box                  ; work         ;
+;       |ff_box:inst7|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|freq_div:inst6|ff_box:inst7                    ; ff_box                  ; work         ;
+;       |ff_box:inst8|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|freq_div:inst6|ff_box:inst8                    ; ff_box                  ; work         ;
+;       |ff_box:inst99|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|freq_div:inst6|ff_box:inst99                   ; ff_box                  ; work         ;
+;       |ff_box:inst9|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|freq_div:inst6|ff_box:inst9                    ; ff_box                  ; work         ;
+;    |load_box:inst1|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|load_box:inst1                                 ; load_box                ; work         ;
+;    |mux_op:inst55|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|mux_op:inst55                                  ; mux_op                  ; work         ;
+;    |up_and_down_counter_box:inst4| ; 37 (28)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|up_and_down_counter_box:inst4                  ; up_and_down_counter_box ; work         ;
+;       |CLRup:inst10|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|up_and_down_counter_box:inst4|CLRup:inst10     ; CLRup                   ; work         ;
+;       |CLRup:inst16|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|up_and_down_counter_box:inst4|CLRup:inst16     ; CLRup                   ; work         ;
+;       |CLRup:inst18|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|up_and_down_counter_box:inst4|CLRup:inst18     ; CLRup                   ; work         ;
+;       |CLRup:inst7|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|up_and_down_counter_box:inst4|CLRup:inst7      ; CLRup                   ; work         ;
+;       |msb_mux:inst37|             ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|up_and_down_counter_box:inst4|msb_mux:inst37   ; msb_mux                 ; work         ;
+;       |preup_mux:inst29|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|up_and_down_counter_box:inst4|preup_mux:inst29 ; preup_mux               ; work         ;
+;       |preup_mux:inst30|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|up_and_down_counter_box:inst4|preup_mux:inst30 ; preup_mux               ; work         ;
+;       |preup_mux:inst31|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |up_and_down_counter|up_and_down_counter_box:inst4|preup_mux:inst31 ; preup_mux               ; work         ;
++------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+-------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -238,10 +279,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 8     ;
+; Total registers                              ; 35    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 8     ;
+; Number of registers using Asynchronous Clear ; 33    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -254,16 +295,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 15                          ;
-; cycloneiii_ff         ; 8                           ;
-;     CLR               ; 8                           ;
-; cycloneiii_lcell_comb ; 30                          ;
-;     normal            ; 30                          ;
-;         2 data inputs ; 8                           ;
+; cycloneiii_ff         ; 35                          ;
+;     CLR               ; 33                          ;
+;     plain             ; 2                           ;
+; cycloneiii_lcell_comb ; 80                          ;
+;     normal            ; 80                          ;
+;         1 data inputs ; 26                          ;
+;         2 data inputs ; 17                          ;
 ;         3 data inputs ; 9                           ;
-;         4 data inputs ; 13                          ;
+;         4 data inputs ; 28                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.54                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.32                        ;
 +-----------------------+-----------------------------+
 
 
@@ -282,7 +325,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Nov 01 22:14:19 2023
+    Info: Processing started: Fri Nov 03 20:42:55 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off up_and_down_counter -c up_and_down_counter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -312,6 +355,33 @@ Info (12021): Found 1 design units, including 1 entities, in source file clrup.b
     Info (12023): Found entity 1: CLRup
 Info (12021): Found 1 design units, including 1 entities, in source file clrdown.bdf
     Info (12023): Found entity 1: CLRdown
+Info (12021): Found 1 design units, including 1 entities, in source file load_box.bdf
+    Info (12023): Found entity 1: load_box
+Info (12021): Found 1 design units, including 1 entities, in source file load_bits.bdf
+    Info (12023): Found entity 1: load_bits
+Info (12021): Found 1 design units, including 1 entities, in source file enable.bdf
+    Info (12023): Found entity 1: enable
+Info (12021): Found 1 design units, including 1 entities, in source file or_output.bdf
+    Info (12023): Found entity 1: or_output
+Info (12021): Found 1 design units, including 1 entities, in source file load_fft.bdf
+    Info (12023): Found entity 1: load_fft
+Warning (12090): Entity "mux" obtained from "mux.bdf" instead of from Quartus Prime megafunction library
+Info (12021): Found 1 design units, including 1 entities, in source file mux.bdf
+    Info (12023): Found entity 1: mux
+Info (12021): Found 1 design units, including 1 entities, in source file preup_mux.bdf
+    Info (12023): Found entity 1: preup_mux
+Info (12021): Found 1 design units, including 1 entities, in source file preup2.bdf
+    Info (12023): Found entity 1: preup2
+Info (12021): Found 1 design units, including 1 entities, in source file msb_mux.bdf
+    Info (12023): Found entity 1: msb_mux
+Info (12021): Found 1 design units, including 1 entities, in source file lsb_mux.bdf
+    Info (12023): Found entity 1: lsb_mux
+Info (12021): Found 1 design units, including 1 entities, in source file mux_op.bdf
+    Info (12023): Found entity 1: mux_op
+Info (12021): Found 1 design units, including 1 entities, in source file freq_div.bdf
+    Info (12023): Found entity 1: freq_div
+Info (12021): Found 1 design units, including 1 entities, in source file clrup_mux.bdf
+    Info (12023): Found entity 1: clrup_mux
 Info (12127): Elaborating entity "up_and_down_counter" for the top level hierarchy
 Warning (12125): Using design file decod_bcd_box.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: decod_bcd_box
@@ -329,36 +399,46 @@ Warning (275008): Primitive "NOT" of instance "inst" not used
 Info (12128): Elaborating entity "comb_output" for hierarchy "comb_output:inst"
 Info (12128): Elaborating entity "a_out" for hierarchy "comb_output:inst|a_out:inst"
 Info (12128): Elaborating entity "b_out" for hierarchy "comb_output:inst|b_out:inst2"
-Warning (275008): Primitive "NOT" of instance "inst8" not used
+Warning (275008): Primitive "NOT" of instance "inst6" not used
 Info (12128): Elaborating entity "c_out" for hierarchy "comb_output:inst|c_out:inst9"
 Info (12128): Elaborating entity "d_out" for hierarchy "comb_output:inst|d_out:inst10"
-Warning (275008): Primitive "NOT" of instance "inst8" not used
 Info (12128): Elaborating entity "up_and_down_counter_box" for hierarchy "up_and_down_counter_box:inst4"
 Warning (275008): Primitive "NOT" of instance "inst50" not used
+Info (12128): Elaborating entity "preup_mux" for hierarchy "up_and_down_counter_box:inst4|preup_mux:inst29"
 Info (12128): Elaborating entity "PREup" for hierarchy "up_and_down_counter_box:inst4|PREup:inst14"
 Info (12128): Elaborating entity "PREdown" for hierarchy "up_and_down_counter_box:inst4|PREdown:inst1"
 Info (12128): Elaborating entity "CLRdown" for hierarchy "up_and_down_counter_box:inst4|CLRdown:inst2"
+Info (12128): Elaborating entity "load_fft" for hierarchy "up_and_down_counter_box:inst4|load_fft:inst"
 Info (12128): Elaborating entity "CLRup" for hierarchy "up_and_down_counter_box:inst4|CLRup:inst7"
+Info (12128): Elaborating entity "msb_mux" for hierarchy "up_and_down_counter_box:inst4|msb_mux:inst37"
+Info (12128): Elaborating entity "mux_op" for hierarchy "mux_op:inst55"
+Info (12128): Elaborating entity "freq_div" for hierarchy "freq_div:inst6"
+Warning (12125): Using design file ff_box.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: ff_box
+Info (12128): Elaborating entity "ff_box" for hierarchy "freq_div:inst6|ff_box:inst24"
+Info (12128): Elaborating entity "load_box" for hierarchy "load_box:inst1"
+Warning (275008): Primitive "NOT" of instance "inst4" not used
+Warning (275008): Primitive "NOT" of instance "inst7" not used
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "up_and_down_counter_box:inst4|inst5" is converted into an equivalent circuit using register "up_and_down_counter_box:inst4|inst5~_emulated" and latch "up_and_down_counter_box:inst4|inst5~1"
     Warning (13310): Register "up_and_down_counter_box:inst4|inst6" is converted into an equivalent circuit using register "up_and_down_counter_box:inst4|inst6~_emulated" and latch "up_and_down_counter_box:inst4|inst6~1"
     Warning (13310): Register "up_and_down_counter_box:inst4|inst8" is converted into an equivalent circuit using register "up_and_down_counter_box:inst4|inst8~_emulated" and latch "up_and_down_counter_box:inst4|inst8~1"
+    Warning (13310): Register "up_and_down_counter_box:inst4|inst5" is converted into an equivalent circuit using register "up_and_down_counter_box:inst4|inst5~_emulated" and latch "up_and_down_counter_box:inst4|inst5~1"
     Warning (13310): Register "up_and_down_counter_box:inst4|inst3" is converted into an equivalent circuit using register "up_and_down_counter_box:inst4|inst3~_emulated" and latch "up_and_down_counter_box:inst4|inst3~1"
-    Warning (13310): Register "up_and_down_counter_box:inst4|inst11" is converted into an equivalent circuit using register "up_and_down_counter_box:inst4|inst11~_emulated" and latch "up_and_down_counter_box:inst4|inst11~1"
-    Warning (13310): Register "up_and_down_counter_box:inst4|inst12" is converted into an equivalent circuit using register "up_and_down_counter_box:inst4|inst12~_emulated" and latch "up_and_down_counter_box:inst4|inst12~1"
-    Warning (13310): Register "up_and_down_counter_box:inst4|inst13" is converted into an equivalent circuit using register "up_and_down_counter_box:inst4|inst13~_emulated" and latch "up_and_down_counter_box:inst4|inst13~1"
+    Warning (13310): Register "up_and_down_counter_box:inst4|inst42" is converted into an equivalent circuit using register "up_and_down_counter_box:inst4|inst42~_emulated" and latch "up_and_down_counter_box:inst4|inst42~1"
+    Warning (13310): Register "up_and_down_counter_box:inst4|inst97" is converted into an equivalent circuit using register "up_and_down_counter_box:inst4|inst97~_emulated" and latch "up_and_down_counter_box:inst4|inst97~1"
+    Warning (13310): Register "up_and_down_counter_box:inst4|inst34" is converted into an equivalent circuit using register "up_and_down_counter_box:inst4|inst34~_emulated" and latch "up_and_down_counter_box:inst4|inst34~1"
     Warning (13310): Register "up_and_down_counter_box:inst4|inst99" is converted into an equivalent circuit using register "up_and_down_counter_box:inst4|inst99~_emulated" and latch "up_and_down_counter_box:inst4|inst99~1"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 45 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 96 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 13 output pins
-    Info (21061): Implemented 30 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 4779 megabytes
-    Info: Processing ended: Wed Nov 01 22:14:27 2023
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:18
+    Info (21061): Implemented 81 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 21 warnings
+    Info: Peak virtual memory: 4782 megabytes
+    Info: Processing ended: Fri Nov 03 20:43:05 2023
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:23
 
 

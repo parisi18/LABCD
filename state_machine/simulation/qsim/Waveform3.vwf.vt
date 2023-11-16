@@ -18,57 +18,43 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/19/2023 20:11:07"
+// Generated on "11/02/2023 15:44:57"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          contador_sincrono
+// Verilog Test Bench (with test vectors) for design :                          load_bits
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module contador_sincrono_vlg_vec_tst();
+module load_bits_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg clear;
-reg clock;
+reg clk;
 // wires                                               
-wire h_a_o;
-wire h_b_o;
-wire h_c_o;
-wire h_d_o;
-wire h_e_o;
-wire h_f_o;
-wire h_g_o;
+wire q1;
+wire q2;
+wire q3;
+wire q4;
 
 // assign statements (if any)                          
-contador_sincrono i1 (
+load_bits i1 (
 // port map - connection between master ports and signals/registers   
-	.clear(clear),
-	.clock(clock),
-	.h_a_o(h_a_o),
-	.h_b_o(h_b_o),
-	.h_c_o(h_c_o),
-	.h_d_o(h_d_o),
-	.h_e_o(h_e_o),
-	.h_f_o(h_f_o),
-	.h_g_o(h_g_o)
+	.clk(clk),
+	.q1(q1),
+	.q2(q2),
+	.q3(q3),
+	.q4(q4)
 );
 initial 
 begin 
-#80000 $finish;
+#1000000 $finish;
 end 
 
-// clear
-initial
-begin
-	clear = 1'b0;
-end 
-
-// clock
+// clk
 always
 begin
-	clock = 1'b0;
-	clock = #5000 1'b1;
+	clk = 1'b0;
+	clk = #5000 1'b1;
 	#5000;
 end 
 endmodule

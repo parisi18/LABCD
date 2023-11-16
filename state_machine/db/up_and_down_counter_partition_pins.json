@@ -8,6 +8,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "up_down",
+					"strict" : false
+				},
+				{
 					"name" : "b",
 					"strict" : false
 				},
@@ -52,15 +56,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "up_down",
+					"name" : "SW17",
 					"strict" : false
 				},
 				{
 					"name" : "clock",
-					"strict" : false
-				},
-				{
-					"name" : "up/down",
 					"strict" : false
 				}
 			]

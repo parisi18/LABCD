@@ -1,9 +1,8 @@
 |up_and_down_counter
 a <= decod_bcd_box:inst2.a
-up/down => up_and_down_counter_box:inst4.up_down
-up/down => up_down.DATAIN
-clock => up_and_down_counter_box:inst4.clock
-clock => clk.DATAIN
+up_down <= mux_op:inst55.up_down
+clock => freq_div:inst6.clk_input
+SW17 => mux_op:inst55.SW16
 b <= decod_bcd_box:inst2.b
 c <= decod_bcd_box:inst2.c
 d <= decod_bcd_box:inst2.d
@@ -14,8 +13,7 @@ q_msb <= up_and_down_counter_box:inst4.q_msb
 q2 <= up_and_down_counter_box:inst4.q2
 q1 <= up_and_down_counter_box:inst4.q1
 q_lsb <= up_and_down_counter_box:inst4.q_lsb
-clk <= clock.DB_MAX_OUTPUT_PORT_TYPE
-up_down <= up/down.DB_MAX_OUTPUT_PORT_TYPE
+clk <= freq_div:inst6.1s
 
 
 |up_and_down_counter|decod_bcd_box:inst2
@@ -130,9 +128,9 @@ A => inst.IN0
 A => inst3.IN0
 B => inst4.IN0
 C => inst2.IN2
+C => inst3.IN2
 C => inst6.IN0
 D => inst2.IN3
-D => inst3.IN3
 D => inst8.IN0
 
 
@@ -142,19 +140,21 @@ A => inst3.IN0
 A => inst.IN0
 B => inst4.IN0
 B => inst2.IN1
-C => inst6.IN0
-D => inst3.IN3
+C => inst3.IN2
+D => inst8.IN0
 D => inst2.IN2
 
 
 |up_and_down_counter|comb_output:inst|c_out:inst9
 c_o <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
-B => inst3.IN1
+A => inst3.IN0
 B => inst4.IN0
-D => inst8.IN0
-D => inst2.IN2
+B => inst2.IN1
 C => inst6.IN0
+C => inst3.IN2
+D => inst1.IN3
+D => inst8.IN0
 
 
 |up_and_down_counter|comb_output:inst|d_out:inst10
@@ -163,9 +163,10 @@ A => inst12.IN0
 A => inst.IN0
 B => inst4.IN0
 B => inst11.IN1
+D => inst8.IN0
+D => inst3.IN3
 C => inst6.IN0
 C => inst11.IN2
-D => inst13.IN2
 
 
 |up_and_down_counter|up_and_down_counter_box:inst4
@@ -188,9 +189,34 @@ up_down => PREup:inst19.UD
 up_down => CLRup:inst18.UD
 clock => inst99.CLK
 clock => inst3.CLK
+ld_under => load_fft:inst.lu
+ld_under => preup_mux:inst29.ld_u
+ld_under => preup_mux:inst30.ld_u
+ld_under => preup_mux:inst31.ld_u
+ld_under => msb_mux:inst37.ld_u
+ld_over => load_fft:inst.lo
+ld_over => preup_mux:inst29.ld_o
+ld_over => preup_mux:inst30.ld_o
+ld_over => preup_mux:inst31.ld_o
+ld_over => msb_mux:inst37.ld_o
+ld_na => load_fft:inst.na
+LD => preup_mux:inst29.LD
+LD => preup_mux:inst30.LD
+LD => preup_mux:inst31.LD
+LD => msb_mux:inst37.LD
 q1 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 q2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 q_msb <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|up_and_down_counter|up_and_down_counter_box:inst4|preup_mux:inst29
+prn_o <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+pre_bit => inst1.IN0
+LD => inst1.IN1
+LD => inst3.IN0
+ld_u => inst2.IN1
+ld_o => inst2.IN2
+pre_up => inst.IN0
 
 
 |up_and_down_counter|up_and_down_counter_box:inst4|PREup:inst14
@@ -211,10 +237,27 @@ UD => inst.IN0
 Qu => inst9.IN1
 
 
+|up_and_down_counter|up_and_down_counter_box:inst4|load_fft:inst
+ld_bit <= inst.DB_MAX_OUTPUT_PORT_TYPE
+lo => inst.IN0
+na => inst.IN1
+lu => inst.IN2
+
+
 |up_and_down_counter|up_and_down_counter_box:inst4|CLRup:inst7
 CLRup <= inst9.DB_MAX_OUTPUT_PORT_TYPE
 UD => inst9.IN0
 Qd => inst9.IN1
+
+
+|up_and_down_counter|up_and_down_counter_box:inst4|preup_mux:inst30
+prn_o <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+pre_bit => inst1.IN0
+LD => inst1.IN1
+LD => inst3.IN0
+ld_u => inst2.IN1
+ld_o => inst2.IN2
+pre_up => inst.IN0
 
 
 |up_and_down_counter|up_and_down_counter_box:inst4|PREup:inst15
@@ -241,6 +284,16 @@ UD => inst9.IN0
 Qd => inst9.IN1
 
 
+|up_and_down_counter|up_and_down_counter_box:inst4|preup_mux:inst31
+prn_o <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+pre_bit => inst1.IN0
+LD => inst1.IN1
+LD => inst3.IN0
+ld_u => inst2.IN1
+ld_o => inst2.IN2
+pre_up => inst.IN0
+
+
 |up_and_down_counter|up_and_down_counter_box:inst4|PREup:inst17
 PREup <= inst9.DB_MAX_OUTPUT_PORT_TYPE
 UD => inst9.IN0
@@ -265,6 +318,16 @@ UD => inst9.IN0
 Qd => inst9.IN1
 
 
+|up_and_down_counter|up_and_down_counter_box:inst4|msb_mux:inst37
+prn_o <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+pre_bit => inst1.IN0
+LD => inst1.IN1
+LD => inst3.IN0
+ld_u => inst2.IN1
+ld_o => inst4.IN0
+pre_up => inst.IN0
+
+
 |up_and_down_counter|up_and_down_counter_box:inst4|PREup:inst19
 PREup <= inst9.DB_MAX_OUTPUT_PORT_TYPE
 UD => inst9.IN0
@@ -287,5 +350,182 @@ Qu => inst9.IN1
 CLRup <= inst9.DB_MAX_OUTPUT_PORT_TYPE
 UD => inst9.IN0
 Qd => inst9.IN1
+
+
+|up_and_down_counter|mux_op:inst55
+up_down <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+SW17 => inst1.IN0
+SW16 => inst3.IN0
+
+
+|up_and_down_counter|freq_div:inst6
+1s <= inst57.DB_MAX_OUTPUT_PORT_TYPE
+clk_input => ff_box:inst5.clk
+clk_input => inst59.CLK
+reset_manual => inst60.IN0
+
+
+|up_and_down_counter|freq_div:inst6|ff_box:inst24
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst1.IN0
+clk => inst.CLK
+
+
+|up_and_down_counter|freq_div:inst6|ff_box:inst20
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst1.IN0
+clk => inst.CLK
+
+
+|up_and_down_counter|freq_div:inst6|ff_box:inst19
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst1.IN0
+clk => inst.CLK
+
+
+|up_and_down_counter|freq_div:inst6|ff_box:inst18
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst1.IN0
+clk => inst.CLK
+
+
+|up_and_down_counter|freq_div:inst6|ff_box:inst17
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst1.IN0
+clk => inst.CLK
+
+
+|up_and_down_counter|freq_div:inst6|ff_box:inst15
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst1.IN0
+clk => inst.CLK
+
+
+|up_and_down_counter|freq_div:inst6|ff_box:inst10
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst1.IN0
+clk => inst.CLK
+
+
+|up_and_down_counter|freq_div:inst6|ff_box:inst9
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst1.IN0
+clk => inst.CLK
+
+
+|up_and_down_counter|freq_div:inst6|ff_box:inst14
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst1.IN0
+clk => inst.CLK
+
+
+|up_and_down_counter|freq_div:inst6|ff_box:inst8
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst1.IN0
+clk => inst.CLK
+
+
+|up_and_down_counter|freq_div:inst6|ff_box:inst7
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst1.IN0
+clk => inst.CLK
+
+
+|up_and_down_counter|freq_div:inst6|ff_box:inst99
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst1.IN0
+clk => inst.CLK
+
+
+|up_and_down_counter|freq_div:inst6|ff_box:inst61
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst1.IN0
+clk => inst.CLK
+
+
+|up_and_down_counter|freq_div:inst6|ff_box:inst5
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst1.IN0
+clk => inst.CLK
+
+
+|up_and_down_counter|freq_div:inst6|ff_box:inst22
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst1.IN0
+clk => inst.CLK
+
+
+|up_and_down_counter|freq_div:inst6|ff_box:inst23
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst1.IN0
+clk => inst.CLK
+
+
+|up_and_down_counter|freq_div:inst6|ff_box:inst25
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst1.IN0
+clk => inst.CLK
+
+
+|up_and_down_counter|freq_div:inst6|ff_box:inst27
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst1.IN0
+clk => inst.CLK
+
+
+|up_and_down_counter|freq_div:inst6|ff_box:inst28
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst1.IN0
+clk => inst.CLK
+
+
+|up_and_down_counter|freq_div:inst6|ff_box:inst29
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst1.IN0
+clk => inst.CLK
+
+
+|up_and_down_counter|freq_div:inst6|ff_box:inst30
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst1.IN0
+clk => inst.CLK
+
+
+|up_and_down_counter|freq_div:inst6|ff_box:inst32
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst1.IN0
+clk => inst.CLK
+
+
+|up_and_down_counter|freq_div:inst6|ff_box:inst33
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst1.IN0
+clk => inst.CLK
+
+
+|up_and_down_counter|freq_div:inst6|ff_box:inst34
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst1.IN0
+clk => inst.CLK
+
+
+|up_and_down_counter|freq_div:inst6|ff_box:inst35
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst1.IN0
+clk => inst.CLK
+
+
+|up_and_down_counter|load_box:inst1
+ld_under <= inst.DB_MAX_OUTPUT_PORT_TYPE
+b1 => inst.IN0
+b1 => inst2.IN0
+b2 => inst.IN1
+b2 => inst5.IN0
+b3 => inst.IN2
+b3 => inst6.IN0
+b4 => inst.IN3
+b4 => inst2.IN3
+ld_over <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+ld_signal <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 

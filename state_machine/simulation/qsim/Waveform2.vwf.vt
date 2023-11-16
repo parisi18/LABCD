@@ -18,49 +18,43 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/19/2023 19:53:16"
+// Generated on "11/02/2023 15:41:53"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          contador_sincrono_box
+// Verilog Test Bench (with test vectors) for design :                          load_bits
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module contador_sincrono_box_vlg_vec_tst();
+module load_bits_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg clear;
-reg clock;
+reg clk;
 // wires                                               
-wire LSB;
-wire MSB;
-wire Q;
+wire q1;
+wire q2;
+wire q3;
+wire q4;
 
 // assign statements (if any)                          
-contador_sincrono_box i1 (
+load_bits i1 (
 // port map - connection between master ports and signals/registers   
-	.clear(clear),
-	.clock(clock),
-	.LSB(LSB),
-	.MSB(MSB),
-	.Q(Q)
+	.clk(clk),
+	.q1(q1),
+	.q2(q2),
+	.q3(q3),
+	.q4(q4)
 );
 initial 
 begin 
-#80000 $finish;
+#1000000 $finish;
 end 
 
-// clear
-initial
-begin
-	clear = 1'b0;
-end 
-
-// clock
+// clk
 always
 begin
-	clock = 1'b0;
-	clock = #5000 1'b1;
+	clk = 1'b0;
+	clk = #5000 1'b1;
 	#5000;
 end 
 endmodule

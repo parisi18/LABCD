@@ -93,31 +93,31 @@ r1
 R9
 R10
 vhard_block
-Z14 !s110 1695265189
+Z14 !s110 1698950698
 !i10b 1
-!s100 =1>O;TT_RzoFdIaK?=O3_0
-IbRH81_dAUICkH^<=RG40X1
+!s100 K5W?oYabCk6^3C2l7U<TE3
+I@f?QekJFNPM?FPfgLRnBN1
 R1
-Z15 dD:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/up_and_down_counter/simulation/qsim
-Z16 w1695265188
+Z15 dD:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/state_machine/simulation/qsim
+Z16 w1698950697
 Z17 8up_and_down_counter.vo
 Z18 Fup_and_down_counter.vo
-L0 397
+L0 146
 R6
 r1
 !s85 0
 31
-Z19 !s108 1695265189.000000
+Z19 !s108 1698950698.000000
 Z20 !s107 up_and_down_counter.vo|
 Z21 !s90 -work|work|up_and_down_counter.vo|
 !i113 1
 R9
 R10
-vup_and_down_counter
+vload_bits
 R14
 !i10b 1
-!s100 XRHB43^e7SiU64z6]4MXI0
-I=Y=Zm@JW=D:oMQln?KhTP1
+!s100 Qck@[[ZNSFlhVK?1aDCOT1
+IzRW85fSHPzj7o_Y=UQR8a2
 R1
 R15
 R16
@@ -129,6 +129,48 @@ r1
 !s85 0
 31
 R19
+R20
+R21
+!i113 1
+R9
+R10
+vload_bits_vlg_vec_tst
+R14
+!i10b 1
+!s100 :dCR16=Om3;E@`izgAFD@2
+Ie>@efKbc<cI=6Kg44N<Vm1
+R1
+R15
+R16
+8Waveform3.vwf.vt
+FWaveform3.vwf.vt
+R13
+R6
+r1
+!s85 0
+31
+R19
+!s107 Waveform3.vwf.vt|
+!s90 -work|work|Waveform3.vwf.vt|
+!i113 1
+R9
+R10
+vup_and_down_counter
+!s110 1695265189
+!i10b 1
+!s100 XRHB43^e7SiU64z6]4MXI0
+I=Y=Zm@JW=D:oMQln?KhTP1
+R1
+dD:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/up_and_down_counter/simulation/qsim
+w1695265188
+R17
+R18
+R5
+R6
+r1
+!s85 0
+31
+!s108 1695265189.000000
 R20
 R21
 !i113 1
