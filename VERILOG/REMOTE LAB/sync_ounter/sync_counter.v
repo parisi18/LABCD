@@ -8,11 +8,11 @@ reg [0:6] segmentos;
 
 always @(posedge V_BT[3]) begin
     if (SW[17]) begin
-        contador = 0;
+        contador <= 0;
     end else begin
         contador = contador + 1;
         if(contador > 7) begin
-            contador = 0;
+            contador <= 0;
         end
     end   
 end
