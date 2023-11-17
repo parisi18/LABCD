@@ -1,0 +1,2 @@
+module async_counter(SW, KEY);
+input [0:3] SW
