@@ -4,31 +4,31 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "a",
+					"name" : "segments[6]",
 					"strict" : false
 				},
 				{
-					"name" : "b",
+					"name" : "segments[5]",
 					"strict" : false
 				},
 				{
-					"name" : "c",
+					"name" : "segments[4]",
 					"strict" : false
 				},
 				{
-					"name" : "d",
+					"name" : "segments[3]",
 					"strict" : false
 				},
 				{
-					"name" : "e",
+					"name" : "segments[2]",
 					"strict" : false
 				},
 				{
-					"name" : "f",
+					"name" : "segments[1]",
 					"strict" : false
 				},
 				{
-					"name" : "g",
+					"name" : "segments[0]",
 					"strict" : false
 				},
 				{

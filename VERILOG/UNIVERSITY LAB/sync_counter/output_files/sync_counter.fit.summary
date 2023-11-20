@@ -1,7 +1,7 @@
-Fitter Status : Successful - Fri Nov 17 19:29:30 2023
+Fitter Status : Successful - Fri Nov 17 20:36:21 2023
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : sync_counter
-Top-level Entity Name : sync_counter
+Top-level Entity Name : geral
 Family : Cyclone IV E
 Device : EP4CE115F29C7
 Timing Models : Final

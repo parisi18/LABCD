@@ -1,41 +1,23 @@
-module sync_counter(KEY_3, SW17,a,b,c,d,e,f,g);
+module sync_counter(KEY_3,SW17,W,X,Y,Z);
 
 input KEY_3;
 input SW17;
 
-output a,b,c,d,e,f,g;
-
-reg [0:3] contador;
-reg [0:6] segmentos;
+output W,X,Y,Z;
+reg [0:3] counter;
 
 
 always @(posedge KEY_3) begin
     if (SW17) begin
-        contador = 0;
+        counter = 0;
     end else begin
-        contador = contador + 1;
-        if(contador > 7) begin
-            contador = 0;
+        counter = counter + 1;
+        if(counter > 7) begin
+            counter = 0;
         end
     end   
 end
 
-always@ (*) begin
-    case ({contador})
-        4'b0000: segmentos=7'b0000001;
-        4'b0001: segmentos=7'b1001111;
-        4'b0010: segmentos=7'b0010010;
-        4'b0011: segmentos=7'b0000110;
-        4'b0100: segmentos=7'b1001100;
-        4'b0101: segmentos=7'b0100100;
-        4'b0110: segmentos=7'b0100000;
-        4'b0111: segmentos=7'b0001111;
-        4'b1000: segmentos=7'b0000000;
-        4'b1001: segmentos=7'b0000100;
-        default: segmentos=7'b1111111;
-    endcase
-end
-
-assign {a,b,c,d,e,f,g} = segmentos;
+assign {W,X,Y,Z} = counter;
 
 endmodule

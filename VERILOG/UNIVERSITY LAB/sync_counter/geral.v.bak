@@ -1,0 +1,9 @@
+module geral(KEY_3, segments);
+
+input KEY_3;
+output [0:6] segments;
+
+
+sync_counter();
+
+decod_bcd();

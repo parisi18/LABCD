@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Successful - Fri Nov 17 19:29:21 2023
+Analysis & Synthesis Status : Successful - Fri Nov 17 20:36:10 2023
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : sync_counter
-Top-level Entity Name : sync_counter
+Top-level Entity Name : geral
 Family : Cyclone IV E
 Total logic elements : 10
     Total combinational functions : 10
