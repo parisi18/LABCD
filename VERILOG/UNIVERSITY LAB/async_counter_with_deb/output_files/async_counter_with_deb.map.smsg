@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at sync_counter.v(33): always construct contains both blocking and non-blocking assignments File: D:/Users/RafaelParisi/Documents/UNIFESP/7 termo/LabCD/VERILOG/UNIVERSITY LAB/async_counter_with_deb/sync_counter.v Line: 33

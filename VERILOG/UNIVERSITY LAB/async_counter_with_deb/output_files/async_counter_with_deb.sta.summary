@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'KEY_3'
+Slack : -0.922
+TNS   : -3.688
+
+Type  : Slow 1200mV 85C Model Setup 'PIN_Y2'
+Slack : 0.001
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PIN_Y2'
+Slack : -0.006
+TNS   : -0.018
+
+Type  : Slow 1200mV 85C Model Hold 'KEY_3'
+Slack : 0.440
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'KEY_3'
+Slack : -3.000
+TNS   : -8.140
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PIN_Y2'
+Slack : -3.000
+TNS   : -6.855
+
+Type  : Slow 1200mV 0C Model Setup 'KEY_3'
+Slack : -0.695
+TNS   : -2.780
+
+Type  : Slow 1200mV 0C Model Setup 'PIN_Y2'
+Slack : 0.056
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PIN_Y2'
+Slack : 0.047
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'KEY_3'
+Slack : 0.387
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'KEY_3'
+Slack : -3.000
+TNS   : -8.140
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PIN_Y2'
+Slack : -3.000
+TNS   : -6.855
+
+Type  : Fast 1200mV 0C Model Setup 'KEY_3'
+Slack : -0.104
+TNS   : -0.416
+
+Type  : Fast 1200mV 0C Model Setup 'PIN_Y2'
+Slack : -0.007
+TNS   : -0.021
+
+Type  : Fast 1200mV 0C Model Hold 'PIN_Y2'
+Slack : -0.196
+TNS   : -0.588
+
+Type  : Fast 1200mV 0C Model Hold 'KEY_3'
+Slack : 0.201
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'KEY_3'
+Slack : -3.000
+TNS   : -7.864
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PIN_Y2'
+Slack : -3.000
+TNS   : -6.183
+
+------------------------------------------------------------

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Nov 24 19:57:56 2023
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : async_counter_with_deb
+Top-level Entity Name : geral
+Family : Cyclone IV E
+Total logic elements : 15
+    Total combinational functions : 15
+    Dedicated logic registers : 7
+Total registers : 7
+Total pins : 10
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
