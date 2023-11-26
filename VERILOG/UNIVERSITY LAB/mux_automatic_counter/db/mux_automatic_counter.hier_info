@@ -1,0 +1,75 @@
+|geral
+PIN_Y2 => PIN_Y2.IN1
+SW0 => SW0.IN1
+SW17 => SW17.IN1
+SW16 => SW16.IN1
+segments[6] << decod_bcd:comb_3.g
+segments[5] << decod_bcd:comb_3.f
+segments[4] << decod_bcd:comb_3.e
+segments[3] << decod_bcd:comb_3.d
+segments[2] << decod_bcd:comb_3.c
+segments[1] << decod_bcd:comb_3.b
+segments[0] << decod_bcd:comb_3.a
+
+
+|geral|sync_counter:sync
+PIN_Y2 => count_pulse.CLK
+PIN_Y2 => fullcount[0].CLK
+PIN_Y2 => fullcount[1].CLK
+PIN_Y2 => fullcount[2].CLK
+PIN_Y2 => fullcount[3].CLK
+PIN_Y2 => fullcount[4].CLK
+PIN_Y2 => fullcount[5].CLK
+PIN_Y2 => fullcount[6].CLK
+PIN_Y2 => fullcount[7].CLK
+PIN_Y2 => fullcount[8].CLK
+PIN_Y2 => fullcount[9].CLK
+PIN_Y2 => fullcount[10].CLK
+PIN_Y2 => fullcount[11].CLK
+PIN_Y2 => fullcount[12].CLK
+PIN_Y2 => fullcount[13].CLK
+PIN_Y2 => fullcount[14].CLK
+PIN_Y2 => fullcount[15].CLK
+PIN_Y2 => fullcount[16].CLK
+PIN_Y2 => fullcount[17].CLK
+PIN_Y2 => fullcount[18].CLK
+PIN_Y2 => fullcount[19].CLK
+PIN_Y2 => fullcount[20].CLK
+PIN_Y2 => fullcount[21].CLK
+PIN_Y2 => fullcount[22].CLK
+PIN_Y2 => fullcount[23].CLK
+PIN_Y2 => fullcount[24].CLK
+PIN_Y2 => fullcount[25].CLK
+PIN_Y2 => fullcount[26].CLK
+PIN_Y2 => fullcount[27].CLK
+PIN_Y2 => fullcount[28].CLK
+SW0 => counter.OUTPUTSELECT
+SW0 => counter.OUTPUTSELECT
+SW0 => counter.OUTPUTSELECT
+SW0 => counter.OUTPUTSELECT
+SW17 => Decoder0.IN0
+SW17 => LessThan0.IN47
+SW17 => LessThan0.IN53
+SW17 => LessThan0.IN56
+SW16 => Decoder0.IN1
+SW16 => LessThan0.IN48
+W <= counter[0].DB_MAX_OUTPUT_PORT_TYPE
+X <= counter[1].DB_MAX_OUTPUT_PORT_TYPE
+Y <= counter[2].DB_MAX_OUTPUT_PORT_TYPE
+Z <= counter[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|geral|decod_bcd:comb_3
+W => Decoder0.IN0
+X => Decoder0.IN1
+Y => Decoder0.IN2
+Z => Decoder0.IN3
+a <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+b <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+d <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+e <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+f <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+g <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+

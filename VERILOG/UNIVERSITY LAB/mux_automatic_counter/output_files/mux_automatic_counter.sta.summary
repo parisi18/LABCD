@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'PIN_Y2'
+Slack : -4.734
+TNS   : -126.513
+
+Type  : Slow 1200mV 85C Model Setup 'sync_counter:sync|count_pulse'
+Slack : -0.156
+TNS   : -0.156
+
+Type  : Slow 1200mV 85C Model Hold 'sync_counter:sync|count_pulse'
+Slack : 0.405
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PIN_Y2'
+Slack : 0.425
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PIN_Y2'
+Slack : -3.000
+TNS   : -41.550
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'sync_counter:sync|count_pulse'
+Slack : -1.285
+TNS   : -3.855
+
+Type  : Slow 1200mV 0C Model Setup 'PIN_Y2'
+Slack : -4.199
+TNS   : -111.574
+
+Type  : Slow 1200mV 0C Model Setup 'sync_counter:sync|count_pulse'
+Slack : -0.046
+TNS   : -0.046
+
+Type  : Slow 1200mV 0C Model Hold 'sync_counter:sync|count_pulse'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PIN_Y2'
+Slack : 0.384
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PIN_Y2'
+Slack : -3.000
+TNS   : -41.550
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'sync_counter:sync|count_pulse'
+Slack : -1.285
+TNS   : -3.855
+
+Type  : Fast 1200mV 0C Model Setup 'PIN_Y2'
+Slack : -1.767
+TNS   : -45.874
+
+Type  : Fast 1200mV 0C Model Setup 'sync_counter:sync|count_pulse'
+Slack : 0.434
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'sync_counter:sync|count_pulse'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PIN_Y2'
+Slack : 0.192
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PIN_Y2'
+Slack : -3.000
+TNS   : -35.207
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'sync_counter:sync|count_pulse'
+Slack : -1.000
+TNS   : -3.000
+
+------------------------------------------------------------
