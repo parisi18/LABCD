@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'PIN_Y2'
+Slack : -2.691
+TNS   : -49.651
+
+Type  : Slow 1200mV 85C Model Setup 'mealy_machine:comb_3|count_pulse'
+Slack : -0.957
+TNS   : -5.249
+
+Type  : Slow 1200mV 85C Model Hold 'mealy_machine:comb_3|count_pulse'
+Slack : 0.388
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PIN_Y2'
+Slack : 0.557
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PIN_Y2'
+Slack : -3.000
+TNS   : -37.695
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'mealy_machine:comb_3|count_pulse'
+Slack : -1.285
+TNS   : -12.850
+
+Type  : Slow 1200mV 0C Model Setup 'PIN_Y2'
+Slack : -2.366
+TNS   : -42.427
+
+Type  : Slow 1200mV 0C Model Setup 'mealy_machine:comb_3|count_pulse'
+Slack : -0.756
+TNS   : -3.739
+
+Type  : Slow 1200mV 0C Model Hold 'mealy_machine:comb_3|count_pulse'
+Slack : 0.339
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PIN_Y2'
+Slack : 0.504
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PIN_Y2'
+Slack : -3.000
+TNS   : -37.695
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'mealy_machine:comb_3|count_pulse'
+Slack : -1.285
+TNS   : -12.850
+
+Type  : Fast 1200mV 0C Model Setup 'PIN_Y2'
+Slack : -0.779
+TNS   : -10.636
+
+Type  : Fast 1200mV 0C Model Setup 'mealy_machine:comb_3|count_pulse'
+Slack : 0.041
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'mealy_machine:comb_3|count_pulse'
+Slack : 0.174
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PIN_Y2'
+Slack : 0.259
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PIN_Y2'
+Slack : -3.000
+TNS   : -31.894
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'mealy_machine:comb_3|count_pulse'
+Slack : -1.000
+TNS   : -10.000
+
+------------------------------------------------------------

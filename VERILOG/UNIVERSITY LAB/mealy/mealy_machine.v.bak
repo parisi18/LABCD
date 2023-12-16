@@ -1,0 +1,7 @@
+module mealy_machine(sw17, sw16, clock, );
+
+
+
+
+
+endmodule
